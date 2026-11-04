@@ -12,6 +12,7 @@ Vào [Releases](../../releases), tải bản mới nhất:
 
 - **Windows**: giải nén `HaiBanTay-Windows.zip`, mở `HaiBanTay.exe` (giữ nguyên cả thư mục).
 - **Linux**: giải nén `HaiBanTay-Linux.tar.gz`, chạy `./HaiBanTay.x86_64`.
+- **Android**: tải `HaiBanTay.apk` về điện thoại, cho phép cài từ nguồn ngoài rồi cài (ARM64, Vulkan, màn hình ngang).
 
 Máy tham chiếu: laptop i3-1005G1, Intel UHD, Windows 10, 1080p. Bản build khoảng 1 GB.
 
@@ -27,6 +28,8 @@ Máy tham chiếu: laptop i3-1005G1, Intel UHD, Windows 10, 1080p. Bản build k
 | C | Ngồi nghỉ |
 | Tab | Mở/đóng sổ |
 | Esc | Tạm dừng, cài đặt |
+
+Trên Android: kéo nửa trái màn hình để đi, kéo nửa phải để nhìn; chạm nửa phải hoặc nút **Làm** để tương tác; giữ **Dùng** / **Giơ tay**; các nút **Ngồi**, **Sổ**, **Dừng**.
 
 ## Mã nguồn
 
