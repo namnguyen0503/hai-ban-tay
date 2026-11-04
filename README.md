@@ -6,6 +6,10 @@ Cốt truyện dựa theo đoạn kể về chuyến tàu trong *Những mẩu c
 
 *A first-person Unity game (Vietnamese) about the young Hồ Chí Minh working as a kitchen hand on the voyage from Saigon to Marseille in 1911.*
 
+## Trailer
+
+[Xem trailer (1080p, 2 phút 10 giây)](https://github.com/namnguyen0503/hai-ban-tay/releases/download/v1.0/HaiBanTay-Trailer-1080p.mp4): quay từ chính game, do bot tự chơi theo kịch bản rồi `Tools/make_trailer.py` dựng tự động.
+
 ## Tải game
 
 Vào [Releases](../../releases), tải bản mới nhất:

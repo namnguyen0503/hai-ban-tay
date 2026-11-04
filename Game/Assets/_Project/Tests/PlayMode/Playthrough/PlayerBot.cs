@@ -30,6 +30,17 @@ namespace HaiBanTay.Tests
         /// </summary>
         public static bool Fast;
         public const int FastMultiplier = 4;
+        /// <summary>
+        /// Quay trailer (BOT_VIDEO=1, BOT_VIDEO_UI=0): lúc bot đứng chờ (không tự nhắm, không đi) máy quay nhìn mặt người đang nói,
+        /// Ba nói thì nhìn người vừa nói với Ba; không ai nói thì ngẩng dần lên ngang tầm mắt. Bot nhắm vào giữa thân NPC hay đồ dưới
+        /// thấp rồi đứng yên nhìn bụng, chân, mặt bàn suốt câu thoại (người dùng 04/11: "mặt không ngẩng lên mà cứ nhìn xuống đất").
+        /// </summary>
+        public static bool Cinematic;
+        const float CinematicSmooth = 0.35f, CinematicRestPitch = 4f, CinematicRange = 9f, CinematicMemory = 6f;
+        readonly System.Collections.Generic.Dictionary<HaiBanTay.Npc.NpcAgent, Transform> _heads =
+            new System.Collections.Generic.Dictionary<HaiBanTay.Npc.NpcAgent, Transform>();
+        HaiBanTay.Npc.NpcAgent _lastTalker;
+        float _lastTalkerAt = float.NegativeInfinity, _camYawVel, _camPitchVel;
 
         public PlayerBot(PlaythroughLog log) { Log = log; }
         public void Fail(string message) { Ok = false; Log.Note(message); }
@@ -51,6 +62,7 @@ namespace HaiBanTay.Tests
 
         public IEnumerator Frame()
         {
+            CinematicLook();
             yield return null;
             Log.ObserveFrame();
             yield return Log.FlushFindings();
@@ -65,6 +77,52 @@ namespace HaiBanTay.Tests
             }
             else if (Application.isBatchMode && Time.unscaledDeltaTime < 0.75f / Fps)
                 System.Threading.Thread.Sleep(Mathf.RoundToInt((1f / Fps - Time.unscaledDeltaTime) * 1000f));
+        }
+
+        void CinematicLook()
+        {
+            var rig = Rig;
+            if (!Cinematic || rig == null || rig.look == null || rig.cam == null) return;
+            // Bot vừa tự nhắm (nhấn, cầm) hay đang đi, đang rê chuột: không giành máy quay.
+            if (Time.frameCount - Log.BotDriveFrame < 3 || Input.SimLook != Vector2.zero || Input.SimMove != Vector2.zero) return;
+            var root = GameRoot.Instance;
+            string id = root != null && root.Subtitles != null ? root.Subtitles.CurrentLineId : null;
+            string speaker = id != null ? root.Content.GetLine(id).Speaker : null;
+            var talker = speaker != null && speaker != HaiBanTay.Npc.TalkGaze.Player ? HaiBanTay.Npc.TalkGaze.Agent(speaker) : null;
+            var eye = rig.cam.transform.position;
+            if (talker != null && talker.isActiveAndEnabled && (talker.transform.position - eye).sqrMagnitude < CinematicRange * CinematicRange)
+            {
+                _lastTalker = talker;
+                _lastTalkerAt = Time.time;
+            }
+            else if (speaker == null || _lastTalker == null || !_lastTalker.isActiveAndEnabled || Time.time - _lastTalkerAt > CinematicMemory)
+                talker = null;
+            else
+                talker = _lastTalker;
+            float yaw = rig.look.Yaw, pitch = CinematicRestPitch;
+            if (talker != null)
+            {
+                var d = Head(talker) - eye;
+                pitch = -Mathf.Atan2(d.y, new Vector2(d.x, d.z).magnitude) * Mathf.Rad2Deg;
+                // Máy quay bị cảnh khóa (ngồi, cutscene): chỉ ngẩng/cúi, không xoay ngang.
+                if (!rig.look.Locked) yaw = Mathf.Atan2(d.x, d.z) * Mathf.Rad2Deg;
+            }
+            else if (rig.look.Pitch <= CinematicRestPitch + 8f)
+                return;
+            float dt = Mathf.Max(Time.deltaTime, 1e-4f);
+            rig.look.SetAngles(Mathf.SmoothDampAngle(rig.look.Yaw, yaw, ref _camYawVel, CinematicSmooth, Mathf.Infinity, dt),
+                Mathf.SmoothDampAngle(rig.look.Pitch, pitch, ref _camPitchVel, CinematicSmooth, Mathf.Infinity, dt));
+        }
+
+        Vector3 Head(HaiBanTay.Npc.NpcAgent agent)
+        {
+            if (!_heads.TryGetValue(agent, out var head))
+            {
+                var animator = agent.GetComponentInChildren<Animator>();
+                head = animator != null && animator.isHuman ? animator.GetBoneTransform(HumanBodyBones.Head) : null;
+                _heads[agent] = head;
+            }
+            return head != null ? head.position + Vector3.up * 0.06f : agent.transform.position + Vector3.up * 1.6f;
         }
 
         public IEnumerator Wait(string step, Func<bool> done, float gameSeconds = 180f, float realSeconds = 240f, string severity = "BLOCKER")

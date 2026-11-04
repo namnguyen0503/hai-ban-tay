@@ -116,6 +116,7 @@ namespace HaiBanTay.Tests
             PlayerBot.Fps = int.TryParse(Environment.GetEnvironmentVariable("BOT_FPS"), out int fps) && fps >= 15 ? fps : 60;
             // BOT_FAST=1: giờ game cố định 1/Fps mỗi khung (vật lý, dò xuyên vật, video vẫn theo nhịp game), bỏ giới hạn khung thật.
             PlayerBot.Fast = Environment.GetEnvironmentVariable("BOT_FAST") == "1";
+            PlayerBot.Cinematic = BotVideo.Requested && Environment.GetEnvironmentVariable("BOT_VIDEO_UI") == "0";
             Time.captureDeltaTime = PlayerBot.Fast ? 1f / PlayerBot.Fps : 0f;
             QualitySettings.vSyncCount = 0; Application.targetFrameRate = PlayerBot.Fast ? PlayerBot.Fps * PlayerBot.FastMultiplier : PlayerBot.Fps;
             _bot = new PlayerBot(_log);
