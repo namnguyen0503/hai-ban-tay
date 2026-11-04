@@ -1,0 +1,33 @@
+# Unity (project nằm trong Game/)
+/Game/[Ll]ibrary/
+/Game/[Tt]emp/
+/Game/[Oo]bj/
+/Game/[Bb]uild/
+/Game/[Bb]uilds/
+/Game/[Ll]ogs/
+/Game/[Uu]ser[Ss]ettings/
+/Game/[Mm]emoryCaptures/
+/Game/[Rr]ecordings/
+/Game/*.csproj
+/Game/*.sln
+/Game/*.slnx
+/Game/*.user
+/Game/.vs/
+/Game/.idea/
+/Game/.vscode/
+/Game/Assets/InitTestScene*
+/Game/mono_crash*
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+
+# Repo
+/Builds/
+/Logs/
+/Staging/
+/Game/Assets/_Project/Resources/BuildId.txt
+/Game/Assets/_Project/Resources/BuildId.txt.meta
+__pycache__/
+*.pyc
+Tools/blender/generated/

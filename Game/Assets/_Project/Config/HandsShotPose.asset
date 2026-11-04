@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc5137e1e0af0e38935df2a51b6753e, type: 3}
+  m_Name: HandsShotPose
+  m_EditorClassIdentifier: HaiBanTay.Runtime::HaiBanTay.Player.HandsShotPose
+  pitch: 8
+  blendSeconds: 1.2
+  leftPos: {x: -0.15, y: -0.092, z: 0.58}
+  leftEuler: {x: -35, y: 8, z: 180}
+  rightPos: {x: 0.15, y: -0.072, z: 0.58}
+  rightEuler: {x: -35, y: -8, z: 180}
+  prologuePitch: 8
+  prologueHandOffset: {x: 0, y: 0, z: 0}
+  prologueStepBack: 0.35

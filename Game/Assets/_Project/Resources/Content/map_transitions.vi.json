@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "transitions": [
+    {
+      "id": "A",
+      "duration": 12,
+      "stops": [
+        {
+          "name": "Sài Gòn",
+          "date": "5/6/1911"
+        },
+        {
+          "name": "Biển Đông"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "duration": 10,
+      "stops": [
+        {
+          "name": "Biển Đông"
+        },
+        {
+          "name": "Singapore",
+          "date": "8/6/1911"
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "duration": 10,
+      "stops": [
+        {
+          "name": "Singapore"
+        },
+        {
+          "name": "Ấn Độ Dương"
+        },
+        {
+          "name": "Colombo"
+        }
+      ]
+    },
+    {
+      "id": "d4",
+      "duration": 10,
+      "stops": [
+        {
+          "name": "Colombo"
+        },
+        {
+          "name": "Ấn Độ Dương"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "duration": 10,
+      "stops": [
+        {
+          "name": "Ấn Độ Dương"
+        },
+        {
+          "name": "Biển Đỏ"
+        },
+        {
+          "name": "Port Said"
+        }
+      ]
+    },
+    {
+      "id": "d6",
+      "duration": 10,
+      "stops": [
+        {
+          "name": "Port Said"
+        },
+        {
+          "name": "Địa Trung Hải"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "duration": 12,
+      "stops": [
+        {
+          "name": "Địa Trung Hải"
+        },
+        {
+          "name": "Marseille",
+          "date": "6/7/1911"
+        }
+      ]
+    }
+  ]
+}

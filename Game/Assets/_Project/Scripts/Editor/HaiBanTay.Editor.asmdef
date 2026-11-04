@@ -1,0 +1,23 @@
+{
+  "name": "HaiBanTay.Editor",
+  "rootNamespace": "HaiBanTay.Editor",
+  "references": [
+    "HaiBanTay.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.InputSystem",
+    "Unity.Cinemachine",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Core.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

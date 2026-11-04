@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "layers": {
+    "luu_tru": "Tư liệu lưu trữ",
+    "loi_ke": "Hồi ký, lời kể",
+    "nghien_cuu": "Sách, báo, giáo trình",
+    "van_hoc_hoa": "Tác phẩm văn học"
+  },
+  "cards": [
+    {
+      "id": "sc_slogan",
+      "layer": "nghien_cuu",
+      "title": "Vì sao là nước Pháp",
+      "body": "Khẩu hiệu Tự do – Bình đẳng – Bác ái của Cách mạng Pháp là sức hút ban đầu hướng Nguyễn Tất Thành tới nước Pháp.",
+      "factIds": [
+        "F11"
+      ],
+      "citation": "S7 — PGS.TS Nguyễn Trọng Phúc, Báo Đại biểu Nhân dân (2011)"
+    },
+    {
+      "id": "sc_hands",
+      "layer": "nghien_cuu",
+      "title": "Hai bàn tay",
+      "body": "Nguyễn Tất Thành ra đi tìm đường cứu nước với hai bàn tay trắng.",
+      "factIds": [
+        "F12b"
+      ],
+      "citation": "Báo Văn hóa, \"Những dấu ấn của Lãnh tụ Nguyễn Ái Quốc ở Pháp\""
+    },
+    {
+      "id": "sc_hands_story",
+      "layer": "loi_ke",
+      "title": "Giơ hai bàn tay",
+      "body": "Khi một người bạn hỏi lấy tiền đâu mà đi, anh Ba giơ hai bàn tay: anh sẽ làm việc để sống và để đi. Đây là giai thoại trong tiểu sử, không phải hồ sơ lưu trữ.",
+      "factIds": [
+        "F12"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch (bản đăng trên trang Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh)"
+    },
+    {
+      "id": "sc_departure",
+      "layer": "nghien_cuu",
+      "title": "Ngày rời bến",
+      "body": "Ngày 3/6/1911 anh nhận thẻ nhân viên của tàu với tên Văn Ba; trưa 5/6/1911 tàu rời Bến Nhà Rồng.",
+      "factIds": [
+        "F01a",
+        "F01b"
+      ],
+      "citation": "Báo Pháp luật Việt Nam; hoatieu.vn (tổng hợp)"
+    },
+    {
+      "id": "sc_ship",
+      "layer": "nghien_cuu",
+      "title": "Con tàu",
+      "body": "Tàu chở hàng kiêm chở khách, đóng tại Saint-Nazaire cho hãng Chargeurs Réunis, hạ thủy 21/9/1903; 5.572 tấn đăng ký; 124,10 × 15,2 m.",
+      "factIds": [
+        "F10"
+      ],
+      "citation": "Miramar Ship Index, dẫn theo shipstamps.co.uk"
+    },
+    {
+      "id": "sc_work",
+      "layer": "loi_ke",
+      "title": "Việc của phụ bếp",
+      "body": "Ngày làm từ 4 giờ sáng: dọn bếp, nhóm lò, lặt rau, cọ chảo nồi, cào lò, xúc than. Có chảo đồng nặng phải kéo lê, có nồi cao phải đứng lên ghế mới cọ được.",
+      "factIds": [
+        "F03",
+        "F04"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch; Báo Pháp luật Việt Nam"
+    },
+    {
+      "id": "sc_hot_cold",
+      "layer": "loi_ke",
+      "title": "Bếp nóng, kho lạnh",
+      "body": "Đi về giữa gian bếp nóng và kho lạnh, khuân đồ nặng lên cầu thang hẹp trên con tàu chòng chành.",
+      "factIds": [
+        "F05"
+      ],
+      "citation": "Tổng hợp các mẩu chuyện về Bác Hồ (hoatieu.vn) — cần đối chiếu sách gốc"
+    },
+    {
+      "id": "sc_sailors",
+      "layer": "loi_ke",
+      "title": "Những người Pháp tốt bụng",
+      "body": "Hai hành khách là lính Pháp trẻ đã giải ngũ giúp anh Ba nhặt rau, cho mượn sách, dạy anh đọc và viết; từ đó anh thấy trong người Pháp cũng có người tốt.",
+      "factIds": [
+        "F05"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch (bản đăng trên trang Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh)"
+    },
+    {
+      "id": "sc_study",
+      "layer": "loi_ke",
+      "title": "Học đọc, viết trên tàu",
+      "body": "Trên tàu sang Pháp năm 1911, lúc rảnh anh Ba tập đọc, viết. Hai hành khách là lính Pháp trẻ đã giải ngũ cho anh mượn sách và dạy anh đọc, viết.",
+      "factIds": [
+        "F07a"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch (bản đăng trên trang Bộ Tư lệnh Lăng)"
+    },
+    {
+      "id": "sc_habits",
+      "layer": "loi_ke",
+      "title": "Thói quen trên tàu",
+      "body": "Trên một chuyến tàu hàng nhỏ rời Le Havre đi vòng châu Phi, sau chuyến tàu tới Marseille, anh Ba dậy sớm xem mặt trời mọc; những đêm trăng đi lại trên tàu ngắm trời biển.",
+      "factIds": [
+        "F07b"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch (bản đăng trên trang Bộ Tư lệnh Lăng)"
+    },
+    {
+      "id": "sc_pay",
+      "layer": "loi_ke",
+      "title": "Lĩnh lương ở Marseille",
+      "body": "Trần Dân Tiên kể nhân viên Việt lĩnh 100–200 quan, thêm tiền thưởng của hành khách; anh Ba làm phụ bếp, chỉ được 10 quan.",
+      "factIds": [
+        "F06"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch"
+    },
+    {
+      "id": "sc_ledger",
+      "layer": "luu_tru",
+      "title": "Sổ lương của tàu",
+      "body": "Bảo tàng Hồ Chí Minh đã sưu tầm bản sao một trang sổ lương của tàu có tên anh, tại Trung tâm Lưu trữ Hải ngoại ở Aix-en-Provence (Pháp).",
+      "factIds": [
+        "F09"
+      ],
+      "citation": "Báo Pháp luật Việt Nam"
+    },
+    {
+      "id": "sc_marseille",
+      "layer": "loi_ke",
+      "title": "Marseille",
+      "body": "Ở Marseille, lần đầu anh thấy tàu điện và ngỡ đó là một ngôi nhà biết chạy; lần đầu ngồi uống cà phê trong quán và được gọi là \"monsieur\".",
+      "factIds": [
+        "F08"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch (bản đăng trên trang Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh); Báo Văn hóa"
+    },
+    {
+      "id": "sc_end_1919",
+      "layer": "nghien_cuu",
+      "title": "6/1919",
+      "body": "Tên Nguyễn Ái Quốc có từ tháng 6/1919, khi Người thay mặt những người Việt Nam yêu nước tại Pháp gửi Bản yêu sách của nhân dân An Nam tới Hội nghị Versailles.",
+      "factIds": [
+        "F13"
+      ],
+      "citation": "Báo Nhân Dân, \"Dấu ấn nhà báo cách mạng Nguyễn Ái Quốc tại Pháp\""
+    },
+    {
+      "id": "sc_end_1920",
+      "layer": "nghien_cuu",
+      "title": "7/1920",
+      "body": "Đọc Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa của Lênin: bước ngoặt trong nhận thức của Nguyễn Ái Quốc về con đường giải phóng dân tộc.",
+      "factIds": [
+        "F14"
+      ],
+      "citation": "Tạp chí Khoa học Trường ĐH Sư phạm TP.HCM, \"Nguyễn Ái Quốc với việc truyền bá chủ nghĩa Mác – Lênin\""
+    },
+    {
+      "id": "sc_end_1920_tours",
+      "layer": "nghien_cuu",
+      "title": "12/1920",
+      "body": "Tại Đại hội Tours (25–30/12/1920), Nguyễn Ái Quốc bỏ phiếu tán thành gia nhập Quốc tế III và tham gia thành lập Đảng Cộng sản Pháp.",
+      "factIds": [
+        "F14b"
+      ],
+      "citation": "Báo Điện tử Chính phủ (baochinhphu.vn)"
+    },
+    {
+      "id": "sc_end_1941",
+      "layer": "nghien_cuu",
+      "title": "28/1/1941",
+      "body": "Người về tới Cao Bằng qua cột mốc 108.",
+      "factIds": [
+        "F15"
+      ],
+      "citation": "Báo Pháp luật Việt Nam"
+    },
+    {
+      "id": "sc_scale",
+      "layer": "loi_ke",
+      "title": "Bảy, tám trăm người",
+      "body": "Bếp trên tàu nấu cho khoảng 700–800 người; phụ bếp làm từ 4 giờ sáng.",
+      "factIds": [
+        "F04"
+      ],
+      "citation": "VOH, Kể chuyện Bác Hồ (dẫn Trần Dân Tiên) — cần đối chiếu sách gốc"
+    },
+    {
+      "id": "sc_voyage",
+      "layer": "nghien_cuu",
+      "title": "Hải trình",
+      "body": "Tàu Amiral Latouche-Tréville tới cảng Keppel, Singapore ngày 8/6/1911, ghé Colombo, Port Said rồi tới Marseille ngày 6/7/1911.",
+      "factIds": [
+        "F02"
+      ],
+      "citation": "Bảo tàng Hồ Chí Minh, \"Hành trình của con tàu Amiral Latouche-Tréville…\"; Báo Pháp luật Việt Nam; Báo Văn hóa"
+    },
+    {
+      "id": "sc_storm",
+      "layer": "loi_ke",
+      "title": "Ngày biển động",
+      "body": "Chuyến thứ hai một ngọn sóng lớn thình lình phủ lên sàn tàu và cuốn xuống bể mọi vật trên sàn tàu. Cả những rổ rau và anh Ba nữa. Anh bị đẩy vào giữa cột buồm và dây xích, nhờ vậy mà thoát chết.",
+      "factIds": [
+        "F05b"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 17–18, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_mai",
+      "layer": "loi_ke",
+      "title": "Ông Mai",
+      "body": "Ông Mai làm ở phòng ăn sĩ quan trên tàu, là người dẫn anh Ba tới gặp chủ tàu xin việc. Được hỏi \"Anh có thể làm việc gì?\", anh đáp: \"Tôi có thể làm bất cứ việc gì!\"",
+      "factIds": [
+        "F01c"
+      ],
+      "citation": "Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch (bản đăng trên trang Bộ Tư lệnh Lăng Chủ tịch Hồ Chí Minh); Bảo tàng Hồ Chí Minh"
+    },
+    {
+      "id": "sc_mrs_arrival",
+      "layer": "nghien_cuu",
+      "title": "Đến Marseille",
+      "body": "Theo hải trình game chọn, tàu tới Marseille ngày 6/7/1911.",
+      "factIds": [
+        "F02"
+      ],
+      "citation": "S1, S4, S14 — Docs/FACTS.md"
+    },
+    {
+      "id": "sc_mrs_pay_nominal",
+      "layer": "nghien_cuu",
+      "title": "Lương danh nghĩa",
+      "body": "Thông tin giới thiệu sổ lương ghi Văn Ba hưởng 45 franc/tháng.",
+      "factIds": [
+        "F06"
+      ],
+      "citation": "S14 — Bảo tàng Hồ Chí Minh"
+    },
+    {
+      "id": "sc_mrs_pay_ratio",
+      "layer": "nghien_cuu",
+      "title": "Cùng công việc",
+      "body": "Nguồn giới thiệu trang sổ lương ghi phụ bếp Pháp cùng việc hưởng khoảng gấp ba.",
+      "factIds": [
+        "F06"
+      ],
+      "citation": "S15 — Thông tin Đối ngoại"
+    },
+    {
+      "id": "sc_mrs_poverty",
+      "layer": "loi_ke",
+      "title": "Người nghèo ở Pháp",
+      "body": "Trần Dân Tiên kể anh Ba thấy người nghèo ở Marseille và hỏi ông Mai vì sao người Pháp không khai hoá đồng bào họ trước.",
+      "factIds": [
+        "F08"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch"
+    },
+    {
+      "id": "sc_water",
+      "layer": "loi_ke",
+      "title": "Đem nước",
+      "body": "Ba, đem nước đây!",
+      "factIds": [
+        "F31"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 16–17, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_provisions",
+      "layer": "loi_ke",
+      "title": "Rau, thịt, cá, nước đá",
+      "body": "Sau đó đi khuân than, rồi xuống hầm lấy rau, thịt, cá, nước đá, v.v..",
+      "factIds": [
+        "F32"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 16, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_serve",
+      "layer": "loi_ke",
+      "title": "Bữa của chủ bếp",
+      "body": "Xong công việc ấy, phải dọn cho bọn chủ bếp Pháp ăn. Sau đấy, nhặt rau, rửa chảo nồi và đun lò lại.",
+      "factIds": [
+        "F33"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 16, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_peel",
+      "layer": "loi_ke",
+      "title": "Học gọt củ",
+      "body": "Và hơn nữa, vì chưa quen việc, anh phải gọt xong đống củ cải và khoai tây. Anh không biết làm thế nào. Tôi dạy cho anh.",
+      "factIds": [
+        "F34"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 17, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_asparagus",
+      "layer": "loi_ke",
+      "title": "Lần đầu thấy măng tây",
+      "body": "Tôi hối hả quẳng xuống bể tất cả măng đã gọt và tôi bày cho anh ta phải làm như thế nào. Nhờ thế không xảy ra việc gì.",
+      "factIds": [
+        "F35"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 17, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_good_french",
+      "layer": "loi_ke",
+      "title": "Những người Pháp tốt",
+      "body": "Anh Mai, cũng có những người Pháp tốt, anh ạ.",
+      "factIds": [
+        "F36"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 18, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_quoc_ngu",
+      "layer": "loi_ke",
+      "title": "Anh Ba dạy quốc ngữ",
+      "body": "Và anh Ba lại dạy họ học quốc ngữ và thỉnh thoảng dấm dúi cho họ một cốc cà phê.",
+      "factIds": [
+        "F37"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 18, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_coffee",
+      "layer": "loi_ke",
+      "title": "Một cốc cà phê",
+      "body": "Và anh Ba lại dạy họ học quốc ngữ và thỉnh thoảng dấm dúi cho họ một cốc cà phê.",
+      "factIds": [
+        "F37"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 18, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_letter",
+      "layer": "loi_ke",
+      "title": "Viết thư về nhà",
+      "body": "anh giúp những người bạn mù chữ của tôi viết thư về cho gia đình họ và anh không bao giờ nói tục — vì vậy anh Ba được tất cả chúng tôi yêu mến.",
+      "factIds": [
+        "F38"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 17–18, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_soup",
+      "layer": "loi_ke",
+      "title": "Bánh mì, bơ và xúp",
+      "body": "Ví dụ mới đầu anh không ăn được bánh mì và bơ. Ăn xúp thì anh dùng nĩa.",
+      "factIds": [
+        "F39"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 18, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_chieu",
+      "layer": "loi_ke",
+      "title": "Bùi Quang Chiêu",
+      "body": "Bùi Quang Chiêu, kỹ sư canh nông vào làng Tây, đi tàu hạng nhất cùng với gia đình. Ông ta đưa con sang Pháp học.",
+      "factIds": [
+        "F40"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 18–19, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_night",
+      "layer": "loi_ke",
+      "title": "Đọc và viết đêm muộn",
+      "body": "Nhưng trong khi chúng tôi nghỉ hoặc đánh bài, anh Ba đọc hay viết đến mười một giờ hoặc nửa đêm.",
+      "factIds": [
+        "F41"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 17, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_mai_help",
+      "layer": "loi_ke",
+      "title": "Ông Mai giúp anh Ba",
+      "body": "Việc gì tôi làm được là tôi cố làm để giúp anh ta, vì anh ta chưa biết làm gì cả. Vả lại, anh ấy có can đảm và nhẫn nại.",
+      "factIds": [
+        "F42"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 16, mục “Trên tàu”."
+    },
+    {
+      "id": "sc_saigon_new",
+      "layer": "loi_ke",
+      "title": "Những điều chưa từng thấy",
+      "body": "Anh Lê: “xem đèn điện, xem chiếu bóng và máy nước”. “Những cái đó trước kia anh chưa hề thấy.”\n“Một hôm tôi mời anh ăn kem. Anh rất lạ. Lần đầu tiên anh mới nếm mùi kem.”",
+      "factIds": [
+        "F19"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 14–15"
+    },
+    {
+      "id": "sc_other_path",
+      "layer": "loi_ke",
+      "title": "Một con đường khác",
+      "body": "Phan Bội Châu:“muốn đưa Anh và một số thanh niên sang Nhật”. “Nhưng Anh không đi.”\nHoàng Hoa Thám:“trực tiếp đấu tranh chống Pháp”; “còn nặng cốt cách phong kiến”.\n“Tôi muốn đi ra ngoài, xem nước Pháp và các nước khác.”",
+      "factIds": [
+        "F20"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 14"
+    },
+    {
+      "id": "sc_job",
+      "layer": "loi_ke",
+      "title": "Lên tàu xin việc",
+      "body": "“Một người như thế có thể làm được công việc gì trên tàu?”\n“Anh có thể làm việc gì?” — “Tôi có thể làm bất cứ việc gì!”\nChàng trai ấy xưng tên là Ba.\nNgày 2/6/1911: S14, F16.",
+      "factIds": [
+        "F21",
+        "F16"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 15–16"
+    },
+    {
+      "id": "sc_mrs_context",
+      "layer": "loi_ke",
+      "title": "Câu hỏi trên boong",
+      "body": "Trông thấy những gái điếm đến làm tiền trên tàu, Ba nói với tôi:\n— Tại sao người Pháp không “khai hóa” đồng bào của họ trước khi đi “khai hóa” chúng ta, sao thế anh Mai?",
+      "factIds": [
+        "F22"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 19"
+    },
+    {
+      "id": "sc_mrs_clothes",
+      "layer": "loi_ke",
+      "title": "Cùng ông Mai đến quán",
+      "body": "“Công việc trong ngày xong, tôi cho anh ta mượn bộ áo quần, và chúng tôi đi đến tiệm cà phê ở đường Canơbia.”\n“cũng là lần đầu tiên người Pháp gọi anh bằng “ông””.",
+      "factIds": [
+        "F23"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 19–20"
+    },
+    {
+      "id": "sc_mai_end",
+      "layer": "loi_ke",
+      "title": "Lời ông Mai",
+      "body": "— Người Pháp ở Pháp tốt, lễ phép hơn người Pháp ở Đông Dương.\nChúng tôi đi theo tàu lên Havơrơ (Havre) để sửa chữa.\nTừ đấy, tôi không được tin tức gì của anh Ba nữa...",
+      "factIds": [
+        "F24",
+        "F25"
+      ],
+      "citation": "S16 — Trần Dân Tiên, Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch, trang 20"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+* text=auto eol=lf
+
+# Unity YAML và file văn bản
+*.unity        text eol=lf
+*.prefab       text eol=lf
+*.asset        text eol=lf
+# LightingData và NavMesh là nhị phân: không cho git đổi CRLF (đã làm hỏng lightmap trước 31/10)
+LightingData.asset binary
+NavMesh.asset binary
+*.mat          text eol=lf
+*.meta         text eol=lf
+*.inputactions text eol=lf
+*.cs           text diff=csharp eol=lf
+*.json         text eol=lf
+*.uxml         text eol=lf
+*.uss          text eol=lf
+*.sh           text eol=lf
+*.py           text eol=lf
+
+# Git LFS — file nhị phân
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.tga   filter=lfs diff=lfs merge=lfs -text
+*.tif   filter=lfs diff=lfs merge=lfs -text
+*.psd   filter=lfs diff=lfs merge=lfs -text
+*.exr   filter=lfs diff=lfs merge=lfs -text
+*.hdr   filter=lfs diff=lfs merge=lfs -text
+*.fbx   filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.obj   filter=lfs diff=lfs merge=lfs -text
+*.glb   filter=lfs diff=lfs merge=lfs -text
+*.wav   filter=lfs diff=lfs merge=lfs -text
+*.mp3   filter=lfs diff=lfs merge=lfs -text
+*.ogg   filter=lfs diff=lfs merge=lfs -text
+*.ttf   filter=lfs diff=lfs merge=lfs -text
+*.otf   filter=lfs diff=lfs merge=lfs -text
+*.mp4   filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b69b7223b6e8612d8cca1730de60932, type: 3}
+  m_Name: SceneLightingProfile_Marseille
+  m_EditorClassIdentifier: HaiBanTay.Runtime::HaiBanTay.Core.SceneLightingProfile
+  ambientSky: {r: 0.62, g: 0.56, b: 0.55, a: 1}
+  ambientEquator: {r: 0.52, g: 0.44, b: 0.38, a: 1}
+  ambientGround: {r: 0.22, g: 0.19, b: 0.17, a: 1}
+  sun: 1
+  sunColor: {r: 1, g: 0.78, b: 0.55, a: 1}
+  sunIntensity: 1.1
+  sunEuler: {x: 12, y: 110, z: 0}
+  sunShadows: 0
+  fog: 1
+  fogColor: {r: 0.86, g: 0.78, b: 0.72, a: 1}
+  fogDensity: 0.06
+  background: {r: 0.86, g: 0.74, b: 0.64, a: 1}

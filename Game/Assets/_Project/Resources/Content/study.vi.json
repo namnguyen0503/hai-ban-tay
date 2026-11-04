@@ -1,0 +1,641 @@
+{
+  "version": 1,
+  "letters": [
+    {
+      "id": "A",
+      "strokes": [
+        [
+          [
+            0.15,
+            0.9
+          ],
+          [
+            0.5,
+            0.1
+          ],
+          [
+            0.85,
+            0.9
+          ]
+        ],
+        [
+          [
+            0.3,
+            0.58
+          ],
+          [
+            0.7,
+            0.58
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "E",
+      "strokes": [
+        [
+          [
+            0.74,
+            0.1
+          ],
+          [
+            0.26,
+            0.1
+          ],
+          [
+            0.26,
+            0.9
+          ],
+          [
+            0.74,
+            0.9
+          ]
+        ],
+        [
+          [
+            0.26,
+            0.5
+          ],
+          [
+            0.64,
+            0.5
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F",
+      "strokes": [
+        [
+          [
+            0.74,
+            0.1
+          ],
+          [
+            0.28,
+            0.1
+          ],
+          [
+            0.28,
+            0.9
+          ]
+        ],
+        [
+          [
+            0.28,
+            0.5
+          ],
+          [
+            0.64,
+            0.5
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "L",
+      "strokes": [
+        [
+          [
+            0.3,
+            0.1
+          ],
+          [
+            0.3,
+            0.9
+          ],
+          [
+            0.74,
+            0.9
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "M",
+      "strokes": [
+        [
+          [
+            0.18,
+            0.9
+          ],
+          [
+            0.18,
+            0.1
+          ],
+          [
+            0.5,
+            0.6
+          ],
+          [
+            0.82,
+            0.1
+          ],
+          [
+            0.82,
+            0.9
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "R",
+      "strokes": [
+        [
+          [
+            0.28,
+            0.9
+          ],
+          [
+            0.28,
+            0.1
+          ],
+          [
+            0.55,
+            0.1
+          ],
+          [
+            0.68,
+            0.15
+          ],
+          [
+            0.73,
+            0.28
+          ],
+          [
+            0.68,
+            0.42
+          ],
+          [
+            0.55,
+            0.48
+          ],
+          [
+            0.28,
+            0.48
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.48
+          ],
+          [
+            0.75,
+            0.9
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "S",
+      "strokes": [
+        [
+          [
+            0.74,
+            0.18
+          ],
+          [
+            0.64,
+            0.11
+          ],
+          [
+            0.5,
+            0.09
+          ],
+          [
+            0.35,
+            0.11
+          ],
+          [
+            0.26,
+            0.2
+          ],
+          [
+            0.27,
+            0.33
+          ],
+          [
+            0.4,
+            0.44
+          ],
+          [
+            0.6,
+            0.54
+          ],
+          [
+            0.73,
+            0.64
+          ],
+          [
+            0.75,
+            0.76
+          ],
+          [
+            0.66,
+            0.87
+          ],
+          [
+            0.5,
+            0.91
+          ],
+          [
+            0.34,
+            0.88
+          ],
+          [
+            0.24,
+            0.8
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "'",
+      "strokes": [
+        [
+          [
+            0.5,
+            0.1
+          ],
+          [
+            0.46,
+            0.32
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U",
+      "strokes": [
+        [
+          [
+            0.25,
+            0.1
+          ],
+          [
+            0.25,
+            0.65
+          ],
+          [
+            0.3,
+            0.8
+          ],
+          [
+            0.4,
+            0.88
+          ],
+          [
+            0.5,
+            0.9
+          ],
+          [
+            0.6,
+            0.88
+          ],
+          [
+            0.7,
+            0.8
+          ],
+          [
+            0.75,
+            0.65
+          ],
+          [
+            0.75,
+            0.1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "I",
+      "strokes": [
+        [
+          [
+            0.5,
+            0.1
+          ],
+          [
+            0.5,
+            0.9
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N",
+      "strokes": [
+        [
+          [
+            0.22,
+            0.9
+          ],
+          [
+            0.22,
+            0.1
+          ],
+          [
+            0.78,
+            0.9
+          ],
+          [
+            0.78,
+            0.1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "P",
+      "strokes": [
+        [
+          [
+            0.28,
+            0.9
+          ],
+          [
+            0.28,
+            0.1
+          ],
+          [
+            0.55,
+            0.1
+          ],
+          [
+            0.68,
+            0.15
+          ],
+          [
+            0.73,
+            0.28
+          ],
+          [
+            0.68,
+            0.42
+          ],
+          [
+            0.55,
+            0.48
+          ],
+          [
+            0.28,
+            0.48
+          ]
+        ]
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l_self",
+      "kind": "trace",
+      "items": [
+        {
+          "id": "pain",
+          "text": "PAIN",
+          "vi": "le pain: bánh mì",
+          "words": [
+            "pain"
+          ],
+          "line": "ba_word_pain"
+        },
+        {
+          "id": "eau",
+          "text": "L'EAU",
+          "vi": "l'eau: nước",
+          "words": [
+            "eau"
+          ],
+          "line": "ba_word_eau"
+        }
+      ]
+    },
+    {
+      "id": "l_letters",
+      "kind": "trace",
+      "items": [
+        {
+          "id": "feu",
+          "text": "FEU",
+          "vi": "le feu: lửa",
+          "words": [
+            "feu"
+          ],
+          "line": "word_feu"
+        },
+        {
+          "id": "mer",
+          "text": "MER",
+          "vi": "la mer: biển",
+          "words": [
+            "mer"
+          ],
+          "line": "word_mer"
+        },
+        {
+          "id": "sel",
+          "text": "SEL",
+          "vi": "le sel: muối",
+          "words": [
+            "sel"
+          ],
+          "line": "word_sel"
+        }
+      ]
+    },
+    {
+      "id": "l_fill",
+      "kind": "fill",
+      "items": [
+        {
+          "id": "froide",
+          "fr": "Va à ___ chercher la viande.",
+          "vi": "Xuống kho lạnh lấy thịt.",
+          "answer": "froide",
+          "options": [
+            "froide",
+            "cuisine",
+            "mer"
+          ],
+          "words": [
+            "froide"
+          ]
+        },
+        {
+          "id": "assiette",
+          "fr": "Lave ___ du capitaine.",
+          "vi": "Rửa cái đĩa của thuyền trưởng.",
+          "answer": "assiette",
+          "options": [
+            "assiette",
+            "livre",
+            "corde"
+          ],
+          "words": [
+            "assiette"
+          ]
+        },
+        {
+          "id": "chaud",
+          "fr": "Il fait ___ près du fourneau.",
+          "vi": "Cạnh lò nóng lắm.",
+          "answer": "chaud",
+          "options": [
+            "chaud",
+            "vite",
+            "merci"
+          ],
+          "words": [
+            "chaud"
+          ]
+        },
+        {
+          "id": "poisson",
+          "fr": "Descends chercher ___.",
+          "vi": "Xuống hầm lấy cá.",
+          "answer": "poisson",
+          "options": [
+            "poisson",
+            "port",
+            "pont"
+          ],
+          "words": [
+            "poisson"
+          ]
+        },
+        {
+          "id": "glace",
+          "fr": "Mets ___ sur le poisson.",
+          "vi": "Phủ nước đá lên cá.",
+          "answer": "glace",
+          "options": [
+            "glace",
+            "cendre",
+            "lettre"
+          ],
+          "words": [
+            "glace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l_sentence",
+      "kind": "sentence",
+      "items": [
+        {
+          "id": "travaille",
+          "tokens": [
+            "Je",
+            "travaille",
+            "à",
+            "la",
+            "cuisine."
+          ],
+          "vi": "Tôi làm việc ở bếp.",
+          "words": [
+            "travailler",
+            "cuisine"
+          ]
+        },
+        {
+          "id": "lis",
+          "tokens": [
+            "Je",
+            "lis",
+            "un",
+            "livre."
+          ],
+          "vi": "Tôi đọc một quyển sách.",
+          "words": [
+            "lire",
+            "livre"
+          ]
+        },
+        {
+          "id": "ecris",
+          "tokens": [
+            "J'écris",
+            "les",
+            "lettres",
+            "de",
+            "mon",
+            "nom."
+          ],
+          "vi": "Tôi viết các chữ cái trong tên tôi.",
+          "words": [
+            "ecrire",
+            "lettre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l_quoc_ngu",
+      "kind": "fill",
+      "language": "vi",
+      "items": [
+        {
+          "id": "ma",
+          "fr": "Anh lính viết: ma. Chỉ chữ đúng: ___",
+          "vi": "Anh Ba chỉ dấu sắc cho hai người lính.",
+          "answer": "v_ma",
+          "options": [
+            "v_ma",
+            "v_ma_plain",
+            "v_ma_grave"
+          ],
+          "words": [],
+          "line": "ba_viet_ma"
+        },
+        {
+          "id": "bo",
+          "fr": "Anh lính viết: bo. Chỉ chữ đúng: ___",
+          "vi": "Giữ chữ ô và đặt dấu sắc.",
+          "answer": "v_bo",
+          "options": [
+            "v_bo",
+            "v_bo_plain",
+            "v_bo_grave"
+          ],
+          "words": [],
+          "line": "ba_viet_bo"
+        }
+      ],
+      "heading": "Dạy hai người lính chữ quốc ngữ"
+    },
+    {
+      "id": "l_letter",
+      "kind": "sentence",
+      "language": "vi",
+      "items": [
+        {
+          "id": "letter_1",
+          "tokens": [
+            "Thưa mẹ,",
+            "con vẫn",
+            "mạnh khỏe."
+          ],
+          "vi": "Bạn đọc: Thưa mẹ, con vẫn mạnh khỏe.",
+          "words": [],
+          "line": "friend_letter_1"
+        },
+        {
+          "id": "letter_2",
+          "tokens": [
+            "Con nhớ",
+            "gia đình.",
+            "Mong mẹ",
+            "giữ gìn",
+            "sức khỏe."
+          ],
+          "vi": "Bạn đọc: Con nhớ gia đình. Mong mẹ giữ gìn sức khỏe.",
+          "words": [],
+          "line": "friend_letter_2"
+        }
+      ],
+      "heading": "Viết thư theo lời người bạn đọc"
+    }
+  ]
+}

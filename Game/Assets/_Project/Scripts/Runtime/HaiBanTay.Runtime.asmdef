@@ -1,0 +1,20 @@
+{
+  "name": "HaiBanTay.Runtime",
+  "rootNamespace": "HaiBanTay",
+  "references": [
+    "Unity.InputSystem",
+    "Unity.Nuget.Newtonsoft-Json",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.Cinemachine",
+    "Unity.RenderPipelines.Core.Runtime"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

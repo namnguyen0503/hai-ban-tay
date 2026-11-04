@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "timings": {
+    "letterboxIn": 1.0,
+    "engineFade": 1.5,
+    "fogLift": 12.0,
+    "payHold": 8,
+    "fadeToBlack": 2.0,
+    "narrator": 5.0,
+    "endCard": 5.0,
+    "title": 4.0,
+    "credits": 10.0,
+    "disclaimer": 5.0,
+    "linkHintAfter": 35,
+    "dawn": 40,
+    "pay": 35,
+    "quay": 35,
+    "tram": 40,
+    "cafe": 45,
+    "linkHold": 2.0,
+    "finalClean": 55,
+    "payQueue": 65,
+    "farewell": 55,
+    "quayObserve": 70,
+    "cafeServe": 25,
+    "pagesLink": 70,
+    "maiRecallCard": 5
+  },
+  "coins": {
+    "player": 10,
+    "frenchHand": 0
+  },
+  "narrator": "Từ bến cảng này, còn chín năm nữa anh mới tìm thấy con đường.",
+  "endCards": [
+    {
+      "date": "6/1919",
+      "text": "Lấy tên Nguyễn Ái Quốc, gửi Bản yêu sách của nhân dân An Nam tới Hội nghị Versailles.",
+      "sourceCardId": "sc_end_1919"
+    },
+    {
+      "date": "7/1920",
+      "text": "Đọc Sơ thảo luận cương của Lênin về vấn đề dân tộc và thuộc địa: bước ngoặt trong nhận thức.",
+      "sourceCardId": "sc_end_1920"
+    },
+    {
+      "date": "12/1920",
+      "text": "Tại Đại hội Tours, tán thành Quốc tế III, tham gia thành lập Đảng Cộng sản Pháp.",
+      "sourceCardId": "sc_end_1920_tours"
+    },
+    {
+      "date": "28/1/1941",
+      "text": "Trở về Tổ quốc qua cột mốc 108, Cao Bằng.",
+      "sourceCardId": "sc_end_1941"
+    }
+  ],
+  "title": "HAI BÀN TAY",
+  "lines": [
+    "mrs_arrival",
+    "mrs_last_clean",
+    "mrs_pay_table",
+    "mrs_pay_next",
+    "mrs_pay_others",
+    "mrs_pay_called",
+    "mrs_pay_here",
+    "mrs_pay_ba",
+    "mrs_cook_bye",
+    "mrs_helper_bye",
+    "mrs_jacques_bye",
+    "mrs_mai_bye",
+    "mrs_soldier_a_bye",
+    "mrs_soldier_b_bye",
+    "mrs_ba_bye",
+    "mrs_ba_mai_bye",
+    "mrs_ba_why1",
+    "mrs_ba_why2",
+    "mrs_captain",
+    "mrs_sailor_open",
+    "mrs_docker",
+    "mrs_ba_poor",
+    "mrs_ba_tram",
+    "mrs_waiter_seat",
+    "mrs_waiter_voila",
+    "mrs_ba_thanks",
+    "mrs_ba_first",
+    "mrs_ba_car",
+    "mrs_ba_glass",
+    "mrs_ba_paper",
+    "mrs_mai_context",
+    "mrs_mai_clothes",
+    "mrs_mai_clothes2",
+    "mrs_mai_monsieur",
+    "mrs_mai_monsieur2",
+    "mrs_woman_invite",
+    "mrs_ba_bye_cook",
+    "mrs_ba_bye_helper",
+    "mrs_ba_bye_jacques",
+    "mrs_ba_bye_read"
+  ],
+  "farewellLines": [
+    "mrs_cook_bye",
+    "mrs_helper_bye",
+    "mrs_jacques_bye",
+    "mrs_mai_bye",
+    "mrs_soldier_a_bye",
+    "mrs_soldier_b_bye"
+  ],
+  "farewellReplies": [
+    "mrs_ba_bye_cook",
+    "mrs_ba_bye_helper",
+    "mrs_ba_bye_jacques",
+    "mrs_ba_mai_bye",
+    "mrs_ba_bye",
+    "mrs_ba_bye_read"
+  ],
+  "finalMeal": {
+    "id": "departure_breakfast",
+    "dirty": 1
+  }
+}

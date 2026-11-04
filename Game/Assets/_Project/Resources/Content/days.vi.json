@@ -1,0 +1,1184 @@
+{
+  "version": 3,
+  "days": [
+    {
+      "id": "d1",
+      "number": 1,
+      "title": "Ngày thứ nhất",
+      "leg": "Biển Đông",
+      "porthole": "sea",
+      "ship": 0.15,
+      "heat": 1.0,
+      "clockStart": 240,
+      "fatigueStart": 0.0,
+      "grimeStart": 0.0,
+      "ashStart": 0.25,
+      "npcs": [
+        {
+          "who": "soldiers",
+          "phase": "day",
+          "action": "deck",
+          "lines": [
+            "linh_d1_1",
+            "ba_d1_3",
+            "linh_d1_2"
+          ]
+        },
+        {
+          "who": "mai",
+          "phase": "dishes",
+          "action": "visit",
+          "lines": [
+            "mai_d1_1",
+            "ba_d1_1",
+            "mai_d1_3"
+          ],
+          "call": "mai_call",
+          "event": "s2.mai.talk"
+        },
+        {
+          "who": "mai",
+          "phase": "evening",
+          "action": "cards"
+        }
+      ],
+      "phases": [
+        {
+          "id": "sweep",
+          "line": "chef_story_sweep",
+          "orders": [
+            {
+              "task": "sweep",
+              "count": 1
+            }
+          ],
+          "minutes": 20,
+          "startCards": []
+        },
+        {
+          "id": "dawn",
+          "line": "chef_story_fire",
+          "orders": [
+            {
+              "task": "ash",
+              "count": 1
+            },
+            {
+              "task": "fire",
+              "count": 2
+            }
+          ],
+          "minutes": 25,
+          "events": [
+            "s2.coal.done"
+          ],
+          "cards": [
+            "sc_work"
+          ]
+        },
+        {
+          "id": "coal",
+          "line": "chef_story_coal",
+          "orders": [
+            {
+              "task": "coal_fetch",
+              "count": 1
+            }
+          ],
+          "minutes": 15
+        },
+        {
+          "id": "breakfast",
+          "line": "chef_story_hold",
+          "orders": [
+            {
+              "task": "sack",
+              "count": 1
+            }
+          ],
+          "startAt": 300,
+          "serviceAt": 390,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.sack.done",
+            "s2.provisions.done"
+          ],
+          "cards": [
+            "sc_hot_cold",
+            "sc_provisions"
+          ]
+        },
+        {
+          "id": "serve",
+          "line": "chef_story_serve",
+          "orders": [
+            {
+              "task": "serve",
+              "count": 1
+            }
+          ],
+          "minutes": 15,
+          "events": [
+            "s2.serve.done"
+          ],
+          "cards": [
+            "sc_serve"
+          ]
+        },
+        {
+          "id": "peel",
+          "line": "chef_story_peel",
+          "orders": [
+            {
+              "task": "peel",
+              "count": 6
+            }
+          ],
+          "minutes": 45,
+          "events": [
+            "s2.peel.done"
+          ],
+          "cards": [
+            "sc_peel"
+          ]
+        },
+        {
+          "id": "dishes",
+          "line": "chef_wash",
+          "orders": [
+            {
+              "task": "wash",
+              "count": 1
+            }
+          ],
+          "minutes": 20,
+          "events": [
+            "s2.wash.done"
+          ]
+        },
+        {
+          "id": "tall_out",
+          "line": "chef_tall_out",
+          "orders": [
+            {
+              "task": "tall_out",
+              "count": 1
+            }
+          ],
+          "minutes": 20
+        },
+        {
+          "id": "lunch",
+          "montage": true,
+          "caption": "montage.lunch",
+          "orders": [
+            {
+              "task": "water",
+              "count": 1
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 600,
+          "serviceAt": 690,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.water.done"
+          ],
+          "cards": [
+            "sc_water"
+          ],
+          "cookTall": true
+        },
+        {
+          "id": "tallpot",
+          "line": "chef_tall_back",
+          "orders": [
+            {
+              "task": "scrub_tall",
+              "count": 1
+            }
+          ],
+          "minutes": 40
+        },
+        {
+          "id": "dinner",
+          "montage": true,
+          "caption": "montage.dinner",
+          "orders": [
+            {
+              "task": "fire",
+              "count": 2
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 960,
+          "serviceAt": 1050,
+          "needsFire": true,
+          "dirty": 2,
+          "cookTall": true
+        },
+        {
+          "id": "crew_meal",
+          "line": "chef_story_soup",
+          "orders": [
+            {
+              "task": "soup",
+              "count": 1
+            }
+          ],
+          "startAt": 1170,
+          "minutes": 40,
+          "events": [
+            "s2.soup.done"
+          ],
+          "cards": [
+            "sc_soup"
+          ]
+        }
+      ],
+      "evening": {
+        "study": "trace",
+        "lesson": "l_self",
+        "items": 2,
+        "line": "ba_self_study",
+        "after": [
+          "mai_cards_1",
+          "ba_cards_1"
+        ]
+      },
+      "coalStock": 2
+    },
+    {
+      "id": "d2",
+      "number": 2,
+      "title": "Ngày thứ hai",
+      "leg": "Cảng Singapore, 8/6/1911",
+      "transition": "d2",
+      "porthole": "port",
+      "ship": 0.0,
+      "heat": 1.0,
+      "clockStart": 240,
+      "fatigueStart": 0.15,
+      "grimeStart": 0.4,
+      "ashStart": 0.25,
+      "docked": true,
+      "port": "singapore",
+      "startEvents": [
+        "s2.port.singapore"
+      ],
+      "npcs": [
+        {
+          "who": "soldiers",
+          "phase": "greens",
+          "action": "help",
+          "lines": [
+            "linh_d2_1",
+            "linh_d2_2",
+            "ba_d2_1",
+            "linh_d2_3",
+            "ba_d2_2",
+            "linh_d2_4"
+          ],
+          "event": "s2.soldiers.help"
+        },
+        {
+          "who": "soldiers",
+          "phase": "evening",
+          "action": "teach",
+          "lines": [
+            "linh_d2_teach",
+            "ba_d2_teach"
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "id": "dawn",
+          "montage": true,
+          "caption": "montage.dawn",
+          "orders": [
+            {
+              "task": "ash",
+              "count": 1
+            },
+            {
+              "task": "fire",
+              "count": 2
+            }
+          ],
+          "minutes": 60,
+          "startCards": [
+            "sc_voyage"
+          ]
+        },
+        {
+          "id": "breakfast",
+          "line": "chef_story_hold",
+          "orders": [
+            {
+              "task": "fish",
+              "count": 1
+            },
+            {
+              "task": "ice",
+              "count": 1
+            }
+          ],
+          "startAt": 300,
+          "serviceAt": 390,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.provisions.done"
+          ],
+          "cards": [
+            "sc_provisions"
+          ]
+        },
+        {
+          "id": "serve",
+          "montage": true,
+          "caption": "montage.serve_dishes",
+          "orders": [
+            {
+              "task": "serve",
+              "count": 1
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "minutes": 45,
+          "events": [
+            "s2.serve.done"
+          ],
+          "cards": [
+            "sc_serve"
+          ]
+        },
+        {
+          "id": "greens",
+          "line": "chef_greens",
+          "orders": [
+            {
+              "task": "greens",
+              "count": 2
+            }
+          ],
+          "startAt": 450,
+          "minutes": 60,
+          "cards": [
+            "sc_good_french"
+          ],
+          "afterLines": [
+            "mai_good_french",
+            "ba_good_french"
+          ],
+          "events": [
+            "s2.good_french"
+          ]
+        },
+        {
+          "id": "lunch",
+          "montage": true,
+          "caption": "montage.lunch",
+          "orders": [
+            {
+              "task": "water",
+              "count": 1
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 660,
+          "serviceAt": 750,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.water.done"
+          ],
+          "cards": [
+            "sc_water"
+          ],
+          "cookTall": true
+        },
+        {
+          "id": "dinner",
+          "montage": true,
+          "caption": "montage.dinner",
+          "orders": [
+            {
+              "task": "fire",
+              "count": 2
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 960,
+          "serviceAt": 1050,
+          "needsFire": true,
+          "dirty": 2,
+          "cookTall": true
+        }
+      ],
+      "evening": {
+        "study": "trace",
+        "lesson": "l_letters",
+        "items": 3,
+        "after": [
+          "linh_d2_after"
+        ],
+        "cards": [
+          "sc_study"
+        ]
+      },
+      "coalStock": 2
+    },
+    {
+      "id": "d3",
+      "number": 3,
+      "title": "Ngày thứ ba",
+      "leg": "Ấn Độ Dương, tới Colombo",
+      "transition": "d3",
+      "porthole": "sea",
+      "ship": 0.55,
+      "heat": 1.1,
+      "clockStart": 240,
+      "fatigueStart": 0.2,
+      "grimeStart": 0.45,
+      "ashStart": 0.25,
+      "ashRate": 2.0,
+      "npcs": [
+        {
+          "who": "soldiers",
+          "phase": "day",
+          "action": "deck",
+          "lines": [
+            "linh_d3_1",
+            "ba_d3_3"
+          ]
+        },
+        {
+          "who": "mai",
+          "phase": "dishes_noon",
+          "action": "visit",
+          "lines": [
+            "mai_d3_1",
+            "ba_d3_1",
+            "mai_d3_2",
+            "ba_d3_2"
+          ],
+          "call": "mai_call"
+        },
+        {
+          "who": "soldiers",
+          "phase": "evening",
+          "action": "teach",
+          "lines": [
+            "linh_d3_teach"
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "id": "dawn",
+          "montage": true,
+          "caption": "montage.dawn",
+          "orders": [
+            {
+              "task": "ash",
+              "count": 1
+            },
+            {
+              "task": "fire",
+              "count": 2
+            }
+          ],
+          "minutes": 60
+        },
+        {
+          "id": "breakfast",
+          "line": "chef_story_hold",
+          "orders": [
+            {
+              "task": "meat",
+              "count": 1
+            }
+          ],
+          "startAt": 300,
+          "serviceAt": 390,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.provisions.done"
+          ],
+          "cards": [
+            "sc_provisions"
+          ]
+        },
+        {
+          "id": "serve",
+          "montage": true,
+          "caption": "montage.serve_dishes",
+          "orders": [
+            {
+              "task": "serve",
+              "count": 1
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "minutes": 45,
+          "events": [
+            "s2.serve.done"
+          ],
+          "cards": [
+            "sc_serve"
+          ]
+        },
+        {
+          "id": "pan",
+          "line": "chef_pan",
+          "orders": [
+            {
+              "task": "pan",
+              "count": 1
+            }
+          ],
+          "startAt": 450,
+          "minutes": 30
+        },
+        {
+          "id": "lunch",
+          "montage": true,
+          "caption": "montage.lunch_pan",
+          "orders": [
+            {
+              "task": "ice",
+              "count": 1
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 660,
+          "serviceAt": 750,
+          "needsFire": true,
+          "dirty": 2,
+          "cookPan": true,
+          "cookTall": true
+        },
+        {
+          "id": "dishes_noon",
+          "line": "chef_pan_back",
+          "orders": [
+            {
+              "task": "pan",
+              "count": 1
+            }
+          ],
+          "startAt": 810,
+          "minutes": 40
+        },
+        {
+          "id": "dinner",
+          "montage": true,
+          "caption": "montage.dinner",
+          "orders": [
+            {
+              "task": "fire",
+              "count": 2
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 960,
+          "serviceAt": 1050,
+          "needsFire": true,
+          "dirty": 2,
+          "cookTall": true
+        }
+      ],
+      "evening": {
+        "study": "match",
+        "set": "w1",
+        "items": 6,
+        "coffee": true,
+        "cards": [
+          "sc_coffee"
+        ]
+      },
+      "coalStock": 2
+    },
+    {
+      "id": "d4",
+      "number": 4,
+      "title": "Ngày thứ tư",
+      "leg": "Ấn Độ Dương, biển động",
+      "transition": "d4",
+      "porthole": "sea",
+      "ship": 0.35,
+      "heat": 1.0,
+      "clockStart": 240,
+      "fatigueStart": 0.25,
+      "grimeStart": 0.5,
+      "ashStart": 0.25,
+      "deckCrowd": false,
+      "npcs": [
+        {
+          "who": "jacques",
+          "phase": "storm",
+          "action": "help",
+          "until": "calm",
+          "lines": [
+            "jacques_d4_1",
+            "ba_d4_1",
+            "jacques_d4_warn"
+          ]
+        },
+        {
+          "who": "jacques",
+          "phase": "evening",
+          "action": "teach",
+          "lines": [
+            "jacques_d4_teach"
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "id": "dawn",
+          "montage": true,
+          "caption": "montage.dawn",
+          "orders": [
+            {
+              "task": "ash",
+              "count": 1
+            },
+            {
+              "task": "fire",
+              "count": 2
+            }
+          ],
+          "minutes": 30
+        },
+        {
+          "id": "breakfast",
+          "montage": true,
+          "caption": "montage.breakfast",
+          "orders": [
+            {
+              "task": "fish",
+              "count": 1
+            },
+            {
+              "task": "serve",
+              "count": 1
+            }
+          ],
+          "startAt": 270,
+          "serviceAt": 315,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.provisions.done",
+            "s2.serve.done"
+          ],
+          "cards": [
+            "sc_provisions"
+          ]
+        },
+        {
+          "id": "storm",
+          "line": "chef_storm",
+          "orders": [
+            {
+              "task": "secure",
+              "count": 1
+            }
+          ],
+          "startAt": 330,
+          "minutes": 30,
+          "storm": true
+        },
+        {
+          "id": "haul",
+          "line": "chef_haul",
+          "orders": [
+            {
+              "task": "haul",
+              "count": 2
+            }
+          ],
+          "startAt": 400,
+          "minutes": 60,
+          "deckWave": true,
+          "events": [
+            "s2.haul.done"
+          ],
+          "cards": [
+            "sc_storm"
+          ]
+        },
+        {
+          "id": "tall_out",
+          "line": "chef_tall_out",
+          "orders": [
+            {
+              "task": "tall_out",
+              "count": 1
+            }
+          ],
+          "minutes": 20
+        },
+        {
+          "id": "lunch",
+          "montage": true,
+          "caption": "montage.lunch",
+          "orders": [
+            {
+              "task": "water",
+              "count": 1
+            }
+          ],
+          "startAt": 690,
+          "serviceAt": 780,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.water.done"
+          ],
+          "cards": [
+            "sc_water"
+          ],
+          "cookTall": true
+        },
+        {
+          "id": "tallpot",
+          "line": "chef_tall_back",
+          "orders": [
+            {
+              "task": "scrub_tall",
+              "count": 1
+            }
+          ],
+          "minutes": 40,
+          "tallSway": true
+        },
+        {
+          "id": "calm",
+          "montage": true,
+          "caption": "montage.calm",
+          "orders": [
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 870,
+          "minutes": 60,
+          "calm": true
+        },
+        {
+          "id": "dinner",
+          "montage": true,
+          "caption": "montage.dinner",
+          "orders": [
+            {
+              "task": "fire",
+              "count": 2
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 960,
+          "serviceAt": 1050,
+          "needsFire": true,
+          "dirty": 2,
+          "cookTall": true
+        }
+      ],
+      "evening": {
+        "study": "match",
+        "set": "w3",
+        "items": 3
+      },
+      "coalStock": 2
+    },
+    {
+      "id": "d5",
+      "number": 5,
+      "title": "Ngày thứ năm",
+      "leg": "Từ Colombo tới Port Said",
+      "transition": "d5",
+      "porthole": "sea",
+      "ship": 0.2,
+      "heat": 1.45,
+      "clockStart": 240,
+      "fatigueStart": 0.3,
+      "grimeStart": 0.5,
+      "ashStart": 0.25,
+      "npcs": [
+        {
+          "who": "soldiers",
+          "phase": "day",
+          "action": "deck",
+          "lines": [
+            "linh_d5_1"
+          ]
+        },
+        {
+          "who": "mai",
+          "phase": "dishes_noon",
+          "action": "visit",
+          "lines": [
+            "mai_d5_1",
+            "ba_d5_1",
+            "mai_d5_2",
+            "ba_d5_2"
+          ],
+          "call": "mai_call"
+        },
+        {
+          "who": "soldiers",
+          "phase": "evening",
+          "action": "teach",
+          "lines": [
+            "linh_d5_teach"
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "id": "dawn",
+          "montage": true,
+          "caption": "montage.dawn",
+          "orders": [
+            {
+              "task": "ash",
+              "count": 1
+            },
+            {
+              "task": "fire",
+              "count": 2
+            }
+          ],
+          "minutes": 60,
+          "line": "chef_d5_heat"
+        },
+        {
+          "id": "breakfast",
+          "montage": true,
+          "caption": "montage.breakfast",
+          "orders": [
+            {
+              "task": "fish",
+              "count": 1
+            },
+            {
+              "task": "serve",
+              "count": 1
+            }
+          ],
+          "startAt": 300,
+          "serviceAt": 390,
+          "needsFire": true,
+          "dirty": 3,
+          "events": [
+            "s2.provisions.done",
+            "s2.serve.done"
+          ],
+          "cards": [
+            "sc_provisions"
+          ]
+        },
+        {
+          "id": "dishes",
+          "montage": true,
+          "caption": "montage.dishes",
+          "orders": [
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 420,
+          "minutes": 60
+        },
+        {
+          "id": "lunch",
+          "line": "chef_story_asparagus",
+          "orders": [
+            {
+              "task": "asparagus",
+              "count": 1
+            },
+            {
+              "task": "tall_out",
+              "count": 1
+            }
+          ],
+          "startAt": 600,
+          "serviceAt": 690,
+          "needsFire": true,
+          "dirty": 3,
+          "events": [
+            "s2.asparagus.done"
+          ],
+          "cards": [
+            "sc_asparagus"
+          ],
+          "cookTall": true
+        },
+        {
+          "id": "dishes_noon",
+          "line": "chef_d5_pile",
+          "orders": [
+            {
+              "task": "wash",
+              "count": 2
+            },
+            {
+              "task": "scrub_tall",
+              "count": 1
+            }
+          ],
+          "startAt": 750,
+          "minutes": 40,
+          "events": [
+            "s2.pile.high"
+          ],
+          "cards": [
+            "sc_scale"
+          ]
+        },
+        {
+          "id": "dinner",
+          "montage": true,
+          "caption": "montage.dinner",
+          "orders": [
+            {
+              "task": "fire",
+              "count": 2
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 960,
+          "serviceAt": 1050,
+          "needsFire": true,
+          "dirty": 3,
+          "cookTall": true
+        }
+      ],
+      "evening": {
+        "study": "fill",
+        "lesson": "l_fill",
+        "items": 5,
+        "storyLesson": "l_quoc_ngu",
+        "events": [
+          "s2.quoc_ngu.done"
+        ],
+        "cards": [
+          "sc_quoc_ngu"
+        ]
+      },
+      "coalStock": 2
+    },
+    {
+      "id": "d6",
+      "number": 6,
+      "title": "Ngày thứ sáu",
+      "leg": "Địa Trung Hải, sắp tới Marseille",
+      "transition": "d6",
+      "porthole": "sea",
+      "ship": 0.08,
+      "heat": 0.9,
+      "clockStart": 240,
+      "fatigueStart": 0.3,
+      "grimeStart": 0.5,
+      "ashStart": 0.25,
+      "npcs": [
+        {
+          "who": "soldiers",
+          "phase": "greens",
+          "action": "help",
+          "lines": [
+            "linh_d6_1",
+            "ba_d6_1"
+          ]
+        },
+        {
+          "who": "mai",
+          "phase": "greens",
+          "action": "visit",
+          "lines": [
+            "mai_d6_1",
+            "ba_d6_2",
+            "mai_d6_2"
+          ],
+          "call": "mai_call"
+        },
+        {
+          "who": "soldiers",
+          "phase": "evening",
+          "action": "teach",
+          "lines": [
+            "linh_d6_teach"
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "id": "dawn",
+          "montage": true,
+          "caption": "montage.dawn",
+          "orders": [
+            {
+              "task": "ash",
+              "count": 1
+            },
+            {
+              "task": "fire",
+              "count": 2
+            }
+          ],
+          "minutes": 60
+        },
+        {
+          "id": "breakfast",
+          "montage": true,
+          "caption": "montage.breakfast",
+          "orders": [
+            {
+              "task": "sack",
+              "count": 1
+            },
+            {
+              "task": "serve",
+              "count": 1
+            }
+          ],
+          "startAt": 300,
+          "serviceAt": 390,
+          "needsFire": true,
+          "dirty": 2,
+          "events": [
+            "s2.provisions.done",
+            "s2.serve.done"
+          ],
+          "cards": [
+            "sc_provisions"
+          ]
+        },
+        {
+          "id": "greens",
+          "line": "chef_d6_last",
+          "orders": [
+            {
+              "task": "greens",
+              "count": 2
+            }
+          ],
+          "startAt": 450,
+          "minutes": 60
+        },
+        {
+          "id": "lunch",
+          "montage": true,
+          "caption": "montage.lunch",
+          "orders": [
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 660,
+          "serviceAt": 750,
+          "needsFire": true,
+          "dirty": 2,
+          "cookTall": true
+        },
+        {
+          "id": "chieu",
+          "orders": [
+            {
+              "task": "chieu",
+              "count": 1
+            }
+          ],
+          "startAt": 840,
+          "minutes": 30,
+          "events": [
+            "s2.chieu.done"
+          ],
+          "cards": [
+            "sc_chieu"
+          ]
+        },
+        {
+          "id": "dinner",
+          "montage": true,
+          "caption": "montage.dinner",
+          "orders": [
+            {
+              "task": "fire",
+              "count": 2
+            },
+            {
+              "task": "wash",
+              "count": 99
+            }
+          ],
+          "startAt": 960,
+          "serviceAt": 1050,
+          "needsFire": true,
+          "dirty": 2,
+          "cookTall": true
+        }
+      ],
+      "evening": {
+        "study": "sentence",
+        "lesson": "l_sentence",
+        "items": 3,
+        "book": true,
+        "after": [
+          "linh_d6_book",
+          "ba_d6_book",
+          "linh_d6_night"
+        ],
+        "storyLesson": "l_letter",
+        "line": "friend_letter",
+        "events": [
+          "s2.letter.done"
+        ],
+        "cards": [
+          "sc_letter"
+        ]
+      },
+      "coalStock": 2
+    }
+  ]
+}

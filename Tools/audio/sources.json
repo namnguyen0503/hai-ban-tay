@@ -1,0 +1,146 @@
+[
+  {
+    "id": "impact",
+    "page": "https://kenney.nl/assets/impact-sounds",
+    "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "author": "Kenney",
+    "license": "CC0",
+    "sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8"
+  },
+  {
+    "id": "rpg",
+    "page": "https://kenney.nl/assets/rpg-audio",
+    "url": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+    "author": "Kenney",
+    "license": "CC0",
+    "sha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b"
+  },
+  {
+    "id": "french",
+    "page": "https://bigsoundbank.com/outside-talks-6-s3096.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/3096.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "2ef6dc5896e9ebec3714766903deb51bf1873b8a10e4bf2dd3b5ade350fb14ac"
+  },
+  {
+    "id": "horse",
+    "page": "https://bigsoundbank.com/chevaux-au-pas-s0289.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0289.ogg",
+    "author": "DenisChardonnet",
+    "license": "CC0",
+    "sha256": "f8c548a06a5349070601e4be3152e044ca68d1e4d06283589841811bfbad6104"
+  },
+  {
+    "id": "gulls",
+    "page": "https://bigsoundbank.com/gulls-on-the-harbor-s2573.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/2573.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "356913aa0ffcbaa5860436981b4193aa73c168730f2b1b29c53735d1f60e7073"
+  },
+  {
+    "id": "sea",
+    "page": "https://bigsoundbank.com/sea-waves-s0266.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0266.ogg",
+    "author": "DenisChardonnet",
+    "license": "CC0",
+    "sha256": "01e8de4f64650f53d9152ae3616bf03be6249eccbf7640ad3978e804bbaea337"
+  },
+  {
+    "id": "sizzle",
+    "page": "https://bigsoundbank.com/frying-pan-3-s0145.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0145.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "2941e30673c7eb382986c728a02720cb148687abd58e89256cb9a9411cbdcf2d"
+  },
+  {
+    "id": "door",
+    "page": "https://bigsoundbank.com/wooden-barn-door-s0538.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0538.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "79d7526b70da3b524b717587a77d792bf5046ca3dc5fbedb7b0b2f5c3079762d"
+  },
+  {
+    "id": "pencil",
+    "page": "https://bigsoundbank.com/pencil-s0221.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0221.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "849ccd125951c38abb2562a1965f9912e0fd527aac8d237fa8df5175924d231f"
+  },
+  {
+    "id": "page",
+    "page": "https://bigsoundbank.com/turned-page-s0164.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0164.ogg",
+    "author": "DavidGreck",
+    "license": "CC0",
+    "sha256": "a449aafe22f7b9fbef01ef2e6c6209a3b4ca864ca82b7da8d38c341f0ce72f6e"
+  },
+  {
+    "id": "rope",
+    "page": "https://bigsoundbank.com/rope-s0554.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0554.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "808f6c76acecabea5263eccdd1bb3f029c7e1d6f35a346988dd64bcb22e5562d"
+  },
+  {
+    "id": "sweep",
+    "page": "https://bigsoundbank.com/straw-broom-s0163.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0163.ogg",
+    "author": "DavidGreck",
+    "license": "CC0",
+    "sha256": "d4099915d81f4a2aba157ad0c2caed9a634823ef1c55090944b7823065c45a7e"
+  },
+  {
+    "id": "chain",
+    "page": "https://bigsoundbank.com/heavy-chain-s0359.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0359.ogg",
+    "author": "DenisChardonnet",
+    "license": "CC0",
+    "sha256": "9378a42d90408f2c5f1cb8a0815898f1623a014bf1d4b4e579b8909321db3238"
+  },
+  {
+    "id": "woodsteps",
+    "page": "https://bigsoundbank.com/man-footsteps-on-the-wooden-floor-s0165.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0165.ogg",
+    "author": "DavidGreck",
+    "license": "CC0",
+    "sha256": "7e19af4c8f902c8fb4dcb443bc041deadbdb119918938b427156447cf6245f44"
+  },
+  {
+    "id": "stonesteps",
+    "page": "https://bigsoundbank.com/step-shoe-on-stone-staircase-s0606.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/0606.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "a371991c7e756e49372edb598625a39f8fa7eae977f2f37168927b03d0763c47"
+  },
+  {
+    "id": "service",
+    "page": "https://bigsoundbank.com/counter-bell-3-s2531.html",
+    "url": "https://bigsoundbank.com/UPLOAD/ogg/2531.ogg",
+    "author": "Joseph SARDIN",
+    "license": "CC0",
+    "sha256": "3af8158af87a920c76e44ed561313e6fe00630f10f1ab1c381498e00dbde3fc5"
+  },
+  {
+    "id": "menu",
+    "page": "https://opengameart.org/content/regret-short-emotional-piano",
+    "url": "https://opengameart.org/sites/default/files/piano_nostalgia.ogg",
+    "author": "Wolfgang_",
+    "license": "CC0",
+    "sha256": "44077bed1d767efbb647bf495d720da8c6e215bde329afa3d80810a12f347663"
+  },
+  {
+    "id": "piano",
+    "page": "https://opengameart.org/content/emotional-piano-0",
+    "url": "https://opengameart.org/sites/default/files/emotional_piano_solo_0.ogg",
+    "author": "Centurion_of_war",
+    "license": "CC0",
+    "sha256": "78fd14ad3cb28e9f9f608f15efa1eeaceefde2f045db189b8d18d971d3f22c58"
+  }
+]

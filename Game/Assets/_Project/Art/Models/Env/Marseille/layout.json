@@ -1,0 +1,2251 @@
+{
+  "schema_version": 1,
+  "scene": "03_Marseille",
+  "units": "metres",
+  "frame": "unity_world",
+  "fbx": "Marseille.fbx",
+  "fbx_transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation_euler": [
+      0,
+      180,
+      0
+    ],
+    "scale": 1
+  },
+  "player_spawn": {
+    "pos": [
+      3,
+      0,
+      -2
+    ],
+    "yaw": 180
+  },
+  "anchors": {
+    "mooring_bollard_0": [
+      -84,
+      -2.5,
+      -9.12
+    ],
+    "mooring_bollard_1": [
+      -60,
+      -2.5,
+      -9.12
+    ],
+    "mooring_bollard_2": [
+      -30,
+      -2.5,
+      -9.12
+    ],
+    "mooring_bollard_3": [
+      24,
+      -2.5,
+      -9.12
+    ],
+    "mooring_bollard_4": [
+      54,
+      -2.5,
+      -9.12
+    ],
+    "gangway_foot": [
+      0,
+      -2.5,
+      -9.2
+    ],
+    "gangway_top": [
+      0,
+      0,
+      -3.21
+    ],
+    "dawn_deck_spawn": [
+      3,
+      0,
+      -2
+    ],
+    "hands_pay_pose": [
+      3,
+      0,
+      -2
+    ],
+    "salary_queue": [
+      -2.5,
+      0,
+      -1.1
+    ],
+    "salary_table": [
+      -4.2,
+      0,
+      -1.1
+    ],
+    "last_shift_sweep": [
+      -12.164,
+      0.0,
+      4.77
+    ],
+    "last_shift_wash": [
+      -20.284,
+      0.8200000000000003,
+      4.92
+    ],
+    "goodbye_chef": [
+      -8.5,
+      0,
+      0.72
+    ],
+    "goodbye_jacques": [
+      -2.4,
+      0,
+      0.5
+    ],
+    "goodbye_mai": [
+      -3.3,
+      0,
+      -1.8
+    ],
+    "goodbye_french_kitchenhand": [
+      -5.2,
+      0,
+      1.8
+    ],
+    "goodbye_two_soldiers": [
+      2.4,
+      0,
+      1.5
+    ],
+    "quay_step": [
+      0,
+      -2.5,
+      -10.4
+    ],
+    "mai_poverty_conversation": [
+      -3.8,
+      -2.5,
+      -12.7
+    ],
+    "poor_porters": [
+      -8,
+      -2.5,
+      -13.4
+    ],
+    "street_edge": [
+      0,
+      -2.5,
+      -15
+    ],
+    "tram_watch": [
+      0,
+      -2.5,
+      -15.6
+    ],
+    "tram_from": [
+      -36,
+      -2.5,
+      -18.5
+    ],
+    "tram_to": [
+      36,
+      -2.5,
+      -18.5
+    ],
+    "cafe_approach": [
+      0.5,
+      -2.4,
+      -21.8
+    ],
+    "cafe_seat": [
+      0.5,
+      -2.4,
+      -23.15
+    ],
+    "cafe_table": [
+      0.5,
+      -1.62,
+      -24
+    ],
+    "waiter_start": [
+      -1.4,
+      -2.4,
+      -24.6
+    ],
+    "waiter_table": [
+      0.25,
+      -1.63,
+      -23.88
+    ],
+    "notebook_link_pages": [
+      0.5,
+      -1.38,
+      -23.15
+    ],
+    "basilica_silhouette": [
+      -2,
+      43,
+      -150
+    ],
+    "galley_coal_bin": [
+      -13.964,
+      0.5999999999999996,
+      0.8199999999999998
+    ],
+    "galley_stove_mouth": [
+      -10.664000000000001,
+      0.6500000000000004,
+      1.4699999999999998
+    ],
+    "galley_prep_drop": [
+      -13.964,
+      1.2000000000000002,
+      3.32
+    ],
+    "galley_scrub_pot": [
+      -17.064,
+      0.40000000000000036,
+      5.12
+    ],
+    "galley_scrub_stool": [
+      -17.064,
+      0.0,
+      4.22
+    ],
+    "galley_evening_seat": [
+      -9.814,
+      0.0,
+      1.9699999999999998
+    ],
+    "galley_evening_lamp": [
+      -9.114,
+      0.7599999999999998,
+      2.57
+    ],
+    "galley_evening_book": [
+      -9.314,
+      0.7800000000000002,
+      2.82
+    ],
+    "galley_wash_basin": [
+      -20.284,
+      0.8200000000000003,
+      4.92
+    ],
+    "galley_storm_pot_0": [
+      -9.664000000000001,
+      0.9000000000000004,
+      5.97
+    ],
+    "galley_storm_pot_1": [
+      -10.664000000000001,
+      0.9000000000000004,
+      5.97
+    ],
+    "galley_storm_pot_2": [
+      -11.664,
+      0.9000000000000004,
+      5.97
+    ],
+    "hold_potato_sack_0": [
+      0.43599999999999994,
+      -2.8,
+      5.87
+    ],
+    "hold_potato_sack_1": [
+      0.5359999999999996,
+      -2.8,
+      6.52
+    ],
+    "hold_potato_sack_2": [
+      -0.1639999999999997,
+      -2.8,
+      6.27
+    ],
+    "hold_stair_top": [
+      -7.364000000000001,
+      0.0,
+      4.17
+    ],
+    "hold_stair_bottom": [
+      -3.8640000000000008,
+      -2.8,
+      4.17
+    ],
+    "food_hold_landing": [
+      -3.8640000000000008,
+      -2.8,
+      4.17
+    ]
+  },
+  "anchor_roles": {
+    "mooring_bollard_0": "object",
+    "mooring_bollard_1": "object",
+    "mooring_bollard_2": "object",
+    "mooring_bollard_3": "object",
+    "mooring_bollard_4": "object",
+    "gangway_foot": "walk",
+    "gangway_top": "ship",
+    "dawn_deck_spawn": "ship",
+    "hands_pay_pose": "ship",
+    "salary_queue": "ship",
+    "salary_table": "ship",
+    "last_shift_sweep": "ship_task",
+    "last_shift_wash": "ship_task",
+    "goodbye_chef": "ship",
+    "goodbye_jacques": "ship",
+    "goodbye_mai": "ship",
+    "goodbye_french_kitchenhand": "ship",
+    "goodbye_two_soldiers": "ship",
+    "quay_step": "walk",
+    "mai_poverty_conversation": "walk",
+    "poor_porters": "walk",
+    "street_edge": "walk",
+    "tram_watch": "walk",
+    "tram_from": "tram",
+    "tram_to": "tram",
+    "cafe_approach": "walk",
+    "cafe_seat": "seat",
+    "cafe_table": "object",
+    "waiter_start": "walk",
+    "waiter_table": "object",
+    "notebook_link_pages": "object",
+    "basilica_silhouette": "background",
+    "galley_coal_bin": "ship_task",
+    "galley_stove_mouth": "ship_task",
+    "galley_prep_drop": "ship_task",
+    "galley_scrub_pot": "ship_task",
+    "galley_scrub_stool": "ship_task",
+    "galley_evening_seat": "ship_task",
+    "galley_evening_lamp": "ship_task",
+    "galley_evening_book": "ship_task",
+    "galley_wash_basin": "ship_task",
+    "galley_storm_pot_0": "ship_task",
+    "galley_storm_pot_1": "ship_task",
+    "galley_storm_pot_2": "ship_task",
+    "hold_potato_sack_0": "ship_task",
+    "hold_potato_sack_1": "ship_task",
+    "hold_potato_sack_2": "ship_task",
+    "hold_stair_top": "ship",
+    "hold_stair_bottom": "ship",
+    "food_hold_landing": "ship"
+  },
+  "walk_bounds": [
+    {
+      "name": "quay",
+      "min": [
+        -88,
+        -2.5,
+        -40
+      ],
+      "max": [
+        60,
+        -2.5,
+        -8.7
+      ]
+    },
+    {
+      "name": "cafe_sidewalk",
+      "min": [
+        -88,
+        -2.4,
+        -30.5
+      ],
+      "max": [
+        60,
+        -2.4,
+        -20.5
+      ]
+    }
+  ],
+  "crowd": {
+    "paths": [
+      {
+        "name": "porters_loop",
+        "points": [
+          [
+            -17,
+            -2.5,
+            -11.1
+          ],
+          [
+            -17,
+            -2.5,
+            -14
+          ],
+          [
+            -5,
+            -2.5,
+            -14
+          ],
+          [
+            -5,
+            -2.5,
+            -11.1
+          ]
+        ],
+        "loop": true,
+        "count": 6
+      },
+      {
+        "name": "arrivals",
+        "points": [
+          [
+            -2,
+            -2.5,
+            -11
+          ],
+          [
+            1.4,
+            -2.5,
+            -12.5
+          ],
+          [
+            1.4,
+            -2.5,
+            -15
+          ]
+        ],
+        "loop": false,
+        "count": 5
+      },
+      {
+        "name": "promenade",
+        "points": [
+          [
+            -12,
+            -2.4,
+            -21.4
+          ],
+          [
+            0,
+            -2.4,
+            -21.4
+          ],
+          [
+            13,
+            -2.4,
+            -21.4
+          ],
+          [
+            23,
+            -2.4,
+            -21.4
+          ]
+        ],
+        "loop": false,
+        "count": 5
+      }
+    ],
+    "spots": [
+      {
+        "name": "cafe_customers",
+        "pos": [
+          5.7,
+          -2.4,
+          -24
+        ],
+        "count": 4
+      },
+      {
+        "name": "poor_workers",
+        "pos": [
+          -8,
+          -2.5,
+          -13.4
+        ],
+        "count": 3
+      },
+      {
+        "name": "mai_conversation",
+        "pos": [
+          -3.8,
+          -2.5,
+          -12.7
+        ],
+        "count": 2
+      }
+    ],
+    "capacity": 25
+  },
+  "blockers": [
+    {
+      "name": "Bollard_00",
+      "mesh_name": "COL_Bollard_00",
+      "center": [
+        -84,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_00"
+      ]
+    },
+    {
+      "name": "Bollard_01",
+      "mesh_name": "COL_Bollard_01",
+      "center": [
+        -78,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_01"
+      ]
+    },
+    {
+      "name": "Bollard_02",
+      "mesh_name": "COL_Bollard_02",
+      "center": [
+        -72,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_02"
+      ]
+    },
+    {
+      "name": "Bollard_03",
+      "mesh_name": "COL_Bollard_03",
+      "center": [
+        -66,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_03"
+      ]
+    },
+    {
+      "name": "Bollard_04",
+      "mesh_name": "COL_Bollard_04",
+      "center": [
+        -60,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_04"
+      ]
+    },
+    {
+      "name": "Bollard_05",
+      "mesh_name": "COL_Bollard_05",
+      "center": [
+        -54,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_05"
+      ]
+    },
+    {
+      "name": "Bollard_06",
+      "mesh_name": "COL_Bollard_06",
+      "center": [
+        -48,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_06"
+      ]
+    },
+    {
+      "name": "Bollard_07",
+      "mesh_name": "COL_Bollard_07",
+      "center": [
+        -42,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_07"
+      ]
+    },
+    {
+      "name": "Bollard_08",
+      "mesh_name": "COL_Bollard_08",
+      "center": [
+        -36,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_08"
+      ]
+    },
+    {
+      "name": "Bollard_09",
+      "mesh_name": "COL_Bollard_09",
+      "center": [
+        -30,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_09"
+      ]
+    },
+    {
+      "name": "Bollard_10",
+      "mesh_name": "COL_Bollard_10",
+      "center": [
+        -24,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_10"
+      ]
+    },
+    {
+      "name": "Bollard_11",
+      "mesh_name": "COL_Bollard_11",
+      "center": [
+        -18,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_11"
+      ]
+    },
+    {
+      "name": "Bollard_12",
+      "mesh_name": "COL_Bollard_12",
+      "center": [
+        -12,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_12"
+      ]
+    },
+    {
+      "name": "Bollard_13",
+      "mesh_name": "COL_Bollard_13",
+      "center": [
+        -6,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_13"
+      ]
+    },
+    {
+      "name": "Bollard_15",
+      "mesh_name": "COL_Bollard_15",
+      "center": [
+        6,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_15"
+      ]
+    },
+    {
+      "name": "Bollard_16",
+      "mesh_name": "COL_Bollard_16",
+      "center": [
+        12,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_16"
+      ]
+    },
+    {
+      "name": "Bollard_17",
+      "mesh_name": "COL_Bollard_17",
+      "center": [
+        18,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_17"
+      ]
+    },
+    {
+      "name": "Bollard_18",
+      "mesh_name": "COL_Bollard_18",
+      "center": [
+        24,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_18"
+      ]
+    },
+    {
+      "name": "Bollard_19",
+      "mesh_name": "COL_Bollard_19",
+      "center": [
+        30,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_19"
+      ]
+    },
+    {
+      "name": "Bollard_20",
+      "mesh_name": "COL_Bollard_20",
+      "center": [
+        36,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_20"
+      ]
+    },
+    {
+      "name": "Bollard_21",
+      "mesh_name": "COL_Bollard_21",
+      "center": [
+        42,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_21"
+      ]
+    },
+    {
+      "name": "Bollard_22",
+      "mesh_name": "COL_Bollard_22",
+      "center": [
+        48,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_22"
+      ]
+    },
+    {
+      "name": "Bollard_23",
+      "mesh_name": "COL_Bollard_23",
+      "center": [
+        54,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_23"
+      ]
+    },
+    {
+      "name": "Bollard_24",
+      "mesh_name": "COL_Bollard_24",
+      "center": [
+        60,
+        -2.0,
+        -9.12
+      ],
+      "size": [
+        0.62,
+        1,
+        0.62
+      ],
+      "yaw": 0,
+      "visuals": [
+        "Bollard_24"
+      ]
+    },
+    {
+      "name": "QuayRail_west",
+      "mesh_name": "COL_QuayRail_west",
+      "center": [
+        -44.599998474121094,
+        -1.975000023841858,
+        -8.850000381469727
+      ],
+      "size": [
+        86.80000416276631,
+        1.05,
+        0.19
+      ],
+      "yaw": -0.0,
+      "visuals": [
+        "QuayRail_west"
+      ]
+    },
+    {
+      "name": "QuayRail_east",
+      "mesh_name": "COL_QuayRail_east",
+      "center": [
+        30.600000381469727,
+        -1.975000023841858,
+        -8.850000381469727
+      ],
+      "size": [
+        58.799999501753824,
+        1.05,
+        0.19
+      ],
+      "yaw": -0.0,
+      "visuals": [
+        "QuayRail_east"
+      ]
+    },
+    {
+      "name": "QuayEnd_-1",
+      "mesh_name": "COL_QuayEnd_-1",
+      "center": [
+        -88.0,
+        -1.600000023841858,
+        -24.350000381469727
+      ],
+      "size": [
+        31.29999906399759,
+        1.8,
+        0.19
+      ],
+      "yaw": 90.0,
+      "visuals": [
+        "QuayEnd_-1"
+      ]
+    },
+    {
+      "name": "QuayEnd_1",
+      "mesh_name": "COL_QuayEnd_1",
+      "center": [
+        60.0,
+        -1.600000023841858,
+        -24.350000381469727
+      ],
+      "size": [
+        31.29999906399759,
+        1.8,
+        0.19
+      ],
+      "yaw": 90.0,
+      "visuals": [
+        "QuayEnd_1"
+      ]
+    },
+    {
+      "name": "PortFacade_00",
+      "mesh_name": "COL_PortFacade_00",
+      "center": [
+        -79,
+        6.574999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        17.95,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_00"
+      ]
+    },
+    {
+      "name": "PortFacade_01",
+      "mesh_name": "COL_PortFacade_01",
+      "center": [
+        -67,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_01"
+      ]
+    },
+    {
+      "name": "PortFacade_02",
+      "mesh_name": "COL_PortFacade_02",
+      "center": [
+        -55,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_02"
+      ]
+    },
+    {
+      "name": "PortFacade_03",
+      "mesh_name": "COL_PortFacade_03",
+      "center": [
+        -43,
+        6.574999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        17.95,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_03"
+      ]
+    },
+    {
+      "name": "PortFacade_04",
+      "mesh_name": "COL_PortFacade_04",
+      "center": [
+        -31,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_04"
+      ]
+    },
+    {
+      "name": "PortFacade_05",
+      "mesh_name": "COL_PortFacade_05",
+      "center": [
+        -19,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_05"
+      ]
+    },
+    {
+      "name": "PortFacade_06",
+      "mesh_name": "COL_PortFacade_06",
+      "center": [
+        -7,
+        6.574999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        17.95,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_06"
+      ]
+    },
+    {
+      "name": "PortFacade_07",
+      "mesh_name": "COL_PortFacade_07",
+      "center": [
+        5,
+        -0.4249999999999998,
+        -35
+      ],
+      "size": [
+        12,
+        3.95,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_07"
+      ]
+    },
+    {
+      "name": "PortFacade_08",
+      "mesh_name": "COL_PortFacade_08",
+      "center": [
+        17,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_08"
+      ]
+    },
+    {
+      "name": "PortFacade_09",
+      "mesh_name": "COL_PortFacade_09",
+      "center": [
+        29,
+        6.574999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        17.95,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_09"
+      ]
+    },
+    {
+      "name": "PortFacade_10",
+      "mesh_name": "COL_PortFacade_10",
+      "center": [
+        41,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_10"
+      ]
+    },
+    {
+      "name": "PortFacade_11",
+      "mesh_name": "COL_PortFacade_11",
+      "center": [
+        53,
+        4.824999999999999,
+        -35
+      ],
+      "size": [
+        12,
+        14.45,
+        9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortFacade_11"
+      ]
+    },
+    {
+      "name": "RearBoundary",
+      "mesh_name": "COL_RearBoundary",
+      "center": [
+        -14.0,
+        -1.600000023841858,
+        -40.0
+      ],
+      "size": [
+        148.0,
+        1.8,
+        0.19
+      ],
+      "yaw": -0.0,
+      "visuals": [
+        "RearBoundary"
+      ]
+    },
+    {
+      "name": "WarehouseWest",
+      "mesh_name": "COL_WarehouseWest",
+      "center": [
+        -67,
+        -0.10000000000000009,
+        -13.45
+      ],
+      "size": [
+        26,
+        4.8,
+        7.4
+      ],
+      "yaw": 0,
+      "visuals": [
+        "WarehouseWest"
+      ]
+    },
+    {
+      "name": "WineCargo_0_0",
+      "mesh_name": "COL_WineCargo_0_0",
+      "center": [
+        -41.0,
+        -1.95,
+        -13.8
+      ],
+      "size": [
+        0.8,
+        1.1,
+        0.8
+      ],
+      "yaw": -3,
+      "visuals": [
+        "WineCargo_0_0"
+      ]
+    },
+    {
+      "name": "WineCargo_0_1",
+      "mesh_name": "COL_WineCargo_0_1",
+      "center": [
+        -39.8,
+        -2.025,
+        -13.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 0,
+      "visuals": [
+        "WineCargo_0_1"
+      ]
+    },
+    {
+      "name": "WineCargo_0_2",
+      "mesh_name": "COL_WineCargo_0_2",
+      "center": [
+        -38.6,
+        -2.025,
+        -13.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 3,
+      "visuals": [
+        "WineCargo_0_2"
+      ]
+    },
+    {
+      "name": "WineCargo_0_3",
+      "mesh_name": "COL_WineCargo_0_3",
+      "center": [
+        -37.4,
+        -2.025,
+        -13.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": -3,
+      "visuals": [
+        "WineCargo_0_3"
+      ]
+    },
+    {
+      "name": "WineCargo_0_4",
+      "mesh_name": "COL_WineCargo_0_4",
+      "center": [
+        -36.2,
+        -1.95,
+        -13.8
+      ],
+      "size": [
+        0.8,
+        1.1,
+        0.8
+      ],
+      "yaw": 0,
+      "visuals": [
+        "WineCargo_0_4"
+      ]
+    },
+    {
+      "name": "WineCargo_0_5",
+      "mesh_name": "COL_WineCargo_0_5",
+      "center": [
+        -35.0,
+        -2.025,
+        -13.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 3,
+      "visuals": [
+        "WineCargo_0_5"
+      ]
+    },
+    {
+      "name": "WineCargo_1_0",
+      "mesh_name": "COL_WineCargo_1_0",
+      "center": [
+        -41.0,
+        -2.025,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": -3,
+      "visuals": [
+        "WineCargo_1_0"
+      ]
+    },
+    {
+      "name": "WineCargo_1_0_upper",
+      "mesh_name": "COL_WineCargo_1_0_upper",
+      "center": [
+        -41.0,
+        -1.075,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 4,
+      "visuals": [
+        "WineCargo_1_0_upper"
+      ]
+    },
+    {
+      "name": "WineCargo_1_1",
+      "mesh_name": "COL_WineCargo_1_1",
+      "center": [
+        -39.8,
+        -2.025,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 0,
+      "visuals": [
+        "WineCargo_1_1"
+      ]
+    },
+    {
+      "name": "WineCargo_1_2",
+      "mesh_name": "COL_WineCargo_1_2",
+      "center": [
+        -38.6,
+        -2.025,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 3,
+      "visuals": [
+        "WineCargo_1_2"
+      ]
+    },
+    {
+      "name": "WineCargo_1_2_upper",
+      "mesh_name": "COL_WineCargo_1_2_upper",
+      "center": [
+        -38.6,
+        -1.075,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 4,
+      "visuals": [
+        "WineCargo_1_2_upper"
+      ]
+    },
+    {
+      "name": "WineCargo_1_3",
+      "mesh_name": "COL_WineCargo_1_3",
+      "center": [
+        -37.4,
+        -1.95,
+        -12.780000000000001
+      ],
+      "size": [
+        0.8,
+        1.1,
+        0.8
+      ],
+      "yaw": -3,
+      "visuals": [
+        "WineCargo_1_3"
+      ]
+    },
+    {
+      "name": "WineCargo_1_4",
+      "mesh_name": "COL_WineCargo_1_4",
+      "center": [
+        -36.2,
+        -2.025,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 0,
+      "visuals": [
+        "WineCargo_1_4"
+      ]
+    },
+    {
+      "name": "WineCargo_1_4_upper",
+      "mesh_name": "COL_WineCargo_1_4_upper",
+      "center": [
+        -36.2,
+        -1.075,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 4,
+      "visuals": [
+        "WineCargo_1_4_upper"
+      ]
+    },
+    {
+      "name": "WineCargo_1_5",
+      "mesh_name": "COL_WineCargo_1_5",
+      "center": [
+        -35.0,
+        -2.025,
+        -12.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 3,
+      "visuals": [
+        "WineCargo_1_5"
+      ]
+    },
+    {
+      "name": "CargoEast_0_0",
+      "mesh_name": "COL_CargoEast_0_0",
+      "center": [
+        31.0,
+        -1.95,
+        -12.8
+      ],
+      "size": [
+        0.8,
+        1.1,
+        0.8
+      ],
+      "yaw": -3,
+      "visuals": [
+        "CargoEast_0_0"
+      ]
+    },
+    {
+      "name": "CargoEast_0_1",
+      "mesh_name": "COL_CargoEast_0_1",
+      "center": [
+        32.2,
+        -2.025,
+        -12.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CargoEast_0_1"
+      ]
+    },
+    {
+      "name": "CargoEast_0_2",
+      "mesh_name": "COL_CargoEast_0_2",
+      "center": [
+        33.4,
+        -2.025,
+        -12.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 3,
+      "visuals": [
+        "CargoEast_0_2"
+      ]
+    },
+    {
+      "name": "CargoEast_0_3",
+      "mesh_name": "COL_CargoEast_0_3",
+      "center": [
+        34.6,
+        -2.025,
+        -12.8
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": -3,
+      "visuals": [
+        "CargoEast_0_3"
+      ]
+    },
+    {
+      "name": "CargoEast_0_4",
+      "mesh_name": "COL_CargoEast_0_4",
+      "center": [
+        35.8,
+        -1.95,
+        -12.8
+      ],
+      "size": [
+        0.8,
+        1.1,
+        0.8
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CargoEast_0_4"
+      ]
+    },
+    {
+      "name": "CargoEast_1_0",
+      "mesh_name": "COL_CargoEast_1_0",
+      "center": [
+        31.0,
+        -2.025,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": -3,
+      "visuals": [
+        "CargoEast_1_0"
+      ]
+    },
+    {
+      "name": "CargoEast_1_0_upper",
+      "mesh_name": "COL_CargoEast_1_0_upper",
+      "center": [
+        31.0,
+        -1.075,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 4,
+      "visuals": [
+        "CargoEast_1_0_upper"
+      ]
+    },
+    {
+      "name": "CargoEast_1_1",
+      "mesh_name": "COL_CargoEast_1_1",
+      "center": [
+        32.2,
+        -2.025,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CargoEast_1_1"
+      ]
+    },
+    {
+      "name": "CargoEast_1_2",
+      "mesh_name": "COL_CargoEast_1_2",
+      "center": [
+        33.4,
+        -2.025,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 3,
+      "visuals": [
+        "CargoEast_1_2"
+      ]
+    },
+    {
+      "name": "CargoEast_1_2_upper",
+      "mesh_name": "COL_CargoEast_1_2_upper",
+      "center": [
+        33.4,
+        -1.075,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 4,
+      "visuals": [
+        "CargoEast_1_2_upper"
+      ]
+    },
+    {
+      "name": "CargoEast_1_3",
+      "mesh_name": "COL_CargoEast_1_3",
+      "center": [
+        34.6,
+        -1.95,
+        -11.780000000000001
+      ],
+      "size": [
+        0.8,
+        1.1,
+        0.8
+      ],
+      "yaw": -3,
+      "visuals": [
+        "CargoEast_1_3"
+      ]
+    },
+    {
+      "name": "CargoEast_1_4",
+      "mesh_name": "COL_CargoEast_1_4",
+      "center": [
+        35.8,
+        -2.025,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CargoEast_1_4"
+      ]
+    },
+    {
+      "name": "CargoEast_1_4_upper",
+      "mesh_name": "COL_CargoEast_1_4_upper",
+      "center": [
+        35.8,
+        -1.075,
+        -11.780000000000001
+      ],
+      "size": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "yaw": 4,
+      "visuals": [
+        "CargoEast_1_4_upper"
+      ]
+    },
+    {
+      "name": "QuayCraneWest",
+      "mesh_name": "COL_QuayCraneWest",
+      "center": [
+        -51,
+        1.5,
+        -13
+      ],
+      "size": [
+        3.2,
+        8,
+        3.2
+      ],
+      "yaw": 0,
+      "visuals": [
+        "QuayCraneWest"
+      ]
+    },
+    {
+      "name": "QuayCraneEast",
+      "mesh_name": "COL_QuayCraneEast",
+      "center": [
+        49,
+        1.5,
+        -13
+      ],
+      "size": [
+        3.2,
+        8,
+        3.2
+      ],
+      "yaw": 0,
+      "visuals": [
+        "QuayCraneEast"
+      ]
+    },
+    {
+      "name": "PortLamp_0",
+      "mesh_name": "COL_PortLamp_0",
+      "center": [
+        -48,
+        0.04999999999999982,
+        -15.2
+      ],
+      "size": [
+        0.4,
+        5.1,
+        0.4
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortLamp_0"
+      ]
+    },
+    {
+      "name": "PortLamp_1",
+      "mesh_name": "COL_PortLamp_1",
+      "center": [
+        -22,
+        0.04999999999999982,
+        -15.2
+      ],
+      "size": [
+        0.4,
+        5.1,
+        0.4
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortLamp_1"
+      ]
+    },
+    {
+      "name": "PortLamp_2",
+      "mesh_name": "COL_PortLamp_2",
+      "center": [
+        13,
+        0.04999999999999982,
+        -15.2
+      ],
+      "size": [
+        0.4,
+        5.1,
+        0.4
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortLamp_2"
+      ]
+    },
+    {
+      "name": "PortLamp_3",
+      "mesh_name": "COL_PortLamp_3",
+      "center": [
+        40,
+        0.04999999999999982,
+        -15.2
+      ],
+      "size": [
+        0.4,
+        5.1,
+        0.4
+      ],
+      "yaw": 0,
+      "visuals": [
+        "PortLamp_3"
+      ]
+    },
+    {
+      "name": "PortBench",
+      "mesh_name": "COL_PortBench",
+      "center": [
+        6,
+        -2.0,
+        -14.5
+      ],
+      "size": [
+        1.9,
+        1,
+        0.7
+      ],
+      "yaw": 180,
+      "visuals": [
+        "PortBench"
+      ]
+    },
+    {
+      "name": "PortCart",
+      "mesh_name": "COL_PortCart",
+      "center": [
+        -26,
+        -1.6,
+        -13.5
+      ],
+      "size": [
+        2.1,
+        1.8,
+        3.5
+      ],
+      "yaw": 90,
+      "visuals": [
+        "PortCart"
+      ]
+    },
+    {
+      "name": "CafeAwning_post_0_0",
+      "mesh_name": "COL_CafeAwning_post_0_0",
+      "center": [
+        -1.4000000000000004,
+        -0.875,
+        -26.9
+      ],
+      "size": [
+        0.1,
+        3.05,
+        0.1
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeAwning"
+      ]
+    },
+    {
+      "name": "CafeAwning_post_0_1",
+      "mesh_name": "COL_CafeAwning_post_0_1",
+      "center": [
+        -1.4000000000000004,
+        -0.875,
+        -24.1
+      ],
+      "size": [
+        0.1,
+        3.05,
+        0.1
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeAwning"
+      ]
+    },
+    {
+      "name": "CafeAwning_post_1_0",
+      "mesh_name": "COL_CafeAwning_post_1_0",
+      "center": [
+        7.4,
+        -0.875,
+        -26.9
+      ],
+      "size": [
+        0.1,
+        3.05,
+        0.1
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeAwning"
+      ]
+    },
+    {
+      "name": "CafeAwning_post_1_1",
+      "mesh_name": "COL_CafeAwning_post_1_1",
+      "center": [
+        7.4,
+        -0.875,
+        -24.1
+      ],
+      "size": [
+        0.1,
+        3.05,
+        0.1
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeAwning"
+      ]
+    },
+    {
+      "name": "CafeTable_0",
+      "mesh_name": "COL_CafeTable_0",
+      "center": [
+        0.5,
+        -2.01,
+        -24
+      ],
+      "size": [
+        0.9,
+        0.78,
+        0.9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeTable_0"
+      ]
+    },
+    {
+      "name": "CafeChair_0",
+      "mesh_name": "COL_CafeChair_0",
+      "center": [
+        0.5,
+        -1.9249999999999998,
+        -23.2
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "yaw": 180,
+      "visuals": [
+        "CafeChair_0"
+      ]
+    },
+    {
+      "name": "CafeChair_0_side",
+      "mesh_name": "COL_CafeChair_0_side",
+      "center": [
+        1.5,
+        -1.9249999999999998,
+        -24
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "yaw": -90,
+      "visuals": [
+        "CafeChair_0_side"
+      ]
+    },
+    {
+      "name": "CafeTable_1",
+      "mesh_name": "COL_CafeTable_1",
+      "center": [
+        3.1,
+        -2.01,
+        -24
+      ],
+      "size": [
+        0.9,
+        0.78,
+        0.9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeTable_1"
+      ]
+    },
+    {
+      "name": "CafeChair_1",
+      "mesh_name": "COL_CafeChair_1",
+      "center": [
+        3.1,
+        -1.9249999999999998,
+        -23.2
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "yaw": 180,
+      "visuals": [
+        "CafeChair_1"
+      ]
+    },
+    {
+      "name": "CafeChair_1_side",
+      "mesh_name": "COL_CafeChair_1_side",
+      "center": [
+        4.1,
+        -1.9249999999999998,
+        -24
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "yaw": -90,
+      "visuals": [
+        "CafeChair_1_side"
+      ]
+    },
+    {
+      "name": "CafeTable_2",
+      "mesh_name": "COL_CafeTable_2",
+      "center": [
+        5.7,
+        -2.01,
+        -24
+      ],
+      "size": [
+        0.9,
+        0.78,
+        0.9
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafeTable_2"
+      ]
+    },
+    {
+      "name": "CafeChair_2",
+      "mesh_name": "COL_CafeChair_2",
+      "center": [
+        5.7,
+        -1.9249999999999998,
+        -23.2
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "yaw": 180,
+      "visuals": [
+        "CafeChair_2"
+      ]
+    },
+    {
+      "name": "CafeChair_2_side",
+      "mesh_name": "COL_CafeChair_2_side",
+      "center": [
+        6.7,
+        -1.9249999999999998,
+        -24
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "yaw": -90,
+      "visuals": [
+        "CafeChair_2_side"
+      ]
+    }
+  ],
+  "collision_surfaces": [
+    {
+      "name": "ContinuousQuay",
+      "mesh_name": "COL_ContinuousQuay",
+      "center": [
+        -14,
+        -4.3,
+        -24.35
+      ],
+      "size": [
+        148,
+        3.6,
+        31.3
+      ],
+      "yaw": 0,
+      "visuals": [
+        "ContinuousQuay"
+      ]
+    },
+    {
+      "name": "CafePavement",
+      "mesh_name": "COL_CafePavement",
+      "center": [
+        -14,
+        -2.495,
+        -25.5
+      ],
+      "size": [
+        148,
+        0.19,
+        10
+      ],
+      "yaw": 0,
+      "visuals": [
+        "CafePavement"
+      ]
+    }
+  ],
+  "notes": "Dawn 6 July 1911. Joliette cargo and Vieux-Port architectural vocabulary combined for gameplay; actual berth is not asserted. Eleven facades have 4-5 floors; a low cafe pavilion occupies the current builder central sightline gap. Street barrier is absent from art; dynamic tram safety/beat gates remain runtime responsibilities. Ship, gangway, animated tram and NPCs are scene-owned, not baked into FBX. E5 pavement lift of 0.1 m is declared in anchors.",
+  "beat_routes": [
+    {
+      "name": "E3_E4_E5",
+      "anchors": [
+        "gangway_foot",
+        "quay_step",
+        "street_edge",
+        "tram_watch",
+        "cafe_approach"
+      ]
+    },
+    {
+      "name": "E3b_Mai",
+      "anchors": [
+        "quay_step",
+        "mai_poverty_conversation",
+        "street_edge"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "name": "quay",
+      "size_m": [
+        148,
+        3.6,
+        31.3
+      ],
+      "basis": "ship extent plus both ends; solid foundation below waterline"
+    },
+    {
+      "name": "port_facades",
+      "size_m": [
+        12,
+        14.45,
+        9
+      ],
+      "basis": "4-5 floors, 3.5 m pitch, old port photograph proportions"
+    },
+    {
+      "name": "cafe_pavilion",
+      "size_m": [
+        12,
+        3.95,
+        9
+      ],
+      "basis": "single low shop in current builder sightline gap; scenographic, not a known historical address"
+    },
+    {
+      "name": "tram_track",
+      "size_m": [
+        148,
+        0.034,
+        1.4
+      ],
+      "basis": "rail centres Z=-17.8/-19.2 from current builder"
+    },
+    {
+      "name": "cafe_canopy",
+      "size_m": [
+        9,
+        3.05,
+        3
+      ],
+      "basis": "E5 current XY/Z composition; pavement lifted 0.1 m"
+    },
+    {
+      "name": "basilica",
+      "size_m": [
+        26,
+        25.45,
+        10
+      ],
+      "basis": "simple background silhouette; not a surveyed replica"
+    }
+  ],
+  "ship": {
+    "position": [
+      -13.464,
+      -5.6,
+      4.17
+    ],
+    "yaw": 0,
+    "length": 124.1,
+    "beam": 15.2,
+    "gangway_top": [
+      0,
+      0,
+      -3.21
+    ],
+    "gangway_foot": [
+      0,
+      -2.5,
+      -9.2
+    ]
+  },
+  "ship_anchor_sources": {
+    "frame": "deck_zones.galley_coordinate_transform + ShipConfig position",
+    "stations": "GalleySceneBuilder.cs and ShipInterior.cs; ship-owned task objects, not part of environment FBX",
+    "stairs": "deck_zones.connections.hold_stairs; bottom is y=-2.8 world for both port scenes",
+    "storm_pots": "intended local counter offsets from BuildPots; runtime task integration remains ship-owned"
+  }
+}

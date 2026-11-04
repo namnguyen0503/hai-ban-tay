@@ -1,0 +1,1923 @@
+{
+  "version": 1,
+  "speakers": {
+    "ba": "Anh Ba",
+    "quan_bep": "Quản bếp",
+    "jacques": "Thủy thủ Jacques",
+    "phu_bep_phap": "Phụ bếp người Pháp",
+    "boi_ban": "Người bồi bàn",
+    "le": "Anh Lê",
+    "mai": "Ông Mai",
+    "purser": "Người phát lương",
+    "docker": "Phu bến",
+    "waiter": "Bồi bàn",
+    "captain": "Thuyền trưởng Maisen",
+    "mrs_soldier_a": "Người lính trẻ",
+    "mrs_soldier_b": "Người lính đội mũ",
+    "linh_tre": "Người lính trẻ",
+    "linh_mu": "Người lính đội mũ",
+    "ong_mai": "Ông Mai",
+    "soat_ve": "Người soát vé",
+    "phu_ben": "Phu bốc hàng",
+    "hanh_khach": "Hành khách",
+    "nguoi_tien": "Người đưa tiễn",
+    "nguoi_ban": "Người bán hàng",
+    "thuy_thu": "Thủy thủ",
+    "nhan_vien": "Nhân viên trên tàu",
+    "visitor_woman": "Người phụ nữ",
+    "chieu": "Bùi Quang Chiêu",
+    "ban_viet": "Bạn của ông Mai",
+    "cai_phu": "Cai phu"
+  },
+  "lines": [
+    {
+      "id": "chef_depart",
+      "speaker": "quan_bep",
+      "fr": "Ba ! À la cuisine !",
+      "vi": "Ba! Xuống bếp!",
+      "audio": "VO/chef_depart",
+      "duration": 1.76
+    },
+    {
+      "id": "chef_fire",
+      "speaker": "quan_bep",
+      "fr": "Le feu d'abord. Allez !",
+      "vi": "Nhóm {w:feu} trước đã. Nhanh lên!",
+      "audio": "VO/chef_fire",
+      "duration": 1.78
+    },
+    {
+      "id": "chef_potatoes",
+      "speaker": "quan_bep",
+      "fr": "Des pommes de terre. À la chambre froide.",
+      "vi": "Lấy {w:pommes}. Dưới {w:froide}.",
+      "audio": "VO/chef_potatoes",
+      "duration": 2.92
+    },
+    {
+      "id": "chef_storm",
+      "speaker": "quan_bep",
+      "fr": "Attachez les marmites !",
+      "vi": "Chằng {w:marmite} lại!",
+      "audio": "VO/chef_storm",
+      "duration": 1.27
+    },
+    {
+      "id": "sailor_hold",
+      "speaker": "jacques",
+      "fr": "Je la tiens. Vas-y.",
+      "vi": "Tôi giữ rồi. Cậu làm đi.",
+      "audio": "VO/sailor_hold",
+      "duration": 1.9
+    },
+    {
+      "id": "chef_pay",
+      "speaker": "quan_bep",
+      "fr": "C'est la paie !",
+      "vi": "Lĩnh lương!",
+      "audio": "VO/chef_pay",
+      "duration": 1.0
+    },
+    {
+      "id": "waiter_voila",
+      "speaker": "boi_ban",
+      "fr": "Voilà, monsieur.",
+      "vi": "Của ông đây, thưa ông.",
+      "audio": "VO/waiter_voila",
+      "duration": 0.59
+    },
+    {
+      "id": "chef_late",
+      "speaker": "quan_bep",
+      "fr": "C'est l'heure ! Vite !",
+      "vi": "Đến giờ rồi! {w:vite} lên!",
+      "audio": "VO/chef_late",
+      "duration": 1.51
+    },
+    {
+      "id": "chef_fire_low",
+      "speaker": "quan_bep",
+      "fr": "Le feu baisse ! Du charbon !",
+      "vi": "Thêm {w:charbon} đi, {w:feu} yếu rồi!",
+      "audio": "VO/chef_fire_low",
+      "duration": 2.15
+    },
+    {
+      "id": "chef_wash",
+      "speaker": "quan_bep",
+      "fr": "La vaisselle ! Lave les marmites.",
+      "vi": "Đi {w:laver} mấy cái {w:marmite} kia.",
+      "audio": "VO/chef_wash",
+      "duration": 2.4
+    },
+    {
+      "id": "chef_lunch",
+      "speaker": "quan_bep",
+      "fr": "Le déjeuner. Des pommes de terre, et le feu !",
+      "vi": "Bữa trưa. Lấy thêm {w:pommes}, giữ {w:feu}!",
+      "audio": "VO/chef_lunch",
+      "duration": 3.25
+    },
+    {
+      "id": "chef_dinner",
+      "speaker": "quan_bep",
+      "fr": "Le dîner ! Encore des pommes de terre.",
+      "vi": "Bữa tối! Lấy thêm {w:pommes}.",
+      "audio": "VO/chef_dinner",
+      "duration": 2.64
+    },
+    {
+      "id": "chef_tallpot",
+      "speaker": "quan_bep",
+      "fr": "Et la grande marmite. Monte sur le tabouret.",
+      "vi": "Còn cái {w:marmite} lớn. Đứng lên ghế mà cọ.",
+      "audio": "VO/chef_tallpot",
+      "duration": 3.07
+    },
+    {
+      "id": "chef_tall_out",
+      "speaker": "quan_bep",
+      "fr": "La grande marmite ! Tire-la jusqu'au fourneau.",
+      "vi": "Cái {w:marmite} lớn! Kéo nó ra lò, nhấc lên bếp.",
+      "audio": "VO/chef_tall_out",
+      "duration": 2.94
+    },
+    {
+      "id": "chef_tall_back",
+      "speaker": "quan_bep",
+      "fr": "Descends la grande marmite. Ramène-la au lavage.",
+      "vi": "Nhấc cái {w:marmite} lớn xuống. Kéo về chỗ rửa.",
+      "audio": "VO/chef_tall_back",
+      "duration": 3.42
+    },
+    {
+      "id": "chef_shift_end",
+      "speaker": "quan_bep",
+      "fr": "C'est fini pour aujourd'hui.",
+      "vi": "Hôm nay xong rồi.",
+      "audio": "VO/chef_shift_end",
+      "duration": 1.34
+    },
+    {
+      "id": "chef_ash",
+      "speaker": "quan_bep",
+      "fr": "Les cendres ! Nettoie le foyer.",
+      "vi": "Cào {w:cendre} đi, lửa nghẹt rồi!",
+      "audio": "VO/chef_ash",
+      "duration": 2.2
+    },
+    {
+      "id": "chef_sweep",
+      "speaker": "quan_bep",
+      "fr": "Le feu, les cendres, et balaie la cuisine.",
+      "vi": "Nhóm {w:feu}, cào {w:cendre}, rồi quét {w:cuisine}.",
+      "audio": "VO/chef_sweep",
+      "duration": 3.58
+    },
+    {
+      "id": "chef_greens",
+      "speaker": "quan_bep",
+      "fr": "Les légumes. Trie-les.",
+      "vi": "Nhặt {w:legumes} đi.",
+      "audio": "VO/chef_greens",
+      "duration": 1.71
+    },
+    {
+      "id": "chef_pan",
+      "speaker": "quan_bep",
+      "fr": "La bassine, au fourneau !",
+      "vi": "Kéo {w:bassine} lại lò!",
+      "audio": "VO/chef_pan",
+      "duration": 1.66
+    },
+    {
+      "id": "chef_pan_back",
+      "speaker": "quan_bep",
+      "fr": "Ramène la bassine à la plonge.",
+      "vi": "Kéo {w:bassine} về chỗ rửa.",
+      "audio": "VO/chef_pan_back",
+      "duration": 1.8
+    },
+    {
+      "id": "chef_call_water",
+      "speaker": "quan_bep",
+      "fr": "",
+      "vi": "Ba, đem nước đây!",
+      "duration": 1.27,
+      "audio": "VO/chef_call_water"
+    },
+    {
+      "id": "chef_call_pan",
+      "speaker": "quan_bep",
+      "fr": "",
+      "vi": "Ba, dọn chảo đi!",
+      "duration": 1.52,
+      "audio": "VO/chef_call_pan"
+    },
+    {
+      "id": "chef_call_coal",
+      "speaker": "quan_bep",
+      "fr": "",
+      "vi": "Ba, thêm than chỗ này, thêm than chỗ kia!",
+      "duration": 2.96,
+      "audio": "VO/chef_call_coal"
+    },
+    {
+      "id": "mai_hail",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Này anh Ba! Mấy bao khoai kia, vác lên tàu cho bếp.",
+      "duration": 3.68,
+      "audio": "VO/mai_hail"
+    },
+    {
+      "id": "mai_recall",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Anh đã được nhận làm phụ bếp. Hôm nay chúng ta chuyển khoai xuống hầm.",
+      "duration": 3.93,
+      "audio": "VO/mai_recall"
+    },
+    {
+      "id": "mai_route",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Lên cầu thang tàu, qua boong, rồi xuống hầm thực phẩm ở phía mũi.",
+      "duration": 3.8,
+      "audio": "VO/mai_route"
+    },
+    {
+      "id": "checker_pass",
+      "speaker": "soat_ve",
+      "fr": "Cuisine ? Montez, montez.",
+      "vi": "Xuống bếp phải không? Lên đi, lên đi.",
+      "duration": 2.34,
+      "audio": "VO/checker_pass"
+    },
+    {
+      "id": "chef_late_quay",
+      "speaker": "quan_bep",
+      "fr": "Ba ! Dépêche-toi !",
+      "vi": "Ba! Nhanh chân lên!",
+      "duration": 1.75,
+      "audio": "VO/chef_late_quay"
+    },
+    {
+      "id": "bark_porter_1",
+      "speaker": "phu_ben",
+      "fr": "",
+      "vi": "Hò dô! Đẩy lên nào!",
+      "duration": 1.4,
+      "audio": "VO/bark_porter_1"
+    },
+    {
+      "id": "bark_porter_2",
+      "speaker": "phu_ben",
+      "fr": "",
+      "vi": "Nặng quá, đổi vai đi!",
+      "duration": 1.11,
+      "audio": "VO/bark_porter_2"
+    },
+    {
+      "id": "bark_porter_3",
+      "speaker": "phu_ben",
+      "fr": "",
+      "vi": "Khoai, gạo, than, thứ gì cũng lên tàu cả.",
+      "duration": 2.11,
+      "audio": "VO/bark_porter_3"
+    },
+    {
+      "id": "bark_passenger_1",
+      "speaker": "hanh_khach",
+      "fr": "Vite, le bateau part à midi !",
+      "vi": "Nhanh lên, tàu rời bến trưa nay!",
+      "duration": 2.07,
+      "audio": "VO/bark_passenger_1"
+    },
+    {
+      "id": "bark_passenger_2",
+      "speaker": "hanh_khach",
+      "fr": "Où est ma valise ?",
+      "vi": "Va li của tôi đâu rồi?",
+      "duration": 1.07,
+      "audio": "VO/bark_passenger_2"
+    },
+    {
+      "id": "bark_passenger_3",
+      "speaker": "hanh_khach",
+      "fr": "Quelle chaleur !",
+      "vi": "Nóng quá!",
+      "duration": 1.09,
+      "audio": "VO/bark_passenger_3"
+    },
+    {
+      "id": "bark_passenger_4",
+      "speaker": "hanh_khach",
+      "fr": "Adieu, Saïgon.",
+      "vi": "Tạm biệt, Sài Gòn.",
+      "duration": 1.19,
+      "audio": "VO/bark_passenger_4"
+    },
+    {
+      "id": "bark_farewell_1",
+      "speaker": "nguoi_tien",
+      "fr": "",
+      "vi": "Đi mạnh giỏi nhé!",
+      "duration": 0.92,
+      "audio": "VO/bark_farewell_1"
+    },
+    {
+      "id": "bark_farewell_2",
+      "speaker": "nguoi_tien",
+      "fr": "",
+      "vi": "Nhớ gửi thư về!",
+      "duration": 1.01,
+      "audio": "VO/bark_farewell_2"
+    },
+    {
+      "id": "bark_farewell_3",
+      "speaker": "nguoi_tien",
+      "fr": "",
+      "vi": "Đi bình an nhé!",
+      "duration": 0.85,
+      "audio": "VO/bark_farewell_3"
+    },
+    {
+      "id": "bark_vendor_1",
+      "speaker": "nguoi_ban",
+      "fr": "",
+      "vi": "Bánh nóng đây, bánh nóng đây!",
+      "duration": 2.19,
+      "audio": "VO/bark_vendor_1"
+    },
+    {
+      "id": "bark_vendor_2",
+      "speaker": "nguoi_ban",
+      "fr": "",
+      "vi": "Nước mía mát đây, ai mua không?",
+      "duration": 1.88,
+      "audio": "VO/bark_vendor_2"
+    },
+    {
+      "id": "bark_vendor_3",
+      "speaker": "nguoi_ban",
+      "fr": "",
+      "vi": "Chuối, mía đây, mua giùm tôi với!",
+      "duration": 2.45,
+      "audio": "VO/bark_vendor_3"
+    },
+    {
+      "id": "bark_sailor_1",
+      "speaker": "thuy_thu",
+      "fr": "Tire la corde !",
+      "vi": "Kéo dây cho căng!",
+      "duration": 1.28,
+      "audio": "VO/bark_sailor_1"
+    },
+    {
+      "id": "bark_sailor_2",
+      "speaker": "thuy_thu",
+      "fr": "Au boulot, les gars !",
+      "vi": "Làm đi, anh em!",
+      "duration": 1.52,
+      "audio": "VO/bark_sailor_2"
+    },
+    {
+      "id": "bark_sailor_3",
+      "speaker": "thuy_thu",
+      "fr": "Ohé ! Pousse !",
+      "vi": "Ê! Đẩy đi!",
+      "duration": 1.84,
+      "audio": "VO/bark_sailor_3"
+    },
+    {
+      "id": "bark_purser_1",
+      "speaker": "soat_ve",
+      "fr": "Billets, s'il vous plaît !",
+      "vi": "Xin cho xem vé!",
+      "duration": 1.78,
+      "audio": "VO/bark_purser_1"
+    },
+    {
+      "id": "bark_purser_2",
+      "speaker": "soat_ve",
+      "fr": "Un par un, mesdames, messieurs.",
+      "vi": "Từng người một, thưa quý vị.",
+      "duration": 1.82,
+      "audio": "VO/bark_purser_2"
+    },
+    {
+      "id": "chef_d2_load",
+      "speaker": "quan_bep",
+      "fr": "On est au port, il y a du monde. Encore des pommes de terre, et le sel !",
+      "vi": "Tàu đỗ, khách lên đông. Lấy thêm {w:pommes}, cả bao {w:sel} nữa!",
+      "audio": "VO/chef_d2_load",
+      "duration": 4.84
+    },
+    {
+      "id": "chef_d3_dawn",
+      "speaker": "quan_bep",
+      "fr": "Le foyer est plein de cendres. Nettoie, puis le feu !",
+      "vi": "Ghi lò đầy tro rồi. Cào {w:cendre}, rồi nhóm {w:feu}!",
+      "audio": "VO/chef_d3_dawn",
+      "duration": 3.65
+    },
+    {
+      "id": "chef_d3_roll",
+      "speaker": "quan_bep",
+      "fr": "Ça bouge ! Tiens bien le sac dans l'escalier.",
+      "vi": "Tàu lắc mạnh! Lên {w:escalier} thì giữ chắc bao {w:pommes}.",
+      "audio": "VO/chef_d3_roll",
+      "duration": 2.84
+    },
+    {
+      "id": "chef_haul",
+      "speaker": "quan_bep",
+      "fr": "Les légumes ! Attache le panier au câble et tire !",
+      "vi": "Rau đâu! Buộc {w:panier} {w:legumes} vào {w:corde} sắt mà kéo lên!",
+      "audio": "VO/chef_haul",
+      "duration": 3.35
+    },
+    {
+      "id": "chef_d5_heat",
+      "speaker": "quan_bep",
+      "fr": "Chaud comme un four. Bois de l'eau, et au travail !",
+      "vi": "{w:chaud} như lò! Uống ngụm {w:eau} rồi {w:travailler}!",
+      "audio": "VO/chef_d5_heat",
+      "duration": 3.32
+    },
+    {
+      "id": "chef_d5_lunch",
+      "speaker": "quan_bep",
+      "fr": "Le déjeuner ! Le poisson sous la glace, et le feu !",
+      "vi": "Bữa trưa! {w:poisson} ướp {w:glace} rồi, giữ {w:feu} cho đều!",
+      "audio": "VO/chef_d5_lunch",
+      "duration": 3.65
+    },
+    {
+      "id": "chef_d5_pile",
+      "speaker": "quan_bep",
+      "fr": "Sept, huit cents couverts... Lave, Ba, lave !",
+      "vi": "Bảy, tám trăm người ăn… {w:assiette}, {w:marmite} chất cao rồi. {w:laver} đi Ba!",
+      "audio": "VO/chef_d5_pile",
+      "duration": 4.68
+    },
+    {
+      "id": "chef_d6_last",
+      "speaker": "quan_bep",
+      "fr": "Dernier jour. La mer est calme. Demain, Marseille.",
+      "vi": "Ngày cuối rồi. {w:mer} êm, ngày mai tới Marseille.",
+      "audio": "VO/chef_d6_last",
+      "duration": 4.05
+    },
+    {
+      "id": "mai_call",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Anh Ba ơi! Tôi đây.",
+      "audio": "VO/mai_call",
+      "duration": 1.6
+    },
+    {
+      "id": "mai_d1_1",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Bếp dưới này nóng quá. Anh chịu nổi không?",
+      "audio": "VO/mai_d1_1",
+      "duration": 2.43
+    },
+    {
+      "id": "ba_d1_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Nóng thì có nóng. Nhưng việc nào cũng là việc, anh Mai ạ.",
+      "duration": 3.68,
+      "audio": "VO/ba_d1_1"
+    },
+    {
+      "id": "mai_d1_2",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Hôm lên tàu, chủ tàu hỏi anh làm được việc gì. Anh còn nhớ chứ?",
+      "audio": "VO/mai_d1_2",
+      "duration": 3.83
+    },
+    {
+      "id": "ba_d1_2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi có thể làm bất cứ việc gì!",
+      "duration": 1.76,
+      "audio": "VO/ba_d1_2"
+    },
+    {
+      "id": "mai_d1_3",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Thì đây, bất cứ việc gì. Thôi, tôi lên phòng ăn sĩ quan.",
+      "audio": "VO/mai_d1_3",
+      "duration": 3.53
+    },
+    {
+      "id": "mai_d3_1",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Trên kia các quan say sóng cả, đĩa trả xuống còn nguyên.",
+      "audio": "VO/mai_d3_1",
+      "duration": 3.46
+    },
+    {
+      "id": "ba_d3_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Dưới này say cũng phải làm. Bếp không nghỉ được.",
+      "duration": 2.75,
+      "audio": "VO/ba_d3_1"
+    },
+    {
+      "id": "mai_d3_2",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Sắp tới Colombo. Đất ấy cũng là thuộc địa, người ta khuân vác như mình.",
+      "audio": "VO/mai_d3_2",
+      "duration": 4.5
+    },
+    {
+      "id": "ba_d3_2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Đi tới đâu cũng gặp người làm lụng khổ sở, anh nhỉ.",
+      "duration": 3.1,
+      "audio": "VO/ba_d3_2"
+    },
+    {
+      "id": "mai_d5_1",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Tôi mang thêm đĩa xuống đây. Phòng ăn trên kia ăn không ngớt.",
+      "audio": "VO/mai_d5_1",
+      "duration": 3.22
+    },
+    {
+      "id": "ba_d5_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Anh cứ để đấy. Chồng nồi này sắp cao hơn người tôi rồi.",
+      "duration": 3.24,
+      "audio": "VO/ba_d5_1"
+    },
+    {
+      "id": "mai_d5_2",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Qua Port Said là vào Địa Trung Hải. Ít hôm nữa tới Pháp.",
+      "audio": "VO/mai_d5_2",
+      "duration": 3.67
+    },
+    {
+      "id": "ba_d5_2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi muốn xem người Pháp ở nước họ sống thế nào.",
+      "duration": 2.64,
+      "audio": "VO/ba_d5_2"
+    },
+    {
+      "id": "mai_d6_1",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Ngày mai tới Marseille rồi. Lên bờ, anh định thế nào?",
+      "duration": 3.43,
+      "audio": "VO/mai_d6_1"
+    },
+    {
+      "id": "ba_d6_2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Lên bờ xem người ta sống ra sao đã. Rồi sẽ tính tiếp.",
+      "duration": 3.14,
+      "audio": "VO/ba_d6_2"
+    },
+    {
+      "id": "mai_d6_2",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Tôi qua Pháp nhiều lần rồi. Lên bờ anh sẽ thấy lắm điều lạ.",
+      "audio": "VO/mai_d6_2",
+      "duration": 3.65
+    },
+    {
+      "id": "linh_d1_1",
+      "speaker": "linh_tre",
+      "fr": "Bonjour ! Tu travailles à la cuisine ?",
+      "vi": "Chào cậu! Cậu làm dưới bếp à?",
+      "audio": "VO/linh_d1_1",
+      "duration": 2.38
+    },
+    {
+      "id": "ba_d1_3",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Vâng. Tôi là phụ bếp.",
+      "duration": 1.44,
+      "audio": "VO/ba_d1_3"
+    },
+    {
+      "id": "linh_d1_2",
+      "speaker": "linh_mu",
+      "fr": "Nous, on rentre en France. Libérés, enfin.",
+      "vi": "Bọn tôi về Pháp. Giải ngũ rồi, may quá.",
+      "audio": "VO/linh_d1_2",
+      "duration": 1.86
+    },
+    {
+      "id": "linh_d2_1",
+      "speaker": "linh_tre",
+      "fr": "On peut aider ? On s'ennuie là-haut.",
+      "vi": "Bọn tôi giúp một tay nhé? Trên boong buồn quá.",
+      "audio": "VO/linh_d2_1",
+      "duration": 2.21
+    },
+    {
+      "id": "linh_d2_2",
+      "speaker": "linh_mu",
+      "fr": "Jusqu'à Marseille, on n'a rien à faire.",
+      "vi": "Từ giờ tới Marseille bọn tôi chẳng có việc gì làm.",
+      "audio": "VO/linh_d2_2",
+      "duration": 1.79
+    },
+    {
+      "id": "ba_d2_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Cảm ơn các anh. Lá tốt bỏ rổ, lá úa bỏ thùng.",
+      "duration": 3.38,
+      "audio": "VO/ba_d2_1"
+    },
+    {
+      "id": "linh_d2_3",
+      "speaker": "linh_tre",
+      "fr": "Comme ça ? Je suis soldat, pas cuisinier.",
+      "vi": "Thế này à? Tôi là lính chứ có phải đầu bếp đâu.",
+      "audio": "VO/linh_d2_3",
+      "duration": 2.51
+    },
+    {
+      "id": "ba_d2_2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Về nước rồi các anh làm gì?",
+      "duration": 1.73,
+      "audio": "VO/ba_d2_2"
+    },
+    {
+      "id": "linh_d2_4",
+      "speaker": "linh_mu",
+      "fr": "Revoir ma mère. Puis chercher du travail.",
+      "vi": "Về thăm mẹ tôi. Rồi đi tìm việc làm.",
+      "audio": "VO/linh_d2_4",
+      "duration": 2.36
+    },
+    {
+      "id": "linh_d2_teach",
+      "speaker": "linh_tre",
+      "fr": "Les lettres d'abord. Un trait, puis un autre.",
+      "vi": "Trước hết là chữ cái. Một nét, rồi một nét nữa.",
+      "audio": "VO/linh_d2_teach",
+      "duration": 3.06
+    },
+    {
+      "id": "ba_d2_teach",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi tô theo nét mờ trước đã.",
+      "duration": 1.65,
+      "audio": "VO/ba_d2_teach"
+    },
+    {
+      "id": "linh_d2_after",
+      "speaker": "linh_mu",
+      "fr": "Bien. Demain, des mots.",
+      "vi": "Được đấy. Ngày mai học thêm từ.",
+      "audio": "VO/linh_d2_after",
+      "duration": 1.89
+    },
+    {
+      "id": "linh_d3_1",
+      "speaker": "linh_tre",
+      "fr": "Ba ! Ce soir, on apprend des mots.",
+      "vi": "Ba! Tối nay học từ nhé.",
+      "audio": "VO/linh_d3_1",
+      "duration": 2.83
+    },
+    {
+      "id": "ba_d3_3",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Vâng. Xong việc tôi lên.",
+      "duration": 1.47,
+      "audio": "VO/ba_d3_3"
+    },
+    {
+      "id": "linh_d3_teach",
+      "speaker": "linh_mu",
+      "fr": "Ces mots, le chef les crie toute la journée.",
+      "vi": "Mấy từ này cả ngày cậu nghe quản bếp quát rồi.",
+      "audio": "VO/linh_d3_teach",
+      "duration": 1.86
+    },
+    {
+      "id": "linh_d5_1",
+      "speaker": "linh_mu",
+      "fr": "Trop chaud pour dormir en bas. On dort sur le pont.",
+      "vi": "Nóng quá, dưới khoang không ngủ nổi. Bọn tôi ra {w:pont} ngủ.",
+      "audio": "VO/linh_d5_1",
+      "duration": 2.87
+    },
+    {
+      "id": "linh_d5_teach",
+      "speaker": "linh_tre",
+      "fr": "Lis la phrase. Quel mot manque ?",
+      "vi": "Đọc câu đi. Thiếu từ nào?",
+      "audio": "VO/linh_d5_teach",
+      "duration": 2.0
+    },
+    {
+      "id": "linh_d6_1",
+      "speaker": "linh_tre",
+      "fr": "Le dernier panier de légumes ensemble, Ba.",
+      "vi": "Rổ rau cuối cùng làm chung đây, Ba.",
+      "audio": "VO/linh_d6_1",
+      "duration": 2.86
+    },
+    {
+      "id": "ba_d6_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Nhờ các anh mà tôi đọc được lệnh của quản bếp.",
+      "duration": 2.31,
+      "audio": "VO/ba_d6_1"
+    },
+    {
+      "id": "linh_d6_teach",
+      "speaker": "linh_mu",
+      "fr": "Tu connais les lettres. Écris une phrase entière.",
+      "vi": "Cậu biết đủ {w:lettre} rồi. Giờ {w:ecrire} trọn một câu xem.",
+      "audio": "VO/linh_d6_teach",
+      "duration": 2.29
+    },
+    {
+      "id": "linh_d6_book",
+      "speaker": "linh_tre",
+      "fr": "Je te prête ce livre. Tu me le rendras à Marseille.",
+      "vi": "Cho cậu mượn quyển {w:livre} này. {w:lire} xong thì trả ở Marseille.",
+      "audio": "VO/linh_d6_book",
+      "duration": 2.94
+    },
+    {
+      "id": "ba_d6_book",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "{w:merci}. Tôi sẽ đọc từng trang.",
+      "duration": 1.78,
+      "audio": "VO/ba_d6_book"
+    },
+    {
+      "id": "linh_d6_night",
+      "speaker": "linh_mu",
+      "fr": "Bonne nuit, Ba. Demain, la France.",
+      "vi": "Ngủ đi, Ba. Ngày mai là tới Pháp rồi.",
+      "audio": "VO/linh_d6_night",
+      "duration": 1.88
+    },
+    {
+      "id": "jacques_d4_1",
+      "speaker": "jacques",
+      "fr": "Le capitaine m'envoie. Ça va secouer toute la journée.",
+      "vi": "Thuyền trưởng sai tôi xuống. Cả ngày nay còn lắc nữa.",
+      "audio": "VO/jacques_d4_1",
+      "duration": 3.42
+    },
+    {
+      "id": "ba_d4_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Anh giữ giúp mấy cái nồi, tôi chằng dây.",
+      "duration": 2.33,
+      "audio": "VO/ba_d4_1"
+    },
+    {
+      "id": "ba_wave",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Sóng… May mà kẹt giữa cột buồm với sợi xích.",
+      "duration": 2.85,
+      "audio": "VO/ba_wave"
+    },
+    {
+      "id": "jacques_wave",
+      "speaker": "jacques",
+      "fr": "Ba ! Accroche-toi ! Reviens le long de la corde !",
+      "vi": "Ba! Bám chắc vào! Men theo {w:corde} mà về!",
+      "audio": "VO/jacques_wave",
+      "duration": 3.02
+    },
+    {
+      "id": "jacques_d4_teach",
+      "speaker": "jacques",
+      "fr": "Trois mots de marin ce soir. Pas plus, tu dors debout.",
+      "vi": "Tối nay ba từ của dân đi biển thôi. Cậu ngủ gật rồi kia.",
+      "audio": "VO/jacques_d4_teach",
+      "duration": 4.51
+    },
+    {
+      "id": "word_feu",
+      "speaker": "linh_tre",
+      "fr": "Le feu. F, E, U.",
+      "vi": "Lửa. Chữ F, chữ E, chữ U.",
+      "duration": 3.38,
+      "audio": "VO/word_feu"
+    },
+    {
+      "id": "word_eau",
+      "speaker": "linh_tre",
+      "fr": "L'eau. E, A, U.",
+      "vi": "Nước. Chữ E, chữ A, chữ U.",
+      "duration": 2.26,
+      "audio": "VO/word_eau"
+    },
+    {
+      "id": "word_mer",
+      "speaker": "linh_mu",
+      "fr": "La mer. M, E, R.",
+      "vi": "Biển. Chữ M, chữ E, chữ R.",
+      "audio": "VO/word_mer",
+      "duration": 2.08
+    },
+    {
+      "id": "word_sel",
+      "speaker": "linh_mu",
+      "fr": "Le sel. S, E, L.",
+      "vi": "Muối. Chữ S, chữ E, chữ L.",
+      "audio": "VO/word_sel",
+      "duration": 2.01
+    },
+    {
+      "id": "word_charbon",
+      "speaker": "linh_mu",
+      "fr": "Le charbon. Répète : le charbon.",
+      "vi": "Than. Nhắc lại đi: le charbon.",
+      "audio": "VO/word_charbon",
+      "duration": 1.85
+    },
+    {
+      "id": "word_marmite",
+      "speaker": "linh_mu",
+      "fr": "La marmite. Répète : la marmite.",
+      "vi": "Nồi. Nhắc lại đi: la marmite.",
+      "audio": "VO/word_marmite",
+      "duration": 1.9
+    },
+    {
+      "id": "word_pommes",
+      "speaker": "linh_tre",
+      "fr": "Les pommes de terre. Répète.",
+      "vi": "Khoai tây. Nhắc lại đi: les pommes de terre.",
+      "audio": "VO/word_pommes",
+      "duration": 2.3
+    },
+    {
+      "id": "word_cendre",
+      "speaker": "linh_tre",
+      "fr": "La cendre. Répète : la cendre.",
+      "vi": "Tro. Nhắc lại đi: la cendre.",
+      "audio": "VO/word_cendre",
+      "duration": 2.91
+    },
+    {
+      "id": "word_legumes",
+      "speaker": "linh_mu",
+      "fr": "Les légumes. Répète : les légumes.",
+      "vi": "Rau. Nhắc lại đi: les légumes.",
+      "audio": "VO/word_legumes",
+      "duration": 2.23
+    },
+    {
+      "id": "word_laver",
+      "speaker": "linh_tre",
+      "fr": "Laver. Répète : laver.",
+      "vi": "Rửa. Nhắc lại đi: laver.",
+      "audio": "VO/word_laver",
+      "duration": 2.38
+    },
+    {
+      "id": "word_corde",
+      "speaker": "jacques",
+      "fr": "La corde. Répète : la corde.",
+      "vi": "Dây. Nhắc lại đi: la corde.",
+      "audio": "VO/word_corde",
+      "duration": 3.07
+    },
+    {
+      "id": "word_panier",
+      "speaker": "jacques",
+      "fr": "Le panier. Répète : le panier.",
+      "vi": "Rổ. Nhắc lại đi: le panier.",
+      "audio": "VO/word_panier",
+      "duration": 2.65
+    },
+    {
+      "id": "word_vite",
+      "speaker": "jacques",
+      "fr": "Vite ! Ça, tu l'entends tous les jours.",
+      "vi": "Nhanh! Câu này ngày nào cậu chả nghe.",
+      "audio": "VO/word_vite",
+      "duration": 3.0
+    },
+    {
+      "id": "pro_ba_patriot",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Anh Lê, anh có yêu nước không?",
+      "audio": "VO/pro_ba_patriot",
+      "duration": 1.94
+    },
+    {
+      "id": "pro_le_patriot",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Tất nhiên là có chứ!",
+      "audio": "VO/pro_le_patriot",
+      "duration": 1.11
+    },
+    {
+      "id": "pro_ba_secret",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Anh có thể giữ bí mật không?",
+      "audio": "VO/pro_ba_secret",
+      "duration": 1.68
+    },
+    {
+      "id": "pro_le_secret",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Có.",
+      "duration": 0.51,
+      "audio": "VO/pro_le_secret"
+    },
+    {
+      "id": "pro_ba_abroad",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi muốn đi ra ngoài, xem nước Pháp và các nước khác.",
+      "audio": "VO/pro_ba_abroad",
+      "duration": 3.14
+    },
+    {
+      "id": "pro_ba_invite",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Nhưng nếu đi một mình, thật ra cũng có điều mạo hiểm, ví như khi đau ốm...",
+      "audio": "VO/pro_ba_invite",
+      "duration": 4.45
+    },
+    {
+      "id": "pro_le_money",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Nhưng bạn ơi, chúng ta lấy đâu ra tiền mà đi?",
+      "audio": "VO/pro_le_money",
+      "duration": 2.17
+    },
+    {
+      "id": "pro_ba_hands",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Đây, tiền đây.",
+      "audio": "VO/pro_ba_hands",
+      "duration": 0.88
+    },
+    {
+      "id": "pro_le_agree",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Được. Tôi đi với anh.",
+      "audio": "VO/pro_le_agree",
+      "duration": 1.06
+    },
+    {
+      "id": "mrs_arrival",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Marseille. Tới nơi rồi, anh Ba.",
+      "duration": 1.83,
+      "audio": "VO/mrs_arrival"
+    },
+    {
+      "id": "mrs_last_clean",
+      "speaker": "quan_bep",
+      "fr": "Un coup de balai, puis cette marmite.",
+      "vi": "Quét chỗ này, rồi rửa chiếc nồi cuối. Chổi ở móc trong bếp.",
+      "audio": "VO/mrs_last_clean",
+      "duration": 2.02
+    },
+    {
+      "id": "mrs_pay_table",
+      "speaker": "quan_bep",
+      "fr": "La paie, sous la toile sur le pont.",
+      "vi": "Lương ở bàn dưới mái bạt trên boong. Ra xếp hàng đi.",
+      "audio": "VO/mrs_pay_table",
+      "duration": 2.44
+    },
+    {
+      "id": "mrs_pay_next",
+      "speaker": "purser",
+      "gaze": "other",
+      "fr": "Au suivant.",
+      "vi": "Người tiếp theo.",
+      "audio": "VO/mrs_pay_next",
+      "duration": 0.63
+    },
+    {
+      "id": "mrs_pay_others",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Nhân viên Việt lĩnh từ 100 đến 200 quan, còn có tiền thưởng của khách.",
+      "audio": "VO/mrs_pay_others",
+      "duration": 4.15
+    },
+    {
+      "id": "mrs_pay_called",
+      "speaker": "purser",
+      "fr": "Văn Ba, à vous.",
+      "vi": "Văn Ba, đến lượt cậu.",
+      "audio": "VO/mrs_pay_called",
+      "duration": 1.29
+    },
+    {
+      "id": "mrs_pay_here",
+      "speaker": "purser",
+      "fr": "Voilà pour vous.",
+      "vi": "Của cậu đây.",
+      "audio": "VO/mrs_pay_here",
+      "duration": 0.86
+    },
+    {
+      "id": "mrs_pay_ba",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi chỉ được mười quan.",
+      "audio": "VO/mrs_pay_ba",
+      "duration": 1.29
+    },
+    {
+      "id": "mrs_cook_bye",
+      "speaker": "quan_bep",
+      "fr": "Au revoir, Ba.",
+      "vi": "Chào cậu, Ba.",
+      "audio": "VO/mrs_cook_bye",
+      "duration": 1.33
+    },
+    {
+      "id": "mrs_helper_bye",
+      "speaker": "phu_bep_phap",
+      "fr": "Au revoir. Bonne route.",
+      "vi": "Chào cậu. Đi cẩn thận.",
+      "audio": "VO/mrs_helper_bye",
+      "duration": 1.91
+    },
+    {
+      "id": "mrs_jacques_bye",
+      "speaker": "jacques",
+      "fr": "La passerelle est là-bas. Bonne route.",
+      "vi": "Cầu thang ở bên kia. Đi cẩn thận nhé.",
+      "audio": "VO/mrs_jacques_bye",
+      "duration": 2.18
+    },
+    {
+      "id": "mrs_mai_bye",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Ra ngoài nhớ nhìn kỹ mọi việc, Ba nhé.",
+      "audio": "VO/mrs_mai_bye",
+      "duration": 2.39
+    },
+    {
+      "id": "mrs_soldier_a_bye",
+      "speaker": "mrs_soldier_a",
+      "fr": "Nous rentrons en France. Bonne route.",
+      "vi": "Bọn tôi về nhà đây. Chúc cậu đi bình an.",
+      "audio": "VO/mrs_soldier_a_bye",
+      "duration": 2.32
+    },
+    {
+      "id": "mrs_soldier_b_bye",
+      "speaker": "mrs_soldier_b",
+      "fr": "Continuez à lire et à écrire. Au revoir.",
+      "vi": "Nhớ tập đọc, tập viết nhé. Chào cậu.",
+      "audio": "VO/mrs_soldier_b_bye",
+      "duration": 1.93
+    },
+    {
+      "id": "mrs_ba_bye",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Cảm ơn. Chào các anh.",
+      "audio": "VO/mrs_ba_bye",
+      "duration": 1.4
+    },
+    {
+      "id": "mrs_ba_bye_cook",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Chào ông. Cảm ơn ông.",
+      "duration": 1.25,
+      "audio": "VO/mrs_ba_bye_cook"
+    },
+    {
+      "id": "mrs_ba_bye_helper",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Cảm ơn anh. Chào anh.",
+      "duration": 1.72,
+      "audio": "VO/mrs_ba_bye_helper"
+    },
+    {
+      "id": "mrs_ba_bye_jacques",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Cảm ơn anh Jacques. Hôm bão, nhờ có anh.",
+      "duration": 2.54,
+      "audio": "VO/mrs_ba_bye_jacques"
+    },
+    {
+      "id": "mrs_ba_bye_read",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Vâng. Tối nào tôi cũng sẽ tập.",
+      "duration": 2.03,
+      "audio": "VO/mrs_ba_bye_read"
+    },
+    {
+      "id": "mrs_ba_mai_bye",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Vâng, anh Mai. Tôi sẽ nhớ.",
+      "audio": "VO/mrs_ba_mai_bye",
+      "duration": 2.33
+    },
+    {
+      "id": "mrs_ba_why1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tại sao người Pháp không 'khai hoá' đồng bào của họ",
+      "audio": "VO/mrs_ba_why1",
+      "duration": 2.26
+    },
+    {
+      "id": "mrs_ba_why2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "trước khi đi 'khai hoá' chúng ta, sao thế anh Mai?",
+      "audio": "VO/mrs_ba_why2",
+      "duration": 2.47
+    },
+    {
+      "id": "mrs_captain",
+      "speaker": "captain",
+      "fr": "Bienvenue en France. Bonne route.",
+      "vi": "Tới nước Pháp rồi. Chúc cậu đi bình an.",
+      "audio": "VO/mrs_captain",
+      "duration": 2.27
+    },
+    {
+      "id": "mrs_sailor_open",
+      "speaker": "jacques",
+      "fr": "La passerelle est ouverte.",
+      "vi": "Dây chắn đã mở. Cậu xuống cầu thang nhé.",
+      "audio": "VO/mrs_sailor_open",
+      "duration": 1.87
+    },
+    {
+      "id": "mrs_docker",
+      "speaker": "docker",
+      "fr": "Laissez le passage, s’il vous plaît.",
+      "vi": "Xin nhường lối cho hàng qua.",
+      "audio": "VO/mrs_docker",
+      "duration": 1.62
+    },
+    {
+      "id": "mrs_ba_poor",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Ơ! Ở Pháp cũng có người nghèo như bên ta!",
+      "audio": "VO/mrs_ba_poor",
+      "duration": 3.05
+    },
+    {
+      "id": "mrs_ba_tram",
+      "firstTime": true,
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Một cái nhà biết chạy!",
+      "audio": "VO/mrs_ba_tram",
+      "duration": 1.42
+    },
+    {
+      "id": "mrs_waiter_seat",
+      "speaker": "waiter",
+      "fr": "Une place, ici, monsieur.",
+      "vi": "Ở đây còn chỗ, thưa ông.",
+      "audio": "VO/mrs_waiter_seat",
+      "duration": 1.34
+    },
+    {
+      "id": "mrs_waiter_voila",
+      "speaker": "waiter",
+      "fr": "Voilà, monsieur.",
+      "vi": "Đây, thưa ông.",
+      "audio": "VO/mrs_waiter_voila",
+      "duration": 0.73
+    },
+    {
+      "id": "mrs_ba_thanks",
+      "speaker": "ba",
+      "fr": "Merci.",
+      "vi": "Cảm ơn ông.",
+      "audio": "VO/mrs_ba_thanks",
+      "duration": 0.48
+    },
+    {
+      "id": "chef_story_sweep",
+      "speaker": "quan_bep",
+      "vi": "Quét sạch bếp trước đã.",
+      "duration": 1.65,
+      "fr": "Nettoie d’abord la cuisine.",
+      "audio": "VO/chef_story_sweep"
+    },
+    {
+      "id": "chef_story_fire",
+      "speaker": "quan_bep",
+      "vi": "Quét xong rồi. Đốt lửa trong các lò.",
+      "duration": 2.43,
+      "fr": "C’est propre. Allume les fourneaux.",
+      "audio": "VO/chef_story_fire"
+    },
+    {
+      "id": "chef_story_coal",
+      "speaker": "quan_bep",
+      "vi": "Đi khuân than về thùng.",
+      "duration": 1.85,
+      "fr": "Va chercher du charbon pour le bac.",
+      "audio": "VO/chef_story_coal"
+    },
+    {
+      "id": "chef_story_hold",
+      "speaker": "quan_bep",
+      "vi": "Xuống hầm lấy rau, thịt, cá, nước đá.",
+      "duration": 4.46,
+      "fr": "Descends à la cale chercher les légumes, la viande, le poisson et la glace.",
+      "audio": "VO/chef_story_hold"
+    },
+    {
+      "id": "chef_story_serve",
+      "speaker": "quan_bep",
+      "vi": "Dọn bữa cho các chủ bếp.",
+      "duration": 2.2,
+      "fr": "Sers le repas des chefs de cuisine.",
+      "audio": "VO/chef_story_serve"
+    },
+    {
+      "id": "chef_story_peel",
+      "speaker": "quan_bep",
+      "vi": "Gọt củ cải và khoai tây đi Ba.",
+      "duration": 2.53,
+      "fr": "Épluche les navets et les pommes de terre, Ba.",
+      "audio": "VO/chef_story_peel"
+    },
+    {
+      "id": "chef_story_asparagus",
+      "speaker": "quan_bep",
+      "vi": "Gọt măng tây cho bữa trưa.",
+      "duration": 2.17,
+      "fr": "Épluche les asperges pour le déjeuner.",
+      "audio": "VO/chef_story_asparagus"
+    },
+    {
+      "id": "mai_peel",
+      "speaker": "ong_mai",
+      "gaze": "task",
+      "vi": "Để tôi làm mẫu. Anh giữ dao, gọt dọc củ từng dải mỏng.",
+      "duration": 3.71,
+      "audio": "VO/mai_peel"
+    },
+    {
+      "id": "mai_asparagus",
+      "speaker": "ong_mai",
+      "gaze": "task",
+      "vi": "Chỗ này gọt trụi rồi. Tôi bỏ đi. Chỉ gọt mỏng phần gốc, giữ nguyên ngọn.",
+      "duration": 4.44,
+      "audio": "VO/mai_asparagus"
+    },
+    {
+      "id": "ba_good_french",
+      "speaker": "ba",
+      "vi": "Anh Mai, cũng có những người Pháp tốt, anh ạ.",
+      "duration": 2.98,
+      "audio": "VO/ba_good_french"
+    },
+    {
+      "id": "ba_viet_teach",
+      "speaker": "ba",
+      "vi": "Tối nay tôi chỉ các anh chữ quốc ngữ. Chữ này có dấu sắc.",
+      "duration": 3.96,
+      "audio": "VO/ba_viet_teach"
+    },
+    {
+      "id": "ba_viet_ma",
+      "speaker": "ba",
+      "vi": "Má. Có dấu sắc trên chữ a.",
+      "duration": 2.22,
+      "audio": "VO/ba_viet_ma"
+    },
+    {
+      "id": "ba_viet_bo",
+      "speaker": "ba",
+      "vi": "Bố. Chữ ô có dấu sắc.",
+      "duration": 2.01,
+      "audio": "VO/ba_viet_bo"
+    },
+    {
+      "id": "soldier_viet",
+      "speaker": "linh_tre",
+      "vi": "Cậu xem giúp tôi đặt dấu đúng chưa.",
+      "duration": 2.29,
+      "fr": "Dis-moi si j’ai bien placé l’accent.",
+      "audio": "VO/soldier_viet"
+    },
+    {
+      "id": "ba_coffee",
+      "speaker": "ba",
+      "vi": "Tôi mang cho các anh một cốc cà phê.",
+      "duration": 1.92,
+      "audio": "VO/ba_coffee"
+    },
+    {
+      "id": "friend_letter",
+      "speaker": "ban_viet",
+      "vi": "Anh Ba ơi, anh viết giúp tôi mấy dòng về nhà nhé.",
+      "duration": 2.52,
+      "audio": "VO/friend_letter"
+    },
+    {
+      "id": "friend_letter_1",
+      "speaker": "ban_viet",
+      "vi": "Thưa mẹ, con vẫn mạnh khỏe.",
+      "duration": 1.42,
+      "audio": "VO/friend_letter_1"
+    },
+    {
+      "id": "friend_letter_2",
+      "speaker": "ban_viet",
+      "vi": "Con nhớ gia đình. Mong mẹ giữ gìn sức khỏe.",
+      "duration": 2.42,
+      "audio": "VO/friend_letter_2"
+    },
+    {
+      "id": "ba_letter",
+      "speaker": "ba",
+      "vi": "Vâng, tôi viết theo lời anh.",
+      "duration": 1.95,
+      "audio": "VO/ba_letter"
+    },
+    {
+      "id": "crew_spoon",
+      "speaker": "ong_mai",
+      "vi": "Anh dùng thìa này để ăn xúp nhé.",
+      "duration": 1.75,
+      "audio": "VO/crew_spoon"
+    },
+    {
+      "id": "chieu_1",
+      "speaker": "chieu",
+      "vi": "Tại sao con lại làm cái nghề khó nhọc này?",
+      "duration": 2.48,
+      "audio": "VO/chieu_1"
+    },
+    {
+      "id": "chieu_2",
+      "speaker": "chieu",
+      "vi": "Bỏ nghề này đi.",
+      "duration": 0.68,
+      "audio": "VO/chieu_2"
+    },
+    {
+      "id": "chieu_3",
+      "speaker": "chieu",
+      "vi": "Con nên chọn một nghề khác, danh giá hơn...",
+      "duration": 1.98,
+      "audio": "VO/chieu_3"
+    },
+    {
+      "id": "ba_chieu",
+      "speaker": "ba",
+      "vi": "Thưa ông, tôi cảm ơn ông.",
+      "duration": 1.52,
+      "audio": "VO/ba_chieu"
+    },
+    {
+      "id": "chef_story_soup",
+      "speaker": "quan_bep",
+      "vi": "Bữa của nhân viên ở bàn kia.",
+      "duration": 2.22,
+      "fr": "Le repas du personnel est à cette table.",
+      "audio": "VO/chef_story_soup"
+    },
+    {
+      "id": "mai_good_french",
+      "speaker": "ong_mai",
+      "vi": "Tôi thấy các anh nhặt rau cùng nhau.",
+      "duration": 1.91,
+      "audio": "VO/mai_good_french"
+    },
+    {
+      "id": "pro_ba_abroad2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Sau khi xem xét họ làm như thế nào, tôi sẽ trở về giúp đồng bào chúng ta.",
+      "audio": "VO/pro_ba_abroad2",
+      "duration": 4.9
+    },
+    {
+      "id": "pro_ba_invite2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Anh muốn đi với tôi không?",
+      "audio": "VO/pro_ba_invite2",
+      "duration": 1.26
+    },
+    {
+      "id": "pro_ba_work",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Chúng ta sẽ làm việc. Chúng ta sẽ làm bất cứ việc gì để sống và để đi.",
+      "audio": "VO/pro_ba_work",
+      "duration": 4.36
+    },
+    {
+      "id": "pro_ba_work2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Thế thì anh cùng đi với tôi chứ?",
+      "audio": "VO/pro_ba_work2",
+      "duration": 2.0
+    },
+    {
+      "id": "pro_ba_light",
+      "firstTime": true,
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Không dầu, không bấc… mà sáng thế này. Tôi chưa hề thấy.",
+      "audio": "VO/pro_ba_light",
+      "duration": 3.66
+    },
+    {
+      "id": "pro_ba_cinema",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Người trên tấm vải đi lại như người sống… mà chẳng nghe tiếng.",
+      "audio": "VO/pro_ba_cinema",
+      "duration": 3.25
+    },
+    {
+      "id": "pro_ba_water",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Không giếng, không gàu… Nước này ở đâu ra thế, anh Lê?",
+      "audio": "VO/pro_ba_water",
+      "duration": 3.65
+    },
+    {
+      "id": "pro_ba_ice",
+      "firstTime": true,
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Lạnh tê cả lưỡi… mà ngọt. Lần đầu tiên tôi được nếm.",
+      "audio": "VO/pro_ba_ice",
+      "duration": 3.6
+    },
+    {
+      "id": "job_ba_ask",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Thưa các anh, trên tàu có việc gì cho tôi làm không?",
+      "audio": "VO/job_ba_ask",
+      "duration": 3.36
+    },
+    {
+      "id": "job_ba_any",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi có thể làm bất cứ việc gì!",
+      "audio": "VO/job_ba_any",
+      "duration": 1.67
+    },
+    {
+      "id": "job_ba_name",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Thưa ông, tôi tên là Ba.",
+      "audio": "VO/job_ba_name",
+      "duration": 1.75
+    },
+    {
+      "id": "mrs_ba_first",
+      "firstTime": true,
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Lần đầu tiên, tôi mới thấy cái này...",
+      "audio": "VO/mrs_ba_first",
+      "duration": 2.19
+    },
+    {
+      "id": "mrs_ba_car",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi chưa từng thấy chiếc xe như thế này.",
+      "audio": "VO/mrs_ba_car",
+      "duration": 2.68
+    },
+    {
+      "id": "mrs_ba_glass",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Lần đầu tôi thấy một cửa hàng có kính lớn như vậy.",
+      "audio": "VO/mrs_ba_glass",
+      "duration": 2.44
+    },
+    {
+      "id": "mrs_ba_paper",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Tôi muốn học đọc những tờ báo này.",
+      "audio": "VO/mrs_ba_paper",
+      "duration": 1.84
+    },
+    {
+      "id": "pro_le_ice",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Tôi mời anh ăn cà-rem. Ăn từ từ thôi, kẻo buốt răng.",
+      "audio": "VO/pro_le_ice",
+      "duration": 2.9
+    },
+    {
+      "id": "pro_le_show",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Anh Ba, lại đây! Tôi dẫn anh coi đèn điện, coi chớp bóng cho biết.",
+      "audio": "VO/pro_le_show",
+      "duration": 3.47
+    },
+    {
+      "id": "pro_le_water",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Người ta bơm lên tháp nước, rồi dẫn ống về tới đây.",
+      "audio": "VO/pro_le_water",
+      "duration": 2.5
+    },
+    {
+      "id": "job_staff_no",
+      "speaker": "nhan_vien",
+      "fr": "",
+      "vi": "Không có việc. Có chăng nữa, chúng tôi cũng không có quyền nhận anh.",
+      "audio": "VO/job_staff_no",
+      "duration": 3.61
+    },
+    {
+      "id": "job_staff_whisper",
+      "speaker": "nhan_vien",
+      "gaze": "other",
+      "fr": "",
+      "vi": "Một người như thế có thể làm được công việc gì trên tàu?",
+      "audio": "VO/job_staff_whisper",
+      "duration": 2.91
+    },
+    {
+      "id": "job_mai_lead",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Đi theo tôi, tôi sẽ dẫn anh đến gặp chủ tàu.",
+      "audio": "VO/job_mai_lead",
+      "duration": 2.86
+    },
+    {
+      "id": "job_mai_lead2",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Có lẽ ông ta sẽ có việc cho anh làm.",
+      "audio": "VO/job_mai_lead2",
+      "duration": 2.33
+    },
+    {
+      "id": "job_captain_work",
+      "speaker": "captain",
+      "fr": "Que savez-vous faire ?",
+      "vi": "Anh có thể làm việc gì?",
+      "audio": "VO/job_captain_work",
+      "duration": 1.35
+    },
+    {
+      "id": "job_captain_accept",
+      "speaker": "captain",
+      "fr": "Bien, je vous prends comme aide-cuisinier. Venez demain matin.",
+      "vi": "Được, ta sẽ lấy anh làm phụ bếp. Sáng mai anh đến đây nhận việc.",
+      "audio": "VO/job_captain_accept",
+      "duration": 3.52
+    },
+    {
+      "id": "job_captain_name",
+      "speaker": "captain",
+      "fr": "Comment vous appelez-vous ?",
+      "vi": "Anh tên là gì?",
+      "audio": "VO/job_captain_name",
+      "duration": 1.05
+    },
+    {
+      "id": "mrs_mai_context",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Những người phụ nữ ấy lên tàu tìm khách trong đám thủy thủ, anh Ba ạ.",
+      "audio": "VO/mrs_mai_context",
+      "duration": 4.09
+    },
+    {
+      "id": "mrs_mai_clothes",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Xong việc rồi. Anh mặc tạm bộ áo quần của tôi.",
+      "audio": "VO/mrs_mai_clothes",
+      "duration": 2.86
+    },
+    {
+      "id": "mrs_mai_clothes2",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Rồi ta ra tiệm cà phê ở đường Canơbia.",
+      "audio": "VO/mrs_mai_clothes2",
+      "duration": 2.45
+    },
+    {
+      "id": "mrs_mai_monsieur",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Lần đầu anh vào tiệm cà phê phải không?",
+      "audio": "VO/mrs_mai_monsieur",
+      "duration": 2.05
+    },
+    {
+      "id": "mrs_mai_monsieur2",
+      "firstTime": true,
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Người ta gọi anh là ông đấy.",
+      "audio": "VO/mrs_mai_monsieur2",
+      "duration": 1.39
+    },
+    {
+      "id": "mrs_woman_invite",
+      "speaker": "visitor_woman",
+      "fr": "Bonjour, messieurs. Voulez-vous de la compagnie ?",
+      "vi": "Chào các ông. Các ông muốn có người cùng trò chuyện không?",
+      "audio": "VO/mrs_woman_invite",
+      "duration": 1.78
+    },
+    {
+      "id": "pro_le_buy_ice",
+      "speaker": "le",
+      "gaze": "other",
+      "fr": "",
+      "vi": "Cho hai ly cà-rem nghen!",
+      "audio": "VO/pro_le_buy_ice",
+      "duration": 1.29
+    },
+    {
+      "id": "mai_meal_1",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Ngồi xuống ăn đi anh Ba. Từ bốn giờ sáng tới giờ chưa có gì vào bụng.",
+      "duration": 4.32,
+      "audio": "VO/mai_meal_1"
+    },
+    {
+      "id": "ba_meal_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "{w:pain}... tôi ăn chưa quen.",
+      "duration": 1.76,
+      "audio": "VO/ba_meal_1"
+    },
+    {
+      "id": "mai_meal_2",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Mới xuống tàu ai cũng thế. Ăn dần rồi quen.",
+      "duration": 2.7,
+      "audio": "VO/mai_meal_2"
+    },
+    {
+      "id": "ba_meal_2",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Ở đây thứ nào cũng mới, tôi phải học tất cả.",
+      "duration": 2.92,
+      "audio": "VO/ba_meal_2"
+    },
+    {
+      "id": "mai_meal_3",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Hôm anh lên xin việc, bọn tôi còn cười, bảo nhau:",
+      "duration": 3.08,
+      "audio": "VO/mai_meal_3"
+    },
+    {
+      "id": "mai_meal_4",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Một người như thế có thể làm được công việc gì trên tàu?",
+      "duration": 2.73,
+      "audio": "VO/mai_meal_4"
+    },
+    {
+      "id": "ba_meal_3",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Thì nay tôi đã làm phụ bếp. Việc nào rồi cũng học được.",
+      "duration": 4.03,
+      "audio": "VO/ba_meal_3"
+    },
+    {
+      "id": "mai_meal_5",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Anh có can đảm và nhẫn nại. Có gì chưa biết thì cứ hỏi tôi.",
+      "duration": 3.83,
+      "audio": "VO/mai_meal_5"
+    },
+    {
+      "id": "ba_self_study",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Mọi người nghỉ cả rồi. Mình chép lại mấy chữ nghe được hôm nay.",
+      "duration": 3.52,
+      "audio": "VO/ba_self_study"
+    },
+    {
+      "id": "mai_cards_1",
+      "speaker": "ong_mai",
+      "fr": "",
+      "vi": "Anh Ba không nghỉ à? Sáng mai bốn giờ lại phải dậy đấy.",
+      "duration": 3.27,
+      "audio": "VO/mai_cards_1"
+    },
+    {
+      "id": "ba_cards_1",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Anh cứ nghỉ trước đi. Tôi học thêm một lúc.",
+      "duration": 2.47,
+      "audio": "VO/ba_cards_1"
+    },
+    {
+      "id": "ba_word_pain",
+      "speaker": "ba",
+      "fr": "Le pain. P, A, I, N.",
+      "vi": "Bánh mì. Chữ P, chữ A, chữ I, chữ N.",
+      "duration": 2.71,
+      "audio": "VO/ba_word_pain"
+    },
+    {
+      "id": "ba_word_eau",
+      "speaker": "ba",
+      "fr": "L'eau. E, A, U.",
+      "vi": "Nước. Chữ E, chữ A, chữ U.",
+      "duration": 1.78,
+      "audio": "VO/ba_word_eau"
+    },
+    {
+      "id": "pro_le_family",
+      "speaker": "le",
+      "fr": "",
+      "vi": "Để tôi về thu xếp với nhà đã.",
+      "audio": "VO/pro_le_family",
+      "duration": 1.72
+    },
+    {
+      "id": "nr_mai_wait",
+      "speaker": "mai",
+      "fr": "",
+      "vi": "Anh chờ ai à?",
+      "audio": "VO/nr_mai_wait",
+      "duration": 0.95
+    },
+    {
+      "id": "nr_ba_friend",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Một người bạn. Chắc anh ấy không tới.",
+      "audio": "VO/nr_ba_friend",
+      "duration": 2.18
+    },
+    {
+      "id": "ba_d1_peel",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Cái này gọt thế nào, anh Mai?",
+      "duration": 1.81,
+      "audio": "VO/ba_d1_peel"
+    },
+    {
+      "id": "ba_ice_saigon",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Ở Sài Gòn, người ta làm cà-rem từ thứ này.",
+      "audio": "VO/ba_ice_saigon",
+      "duration": 2.73
+    },
+    {
+      "id": "jacques_d4_warn",
+      "speaker": "jacques",
+      "fr": "La mer va grossir. Sur le pont, tiens-toi bien.",
+      "vi": "Sóng sắp to đấy. Lên boong thì bám cho chắc.",
+      "audio": "VO/jacques_d4_warn",
+      "duration": 3.28
+    },
+    {
+      "id": "word_vague",
+      "speaker": "jacques",
+      "fr": "La vague. Tu l'as vue arriver aujourd'hui.",
+      "vi": "Sóng. Hôm nay cậu thấy nó ập tới rồi.",
+      "audio": "VO/word_vague",
+      "duration": 3.4
+    },
+    {
+      "id": "word_mat",
+      "speaker": "jacques",
+      "fr": "Le mât. Il a tenu bon.",
+      "vi": "Cột buồm. Nó vẫn đứng vững.",
+      "audio": "VO/word_mat",
+      "duration": 1.95
+    },
+    {
+      "id": "word_chaine",
+      "speaker": "jacques",
+      "fr": "La chaîne. À Marseille, tu l'entendras tomber.",
+      "vi": "Xích. Tới Marseille cậu sẽ nghe tiếng thả xích.",
+      "audio": "VO/word_chaine",
+      "duration": 3.28
+    },
+    {
+      "id": "linh_d5_mere",
+      "speaker": "linh_mu",
+      "fr": "Ma mère.",
+      "vi": "Mẹ tôi.",
+      "audio": "VO/linh_d5_mere",
+      "duration": 0.53
+    },
+    {
+      "id": "ban_viet_cards",
+      "speaker": "ban_viet",
+      "fr": "",
+      "vi": "Các anh ơi, thư nhà tôi xong rồi. Nhờ anh Ba đấy.",
+      "audio": "VO/ban_viet_cards",
+      "duration": 2.61
+    },
+    {
+      "id": "mrs_ba_book",
+      "speaker": "ba",
+      "fr": "",
+      "vi": "Quyển sách của anh đây. Tôi mới đọc được mấy trang.",
+      "duration": 2.63,
+      "audio": "VO/mrs_ba_book"
+    },
+    {
+      "id": "mrs_soldier_keep",
+      "speaker": "linh_tre",
+      "fr": "Garde-le.",
+      "vi": "Giữ lấy.",
+      "audio": "VO/mrs_soldier_keep",
+      "duration": 0.8
+    },
+    {
+      "id": "mrs_foreman_no",
+      "speaker": "cai_phu",
+      "fr": "Pas de travail.",
+      "vi": "Không có việc.",
+      "audio": "VO/mrs_foreman_no",
+      "duration": 0.81
+    }
+  ]
+}

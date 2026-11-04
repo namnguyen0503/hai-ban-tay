@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "id": "p_why_france",
+      "title": "Tự do – Bình đẳng – Bác ái",
+      "body": "Khẩu hiệu của Cách mạng Pháp. Tư liệu cho biết sức hút từ khẩu hiệu này là điều ban đầu hướng anh Ba tới nước Pháp.",
+      "unlockEvent": "s1.notebook.intro",
+      "sourceCardIds": [
+        "sc_slogan"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "p_departure",
+      "title": "Rời Bến Nhà Rồng",
+      "body": "Trưa 5/6/1911, tàu Amiral Latouche-Tréville rời Bến Nhà Rồng. Anh làm phụ bếp trên tàu với tên Văn Ba.",
+      "appendIfFlag": {
+        "flag": "s1.lingered",
+        "text": "Bến Nhà Rồng khuất dần sau đuôi tàu."
+      },
+      "unlockEvent": "s1.depart",
+      "sourceCardIds": [
+        "sc_departure",
+        "sc_hands",
+        "sc_hands_story"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_ship",
+      "title": "Tàu Amiral Latouche-Tréville",
+      "body": "Tàu chở hàng kiêm chở khách của hãng Chargeurs Réunis, hạ thủy năm 1903, dài khoảng 124 m, rộng 15,2 m.",
+      "unlockEvent": "s1.depart",
+      "sourceCardIds": [
+        "sc_ship"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_four_am",
+      "title": "Bốn giờ sáng",
+      "body": "Việc của phụ bếp bắt đầu từ 4 giờ sáng: dọn gian bếp lớn, lo lửa cho các lò.",
+      "unlockEvent": "s2.coal.done",
+      "sourceCardIds": [
+        "sc_work"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mai",
+      "title": "Ông Mai",
+      "body": "Ông Mai làm ở phòng ăn sĩ quan, người đã dẫn anh Ba đi gặp chủ tàu. Hôm ấy anh nói: \"Tôi có thể làm bất cứ việc gì!\"",
+      "unlockEvent": "s2.mai.talk",
+      "sourceCardIds": [
+        "sc_mai"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_hot_cold",
+      "title": "Bếp nóng, kho lạnh",
+      "body": "Đi về liên tục giữa bếp nóng và kho lạnh; vác đồ nặng lên cầu thang hẹp khi tàu chòng chành.",
+      "unlockEvent": "s2.sack.done",
+      "sourceCardIds": [
+        "sc_hot_cold"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_voyage",
+      "title": "Cảng Singapore",
+      "body": "Ngày 8/6/1911 tàu tới cảng Keppel, Singapore. Rồi tàu ghé Colombo, Port Said, tới Marseille ngày 6/7/1911.",
+      "unlockEvent": "s2.port.singapore",
+      "sourceCardIds": [
+        "sc_voyage"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_scale",
+      "title": "Bảy, tám trăm người",
+      "body": "Bếp trên tàu nấu cho khoảng 700–800 người. Phụ bếp lo vác khoai, xúc than, rửa nồi, cọ chảo.",
+      "unlockEvent": "s2.pile.high",
+      "sourceCardIds": [
+        "sc_scale",
+        "sc_work"
+      ]
+    },
+    {
+      "id": "p_copper_pot",
+      "title": "Chảo đồng, nồi cao",
+      "body": "Có chảo đồng nặng phải kéo lê trên sàn; có nồi cao phải đứng lên ghế mới cọ được.",
+      "unlockEvent": "s2.scrub.done",
+      "sourceCardIds": [
+        "sc_work"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_storm",
+      "title": "Dây sắt",
+      "body": "Chuyến thứ hai một ngọn sóng lớn thình lình phủ lên sàn tàu và cuốn xuống bể mọi vật trên sàn tàu. Cả những rổ rau và anh Ba nữa. Anh bị đẩy vào giữa cột buồm và dây xích, nhờ vậy mà thoát chết.",
+      "unlockEvent": "s2.storm.wave",
+      "sourceCardIds": [
+        "sc_storm"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_french_sailor",
+      "title": "Người Pháp tốt bụng",
+      "body": "Hai người lính Pháp giải ngũ đi cùng tàu giúp anh Ba nhặt rau, dạy anh đọc và viết.",
+      "unlockEvent": "s2.soldiers.help",
+      "sourceCardIds": [
+        "sc_sailors"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "p_study",
+      "title": "Giờ nghỉ",
+      "body": "Lúc rảnh, anh tập đọc và viết. Trên tàu có hai lính Pháp trẻ đã giải ngũ cho anh mượn sách, dạy anh.",
+      "unlockEvent": "s2.words.done",
+      "sourceCardIds": [
+        "sc_study"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_book",
+      "title": "Cuốn sách mượn",
+      "body": "Hai người lính Pháp trẻ đã giải ngũ cho anh mượn sách. Sau ca làm tới 9 giờ tối, anh đọc, viết tới 11 giờ hoặc nửa đêm.",
+      "unlockEvent": "s2.book.lent",
+      "sourceCardIds": [
+        "sc_study",
+        "sc_work"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_sunrise",
+      "title": "Đến Marseille",
+      "body": "Theo hải trình game chọn, tàu đến Marseille ngày 6/7/1911. Cảng, dãy nhà ven bờ và ngọn đồi hiện ra khi sương tan.",
+      "unlockEvent": "s3.dawn",
+      "sourceCardIds": [
+        "sc_mrs_arrival"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_pay",
+      "title": "Tiền công",
+      "body": "Văn Ba: 45 franc/tháng; phụ bếp Pháp cùng việc: khoảng gấp ba. Theo lời kể, ở Marseille người Việt khác lĩnh 100–200 quan và tiền thưởng; anh Ba chỉ được 10 quan.",
+      "unlockEvent": "s3.pay.received",
+      "sourceCardIds": [
+        "sc_mrs_pay_nominal",
+        "sc_mrs_pay_ratio",
+        "sc_pay",
+        "sc_ledger"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "p_tram",
+      "title": "Ngôi nhà biết chạy",
+      "body": "Ở Marseille, lần đầu Văn Ba thấy tàu điện, ngỡ đó là một ngôi nhà biết chạy.",
+      "unlockEvent": "s3.tram.pass",
+      "sourceCardIds": [
+        "sc_marseille"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_monsieur",
+      "title": "Monsieur",
+      "body": "Theo lời kể, Văn Ba uống cà phê ở quán tại Canebière. Người bồi bàn gọi anh là “monsieur”.",
+      "unlockEvent": "s3.cafe.served",
+      "sourceCardIds": [
+        "sc_marseille"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "p_two_hands",
+      "title": "Hai bàn tay",
+      "body": "Theo lời kể, khi người bạn hỏi lấy đâu ra tiền mà đi, anh Ba giơ hai bàn tay: anh sẽ làm việc để sống và để đi.",
+      "unlockEvent": "s1.hands.raised",
+      "sourceCardIds": [
+        "sc_hands",
+        "sc_hands_story"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mrs_last_shift",
+      "title": "Việc cuối ca",
+      "body": "Quét dọn bếp và rửa nồi là công việc của phụ bếp. Tới Marseille, làm xong chiếc nồi cuối rồi lên boong lĩnh lương.",
+      "unlockEvent": "s3.final_clean.done",
+      "sourceCardIds": [
+        "sc_work"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mrs_quay",
+      "title": "Người nghèo ở Pháp",
+      "body": "Ở Marseille, anh Ba thốt lên: “Ơ! Ở Pháp cũng có người nghèo như bên ta!”",
+      "unlockEvent": "s3.quay.observed",
+      "sourceCardIds": [
+        "sc_mrs_poverty"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_water",
+      "title": "Đem nước",
+      "body": "Ba, đem nước đây!",
+      "unlockEvent": "s2.water.done",
+      "sourceCardIds": [
+        "sc_water"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_provisions",
+      "title": "Rau, thịt, cá, nước đá",
+      "body": "Sau đó đi khuân than, rồi xuống hầm lấy rau, thịt, cá, nước đá, v.v..",
+      "unlockEvent": "s2.provisions.done",
+      "sourceCardIds": [
+        "sc_provisions"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_serve",
+      "title": "Bữa của chủ bếp",
+      "body": "Xong công việc ấy, phải dọn cho bọn chủ bếp Pháp ăn. Sau đấy, nhặt rau, rửa chảo nồi và đun lò lại.",
+      "unlockEvent": "s2.serve.done",
+      "sourceCardIds": [
+        "sc_serve"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_peel",
+      "title": "Học gọt củ",
+      "body": "Và hơn nữa, vì chưa quen việc, anh phải gọt xong đống củ cải và khoai tây. Anh không biết làm thế nào. Tôi dạy cho anh.",
+      "unlockEvent": "s2.peel.done",
+      "sourceCardIds": [
+        "sc_peel"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_asparagus",
+      "title": "Lần đầu thấy măng tây",
+      "body": "Đây là lần đầu tiên anh Ba thấy măng tây. Anh ta bắt đầu gọt trơ trụi, thì vừa lúc tôi đến.",
+      "unlockEvent": "s2.asparagus.done",
+      "sourceCardIds": [
+        "sc_asparagus"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_good_french",
+      "title": "Những người Pháp tốt",
+      "body": "Anh Mai, cũng có những người Pháp tốt, anh ạ.",
+      "unlockEvent": "s2.good_french",
+      "sourceCardIds": [
+        "sc_good_french"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_quoc_ngu",
+      "title": "Anh Ba dạy quốc ngữ",
+      "body": "Và anh Ba lại dạy họ học quốc ngữ và thỉnh thoảng dấm dúi cho họ một cốc cà phê.",
+      "unlockEvent": "s2.quoc_ngu.done",
+      "sourceCardIds": [
+        "sc_quoc_ngu"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_coffee",
+      "title": "Một cốc cà phê",
+      "body": "Và anh Ba lại dạy họ học quốc ngữ và thỉnh thoảng dấm dúi cho họ một cốc cà phê.",
+      "unlockEvent": "s2.coffee.done",
+      "sourceCardIds": [
+        "sc_coffee"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_letter",
+      "title": "Viết thư về nhà",
+      "body": "anh giúp những người bạn mù chữ của tôi viết thư về cho gia đình họ và anh không bao giờ nói tục — vì vậy anh Ba được tất cả chúng tôi yêu mến.",
+      "unlockEvent": "s2.letter.done",
+      "sourceCardIds": [
+        "sc_letter"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_soup",
+      "title": "Bánh mì, bơ và xúp",
+      "body": "Ví dụ mới đầu anh không ăn được bánh mì và bơ. Ăn xúp thì anh dùng nĩa.",
+      "unlockEvent": "s2.soup.done",
+      "sourceCardIds": [
+        "sc_soup"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_chieu",
+      "title": "Bùi Quang Chiêu",
+      "body": "Anh Ba lễ phép cảm ơn ông Chiêu, nhưng không nói đồng ý hay không.",
+      "unlockEvent": "s2.chieu.done",
+      "sourceCardIds": [
+        "sc_chieu"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_night",
+      "title": "Đọc và viết đêm muộn",
+      "body": "Nhưng trong khi chúng tôi nghỉ hoặc đánh bài, anh Ba đọc hay viết đến mười một giờ hoặc nửa đêm.",
+      "unlockEvent": "s2.words.done",
+      "sourceCardIds": [
+        "sc_night"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mai_help",
+      "title": "Ông Mai giúp anh Ba",
+      "body": "Việc gì tôi làm được là tôi cố làm để giúp anh ta, vì anh ta chưa biết làm gì cả. Vả lại, anh ấy có can đảm và nhẫn nại.",
+      "unlockEvent": "s2.peel.done",
+      "sourceCardIds": [
+        "sc_mai_help"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_saigon_new",
+      "title": "Những điều mới lạ",
+      "body": "Anh Lê: “xem đèn điện, xem chiếu bóng và máy nước”. “Những cái đó trước kia anh chưa hề thấy.”\n“Một hôm tôi mời anh ăn kem. Anh rất lạ. Lần đầu tiên anh mới nếm mùi kem.”",
+      "unlockEvent": "s0.street.done",
+      "sourceCardIds": [
+        "sc_saigon_new"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_other_path",
+      "title": "Một con đường khác",
+      "body": "Phan Bội Châu:“muốn đưa Anh và một số thanh niên sang Nhật”. “Nhưng Anh không đi.”\nHoàng Hoa Thám:“trực tiếp đấu tranh chống Pháp”; “còn nặng cốt cách phong kiến”.\n“Tôi muốn đi ra ngoài, xem nước Pháp và các nước khác.”",
+      "unlockEvent": "s0.path.chosen",
+      "sourceCardIds": [
+        "sc_other_path"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "p_job",
+      "title": "Xin việc trên tàu",
+      "body": "“Đi theo tôi, tôi sẽ dẫn anh đến gặp chủ tàu. Có lẽ ông ta sẽ có việc cho anh làm.”\n“Được, ta sẽ lấy anh làm phụ bếp. Sáng mai anh đến đây nhận việc.”\nChàng trai ấy xưng tên là Ba.",
+      "unlockEvent": "s1.job.accepted",
+      "sourceCardIds": [
+        "sc_job"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mrs_context",
+      "title": "Câu hỏi về “khai hóa”",
+      "body": "Trông thấy những gái điếm đến làm tiền trên tàu, Ba nói với tôi:\n— Tại sao người Pháp không “khai hóa” đồng bào của họ trước khi đi “khai hóa” chúng ta, sao thế anh Mai?",
+      "unlockEvent": "s3.context.seen",
+      "sourceCardIds": [
+        "sc_mrs_context"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mrs_clothes",
+      "title": "Một bộ áo quần mượn",
+      "body": "“Công việc trong ngày xong, tôi cho anh ta mượn bộ áo quần, và chúng tôi đi đến tiệm cà phê ở đường Canơbia.”\n“cũng là lần đầu tiên người Pháp gọi anh bằng “ông””.",
+      "unlockEvent": "s3.clothes.borrowed",
+      "sourceCardIds": [
+        "sc_mrs_clothes"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "p_mai_end",
+      "title": "Lời ông Mai",
+      "body": "— Người Pháp ở Pháp tốt, lễ phép hơn người Pháp ở Đông Dương.\nChúng tôi đi theo tàu lên Havơrơ (Havre) để sửa chữa.\nTừ đấy, tôi không được tin tức gì của anh Ba nữa...",
+      "unlockEvent": "s3.mai.recalled",
+      "sourceCardIds": [
+        "sc_mai_end"
+      ],
+      "linkable": false
+    }
+  ],
+  "linkTarget": {
+    "a": "p_pay",
+    "b": "p_why_france",
+    "event": "s3.pages.linked"
+  }
+}

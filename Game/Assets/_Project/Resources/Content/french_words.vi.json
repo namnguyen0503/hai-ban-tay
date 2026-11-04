@@ -1,0 +1,241 @@
+{
+  "version": 3,
+  "pairs": [
+    {
+      "id": "mer",
+      "fr": "la mer",
+      "vi": "biển"
+    },
+    {
+      "id": "charbon",
+      "fr": "le charbon",
+      "vi": "than",
+      "set": "w1",
+      "line": "word_charbon"
+    },
+    {
+      "id": "feu",
+      "fr": "le feu",
+      "vi": "lửa"
+    },
+    {
+      "id": "marmite",
+      "fr": "la marmite",
+      "vi": "nồi",
+      "set": "w1",
+      "line": "word_marmite"
+    },
+    {
+      "id": "pommes",
+      "fr": "les pommes de terre",
+      "vi": "khoai tây",
+      "set": "w1",
+      "line": "word_pommes"
+    },
+    {
+      "id": "cuisine",
+      "fr": "la cuisine",
+      "vi": "bếp"
+    },
+    {
+      "id": "pain",
+      "fr": "le pain",
+      "vi": "bánh mì"
+    },
+    {
+      "id": "ami",
+      "fr": "l'ami",
+      "vi": "người bạn"
+    },
+    {
+      "id": "eau",
+      "fr": "l'eau",
+      "vi": "nước"
+    },
+    {
+      "id": "laver",
+      "fr": "laver",
+      "vi": "rửa",
+      "set": "w1",
+      "line": "word_laver"
+    },
+    {
+      "id": "froide",
+      "fr": "la chambre froide",
+      "vi": "kho lạnh"
+    },
+    {
+      "id": "vite",
+      "fr": "vite",
+      "vi": "nhanh",
+      "line": "word_vite"
+    },
+    {
+      "id": "cendre",
+      "fr": "la cendre",
+      "vi": "tro",
+      "set": "w1",
+      "line": "word_cendre"
+    },
+    {
+      "id": "legumes",
+      "fr": "les légumes",
+      "vi": "rau",
+      "set": "w1",
+      "line": "word_legumes"
+    },
+    {
+      "id": "bassine",
+      "fr": "la bassine",
+      "vi": "chảo"
+    },
+    {
+      "id": "sel",
+      "fr": "le sel",
+      "vi": "muối"
+    },
+    {
+      "id": "sac",
+      "fr": "le sac",
+      "vi": "bao"
+    },
+    {
+      "id": "corde",
+      "fr": "la corde",
+      "vi": "dây",
+      "line": "word_corde"
+    },
+    {
+      "id": "panier",
+      "fr": "le panier",
+      "vi": "rổ",
+      "line": "word_panier"
+    },
+    {
+      "id": "vague",
+      "fr": "la vague",
+      "vi": "sóng",
+      "set": "w3",
+      "line": "word_vague"
+    },
+    {
+      "id": "tempete",
+      "fr": "la tempête",
+      "vi": "bão"
+    },
+    {
+      "id": "assiette",
+      "fr": "l'assiette",
+      "vi": "đĩa"
+    },
+    {
+      "id": "chaud",
+      "fr": "chaud",
+      "vi": "nóng"
+    },
+    {
+      "id": "poisson",
+      "fr": "le poisson",
+      "vi": "cá"
+    },
+    {
+      "id": "glace",
+      "fr": "la glace",
+      "vi": "nước đá"
+    },
+    {
+      "id": "viande",
+      "fr": "la viande",
+      "vi": "thịt"
+    },
+    {
+      "id": "travailler",
+      "fr": "travailler",
+      "vi": "làm việc"
+    },
+    {
+      "id": "livre",
+      "fr": "le livre",
+      "vi": "sách"
+    },
+    {
+      "id": "lire",
+      "fr": "lire",
+      "vi": "đọc"
+    },
+    {
+      "id": "ecrire",
+      "fr": "écrire",
+      "vi": "viết"
+    },
+    {
+      "id": "lettre",
+      "fr": "la lettre",
+      "vi": "chữ cái"
+    },
+    {
+      "id": "merci",
+      "fr": "merci",
+      "vi": "cảm ơn"
+    },
+    {
+      "id": "port",
+      "fr": "le port",
+      "vi": "cảng"
+    },
+    {
+      "id": "pont",
+      "fr": "le pont",
+      "vi": "boong tàu"
+    },
+    {
+      "id": "escalier",
+      "fr": "l'escalier",
+      "vi": "cầu thang"
+    },
+    {
+      "id": "v_ma",
+      "fr": "má",
+      "vi": "má"
+    },
+    {
+      "id": "v_ma_plain",
+      "fr": "ma",
+      "vi": "ma"
+    },
+    {
+      "id": "v_ma_grave",
+      "fr": "mà",
+      "vi": "mà"
+    },
+    {
+      "id": "v_bo",
+      "fr": "bố",
+      "vi": "bố"
+    },
+    {
+      "id": "v_bo_plain",
+      "fr": "bo",
+      "vi": "bo"
+    },
+    {
+      "id": "v_bo_grave",
+      "fr": "bò",
+      "vi": "bò"
+    },
+    {
+      "id": "mat",
+      "fr": "le mât",
+      "vi": "cột buồm",
+      "set": "w3",
+      "line": "word_mat"
+    },
+    {
+      "id": "chaine",
+      "fr": "la chaîne",
+      "vi": "xích",
+      "set": "w3",
+      "line": "word_chaine"
+    }
+  ]
+}

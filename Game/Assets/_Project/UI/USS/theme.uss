@@ -1,0 +1,1010 @@
+/* Giấy cũ, mực nâu. Cỡ chữ tính ở 1080p (PLAN mục 3.2): phụ đề >= 40, prompt >= 30, thân sổ >= 32, thẻ mốc >= 56. */
+:root {
+  --paper: rgb(236, 224, 196);
+  --paper-dark: rgb(214, 198, 164);
+  --ink: rgb(58, 42, 28);
+  --ink-soft: rgb(110, 86, 60);
+  --accent: rgb(150, 74, 40);
+}
+
+.hbt-layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* ---- HUD ---- */
+.hbt-crosshair {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  margin-top: -4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.hbt-prompt {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 56%;
+  font-size: 34px;
+  color: rgb(255, 255, 255);
+  white-space: normal;
+  -unity-text-align: middle-center;
+  -unity-font-style: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hbt-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 72px;
+  height: 72px;
+  margin-left: -36px;
+  margin-top: -36px;
+}
+
+/* Gợi ý: giữa màn hình, dưới prompt (không đè HUD ca làm bên trái và thẻ tư liệu bên phải). */
+.hbt-hint {
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  top: 63%;
+  font-size: 30px;
+  color: var(--paper);
+  white-space: normal;
+  -unity-text-align: middle-center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hbt-toast {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  padding: 12px 20px;
+  font-size: 30px;
+  color: var(--ink);
+  background-color: rgba(236, 224, 196, 0.92);
+  border-left-width: 6px;
+  border-left-color: var(--accent);
+  white-space: nowrap;
+}
+
+/* ---- Phụ đề ---- */
+.hbt-subtitles {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 7%;
+  align-items: center;
+  padding: 10px 18px;
+}
+
+.hbt-subtitle-speaker {
+  font-size: 30px;
+  color: var(--paper);
+  -unity-font-style: bold;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+  white-space: normal;
+}
+
+.hbt-subtitle-text {
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  white-space: normal;
+  -unity-text-align: middle-center;
+  padding: 6px 18px;
+}
+
+.hbt-subtitle-fr {
+  font-size: 30px;
+  color: rgb(220, 220, 220);
+  -unity-font-style: italic;
+  -unity-text-align: middle-center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+  white-space: normal;
+}
+
+/* ---- Thẻ tư liệu ---- */
+.hbt-card {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 500px;
+  padding: 12px 16px;
+  background-color: rgba(236, 224, 196, 0.96);
+  border-left-width: 8px;
+  border-left-color: var(--accent);
+}
+
+.hbt-card--inline {
+  position: relative;
+  right: auto;
+  top: auto;
+  width: auto;
+  margin-bottom: 18px;
+}
+
+.hbt-card-layer {
+  font-size: 24px;
+  color: var(--accent);
+  -unity-font-style: bold;
+}
+
+.hbt-card-title {
+  font-size: 30px;
+  color: var(--ink);
+  -unity-font-style: bold;
+  white-space: normal;
+}
+
+.hbt-card-body {
+  font-size: 26px;
+  color: var(--ink);
+  white-space: normal;
+  margin-top: 6px;
+}
+
+.hbt-card-citation {
+  font-size: 22px;
+  color: var(--ink-soft);
+  -unity-font-style: italic;
+  white-space: normal;
+  margin-top: 8px;
+}
+
+/* ---- Sổ quan sát ---- */
+.hbt-notebook {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
+  flex-direction: row;
+  background-color: var(--paper);
+  padding: 28px;
+}
+
+.hbt-notebook-list {
+  width: 32%;
+  padding-right: 20px;
+  border-right-width: 2px;
+  border-right-color: var(--paper-dark);
+}
+
+.hbt-notebook-page {
+  flex-grow: 1;
+  padding-left: 32px;
+}
+
+.hbt-notebook-heading {
+  font-size: 40px;
+  color: var(--ink);
+  -unity-font-style: bold;
+  margin-bottom: 16px;
+}
+
+.hbt-notebook-item {
+  font-size: 32px;
+  color: var(--ink);
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  -unity-text-align: middle-left;
+  padding: 6px 10px;
+  margin: 2px 0;
+  white-space: normal;
+}
+
+.hbt-notebook-item:hover {
+  background-color: var(--paper-dark);
+}
+
+.hbt-notebook-item--selected {
+  background-color: var(--paper-dark);
+  -unity-font-style: bold;
+}
+
+.hbt-page-title {
+  font-size: 48px;
+  color: var(--ink);
+  white-space: normal;
+  margin-bottom: 18px;
+}
+
+.hbt-page-body {
+  font-size: 36px;
+  color: var(--ink);
+  white-space: normal;
+}
+
+.hbt-notebook-footer {
+  position: absolute;
+  right: 28px;
+  bottom: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hbt-hint-small {
+  font-size: 28px;
+  color: var(--ink-soft);
+}
+
+.hbt-button {
+  font-size: 32px;
+  color: var(--paper);
+  background-color: var(--ink);
+  border-width: 0;
+  padding: 8px 24px;
+  margin-left: 16px;
+}
+
+.hbt-button:hover {
+  background-color: var(--accent);
+}
+
+/* Ghép từ (B2.6) */
+.hbt-match {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hbt-match-column {
+  width: 42%;
+}
+
+.hbt-word {
+  font-size: 38px;
+  color: var(--ink);
+  background-color: var(--paper-dark);
+  border-width: 2px;
+  border-color: var(--paper-dark);
+  padding: 10px 18px;
+  margin: 8px 0;
+}
+
+.hbt-word--selected {
+  border-color: var(--accent);
+}
+
+.hbt-word--done {
+  opacity: 0.45;
+}
+
+/* Nối trang (E5) */
+.hbt-link-board {
+  flex-grow: 1;
+  /* một hàng thẻ bằng nhau: hàng thứ hai ra khỏi trang ở cỡ chữ 120% (màn điện thoại thấp) */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.hbt-link-card {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 6px;
+  padding: 10px 12px;
+  background-color: rgb(246, 238, 218);
+  border-width: 2px;
+  border-color: var(--paper-dark);
+}
+
+.hbt-link-card--glow {
+  border-color: rgb(214, 160, 70);
+  border-width: 5px;
+}
+
+.hbt-link-card {
+  transition-property: translate;
+  transition-duration: 0.3s;
+}
+
+.hbt-link-card--dragging {
+  opacity: 0.85;
+  transition-duration: 0s;
+}
+
+.hbt-link-card-title {
+  font-size: 28px;
+  color: var(--ink);
+  -unity-font-style: bold;
+  white-space: normal;
+}
+
+.hbt-link-card-body {
+  font-size: 24px;
+  color: var(--ink);
+  white-space: normal;
+  margin-top: 4px;
+}
+
+/* ---- Màn chữ toàn màn hình (thẻ mở đầu, bản đồ, thẻ kết) ---- */
+.hbt-fullcard {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+.hbt-fullcard-text {
+  /* width cố định: max-width + align-items:center làm Yoga đo thiếu dòng khi chữ xuống dòng */
+  width: 80%;
+  font-size: 60px;
+  color: var(--paper);
+  white-space: normal;
+  -unity-text-align: middle-center;
+}
+
+.hbt-fullcard-date {
+  font-size: 80px;
+  color: var(--paper);
+  -unity-font-style: bold;
+  margin-bottom: 24px;
+}
+
+.hbt-fullcard-title {
+  font-size: 120px;
+  color: var(--paper);
+  -unity-font-style: bold;
+  letter-spacing: 12px;
+}
+
+.hbt-fullcard-small {
+  /* width cố định: max-width + align-items:center làm Yoga đo thiếu dòng khi chữ xuống dòng */
+  width: 80%;
+  font-size: 30px;
+  color: var(--paper-dark);
+  white-space: normal;
+  -unity-text-align: middle-center;
+  margin: 3px 0;
+}
+
+/* Bản đồ hải trình */
+.hbt-map-route {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.hbt-map-stop {
+  align-items: center;
+  /* 24%: tên biển dài nhất ("Địa Trung Hải") còn dư chỗ ở cỡ chữ 120%; tối đa 3 điểm dừng */
+  width: 24%;
+}
+
+.hbt-map-dot {
+  width: 28px;
+  height: 28px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  background-color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.hbt-map-name {
+  font-size: 44px;
+  color: var(--paper);
+  -unity-text-align: middle-center;
+}
+
+.hbt-map-date {
+  font-size: 34px;
+  color: var(--paper-dark);
+  -unity-text-align: middle-center;
+}
+
+.hbt-map-line {
+  position: absolute;
+  left: 12%;
+  top: 12px;
+  height: 4px;
+  width: 0;
+  background-color: var(--paper-dark);
+}
+
+/* ---- Letterbox, tint, pause ---- */
+.hbt-letterbox-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.hbt-cold {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.hbt-pause {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.hbt-pause .hbt-button {
+  font-size: 44px;
+  width: 420px;
+  margin: 12px 0;
+}
+
+/* ---- Ca làm: đồng hồ + bảng việc (góc trái, dưới thông báo) ---- */
+.hbt-shift {
+  position: absolute;
+  left: 5%;
+  top: 13%;
+  width: 560px;
+  padding: 14px 18px;
+  background-color: rgba(18, 14, 10, 0.62);
+  border-left-width: 5px;
+  border-left-color: var(--accent);
+}
+
+.hbt-shift-head {
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.hbt-shift-clock {
+  font-size: 44px;
+  color: var(--paper);
+  -unity-font-style: bold;
+  margin-right: 16px;
+}
+
+.hbt-shift-day {
+  font-size: 28px;
+  color: var(--paper-dark);
+  margin-bottom: 6px;
+}
+
+.hbt-order {
+  flex-direction: row;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.hbt-order--done {
+  opacity: 0.4;
+}
+
+.hbt-order-label {
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  white-space: normal;
+  margin-left: 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.hbt-order-count {
+  font-size: 30px;
+  color: var(--paper);
+  -unity-font-style: bold;
+  margin-left: 10px;
+}
+
+/* Thanh thăng bằng khi vác bao lên cầu thang (giữa, ngay trên tâm màn hình). */
+.hbt-balance {
+  position: absolute;
+  left: 35%;
+  width: 30%;
+  top: 44%;
+  height: 14px;
+  background-color: rgba(18, 14, 10, 0.62);
+  border-radius: 7px;
+}
+
+.hbt-balance-center {
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  width: 3px;
+  height: 26px;
+  margin-left: -1px;
+  background-color: var(--paper-dark);
+}
+
+.hbt-balance-mark {
+  position: absolute;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-radius: 12px;
+  background-color: var(--paper);
+}
+
+.hbt-balance-mark--danger {
+  background-color: rgb(214, 96, 54);
+}
+
+/* Mũi tên chỉ hướng tới việc đang chờ (giữa trên, dưới mép vùng an toàn). */
+.hbt-pointer {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 13%;
+  align-items: center;
+}
+
+.hbt-pointer-arrow {
+  width: 56px;
+  height: 56px;
+}
+
+.hbt-pointer-label {
+  font-size: 30px;
+  color: var(--paper);
+  margin-top: 4px;
+  -unity-text-align: middle-center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* ---- Chỉ dẫn từng bước: dòng việc tiếp theo, mốc chỉ chỗ ---- */
+.hbt-guide {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 5.5%;
+  align-items: center;
+}
+
+.hbt-guide-text {
+  font-size: 30px;
+  color: var(--paper);
+  padding: 8px 22px;
+  background-color: rgba(18, 14, 10, 0.66);
+  border-left-width: 5px;
+  border-left-color: rgb(245, 204, 107);
+  white-space: normal;
+  -unity-text-align: middle-center;
+}
+
+.hbt-guide-marker {
+  position: absolute;
+  width: 120px;
+  height: 90px;
+  margin-left: -60px;
+  margin-top: -22px;
+  align-items: center;
+}
+
+.hbt-guide-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.hbt-guide-marker--edge .hbt-guide-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.hbt-guide-distance {
+  font-size: 24px;
+  color: rgb(245, 204, 107);
+  margin-top: 2px;
+  -unity-text-align: middle-center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* ---- Học buổi tối: tô chữ, điền từ, viết câu ---- */
+.hbt-study-sub {
+  font-size: 32px;
+  color: var(--ink-soft);
+  white-space: normal;
+  margin-bottom: 12px;
+}
+
+.hbt-study-row {
+  flex-direction: row;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.hbt-trace-column {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.hbt-trace-column > .hbt-trace-side {
+  flex-grow: 0;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.hbt-trace-canvas {
+  width: 520px;
+  height: 520px;
+  flex-shrink: 0;
+  background-color: rgb(246, 238, 218);
+  border-width: 2px;
+  border-color: var(--paper-dark);
+}
+
+.hbt-trace-side {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 32px;
+}
+
+.hbt-trace-word {
+  font-size: 64px;
+  color: var(--ink);
+  -unity-font-style: bold;
+  letter-spacing: 12px;
+}
+
+.hbt-study-sentence {
+  font-size: 40px;
+  color: var(--ink);
+  white-space: normal;
+  margin: 16px 0 24px 0;
+  min-height: 56px;
+}
+
+.hbt-study-options {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hbt-study-option {
+  font-size: 36px;
+  color: var(--ink);
+  background-color: var(--paper-dark);
+  border-width: 2px;
+  border-color: var(--paper-dark);
+  padding: 10px 22px;
+  margin: 8px 16px 8px 0;
+}
+
+.hbt-study-option:hover {
+  border-color: var(--accent);
+}
+
+.hbt-study-option--wrong {
+  opacity: 0.4;
+  border-color: rgb(170, 70, 50);
+}
+
+.hbt-study-option--used {
+  opacity: 0.3;
+}
+
+/* ---- Menu chính ---- */
+.hbt-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* 52%: tên game (88px đậm, giãn 8px, rộng ~655) vừa một dòng ở cỡ chữ 120% (cột ~707) */
+  width: 52%;
+  background-color: rgba(10, 8, 6, 0.72);
+  justify-content: center;
+}
+
+.hbt-menu-column {
+  margin-left: 10%;
+  margin-right: 4%;
+}
+
+.hbt-menu-title {
+  font-size: 88px;
+  color: var(--paper);
+  -unity-font-style: bold;
+  letter-spacing: 8px;
+}
+
+.hbt-menu-subtitle {
+  font-size: 30px;
+  color: var(--paper-dark);
+  white-space: normal;
+  margin-bottom: 40px;
+}
+
+.hbt-menu-version {
+  font-size: 22px;
+  color: var(--paper-dark);
+  white-space: normal;
+  margin-top: 14px;
+}
+
+.hbt-menu-button {
+  font-size: 40px;
+  color: var(--paper);
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  border-left-width: 4px;
+  border-left-color: rgba(0, 0, 0, 0);
+  -unity-text-align: middle-left;
+  padding: 8px 20px;
+  margin: 4px 0;
+  white-space: normal;
+}
+
+.hbt-menu-buttons--compact .hbt-menu-button {
+  font-size: 30px;
+  padding: 5px 20px;
+  margin: 1px 0;
+}
+
+/* Danh sách chương dài: bớt khoảng trống quanh tiêu đề để cả cột vừa vùng an toàn ở màn điện thoại, cỡ chữ 120% */
+.hbt-menu--compact .hbt-menu-subtitle {
+  margin-bottom: 14px;
+}
+
+.hbt-menu--compact .hbt-menu-version {
+  margin-top: 6px;
+}
+
+.hbt-menu-button:hover {
+  background-color: rgba(150, 74, 40, 0.35);
+  border-left-color: var(--accent);
+}
+
+/* Mục chưa mở: chỉ mờ đi. Theme mặc định tô nền xám cho nút disabled, trông như mục đang chọn. */
+.hbt-menu .hbt-menu-button:disabled {
+  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  color: var(--paper);
+}
+
+/* ---- Cài đặt ---- */
+.hbt-settings {
+  width: 1180px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 26px 40px;
+  background-color: var(--paper);
+}
+
+.hbt-settings-rows {
+  flex-shrink: 1;
+  min-height: 0;
+}
+
+.hbt-help-body {
+  font-size: 32px;
+  color: var(--ink);
+  white-space: normal;
+  margin: 8px 0 12px 0;
+}
+
+.hbt-settings-title {
+  font-size: 48px;
+  color: var(--ink);
+  -unity-font-style: bold;
+  margin-bottom: 10px;
+}
+
+.hbt-settings-row {
+  flex-direction: row;
+  align-items: center;
+  min-height: 58px;
+  flex-shrink: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--paper-dark);
+}
+
+.hbt-settings-label {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  font-size: 30px;
+  color: var(--ink);
+  white-space: normal;
+}
+
+.hbt-settings-value {
+  width: 130px;
+  font-size: 30px;
+  color: var(--ink);
+  -unity-text-align: middle-center;
+}
+
+.hbt-settings-step,
+.hbt-settings-toggle {
+  font-size: 30px;
+  color: var(--paper);
+  background-color: var(--ink);
+  border-width: 0;
+  padding: 2px 18px;
+  margin: 0 4px;
+  min-width: 60px;
+}
+
+.hbt-settings-toggle {
+  min-width: 270px;
+}
+
+.hbt-settings-step:hover,
+.hbt-settings-toggle:hover {
+  background-color: var(--accent);
+}
+
+.hbt-settings-footer {
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 16px;
+  /* Bảng cài đặt chặn ở 90% chiều cao: phần cuộn co lại, chân bảng (nút Xong) giữ đủ cao cho chữ cỡ lớn. */
+  flex-shrink: 0;
+}
+
+/* ---- Điều khiển cảm ứng (điện thoại) ---- */
+.hbt-touch {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hbt-touch-button {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 14, 8, 0.35);
+  border-width: 3px;
+  border-color: rgba(236, 224, 196, 0.6);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.hbt-touch-down {
+  background-color: rgba(150, 74, 40, 0.6);
+}
+
+.hbt-touch-label {
+  font-size: 30px;
+  color: rgba(236, 224, 196, 0.95);
+  -unity-text-align: middle-center;
+}
+
+.hbt-touch-use {
+  width: 210px;
+  height: 210px;
+}
+
+.hbt-touch-act {
+  width: 170px;
+  height: 170px;
+}
+
+.hbt-touch-small {
+  width: 150px;
+  height: 150px;
+}
+
+.hbt-touch-top {
+  width: 120px;
+  height: 90px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.hbt-touch-pause {
+  width: 96px;
+  height: 96px;
+  flex-direction: row;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.hbt-touch-pause-bar {
+  width: 14px;
+  height: 42px;
+  margin: 0 7px;
+  background-color: rgba(236, 224, 196, 0.95);
+}
+
+.hbt-touch-top .hbt-touch-label {
+  font-size: 26px;
+}
+
+.hbt-touch-stick {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-width: 3px;
+  border-color: rgba(236, 224, 196, 0.5);
+  background-color: rgba(20, 14, 8, 0.25);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbt-touch-knob {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(236, 224, 196, 0.6);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* ---- Ghi chú debug (phím /) ---- */
+.hbt-note {
+  width: 1300px;
+  padding: 26px 40px;
+  background-color: var(--paper);
+}
+
+.hbt-note-title {
+  font-size: 40px;
+  color: var(--ink);
+  -unity-font-style: bold;
+}
+
+.hbt-note-info {
+  font-size: 22px;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+  white-space: normal;
+}
+
+.hbt-note-field {
+  height: 330px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.hbt-note-field > #unity-text-input {
+  background-color: rgb(250, 244, 230);
+  color: var(--ink);
+  -unity-text-align: upper-left;
+  white-space: normal;
+}
+
+.hbt-note-footer {
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.hbt-note-footer .hbt-button {
+  width: 240px;
+  flex-grow: 0;
+  -unity-text-align: middle-center;
+}

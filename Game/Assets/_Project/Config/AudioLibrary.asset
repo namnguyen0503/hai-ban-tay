@@ -1,0 +1,607 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02eaf5da940b1bf7a84437ffbcbefc69, type: 3}
+  m_Name: AudioLibrary
+  m_EditorClassIdentifier: HaiBanTay.Runtime::HaiBanTay.Audio.AudioLibrary
+  entries:
+  - key: Ambience/colombo_dockers
+    clip: {fileID: 8300000, guid: cd62c3f2388b0e97183a1a3c1845faf8, type: 3}
+  - key: Ambience/engine
+    clip: {fileID: 8300000, guid: 97c72f491b2cba176847a24f01ced4e5, type: 3}
+  - key: Ambience/galley
+    clip: {fileID: 8300000, guid: 4124b5954cdbac67f9f75e1df5429f0e, type: 3}
+  - key: Ambience/harbor_water
+    clip: {fileID: 8300000, guid: 6b19133698426304796b1dabec6a3239, type: 3}
+  - key: Ambience/hold_cold
+    clip: {fileID: 8300000, guid: d39207c7658539d8db625cabdb2fe543, type: 3}
+  - key: Ambience/marseille_street
+    clip: {fileID: 8300000, guid: acc0a99c74cacdedfab8dbd4fb355be8, type: 3}
+  - key: Ambience/nharong_quay
+    clip: {fileID: 8300000, guid: ff2e05796cad5dca08cd49d06ae58992, type: 3}
+  - key: Ambience/saigon_evening
+    clip: {fileID: 8300000, guid: 0760fc93568eecb308741109a06579b7, type: 3}
+  - key: Ambience/sea_deck
+    clip: {fileID: 8300000, guid: e832a2a3e696be674bf0edc63a3283da, type: 3}
+  - key: Ambience/storm
+    clip: {fileID: 8300000, guid: 9d35566c262f8ebe487e3d776e7fa9b1, type: 3}
+  - key: Music/ending
+    clip: {fileID: 8300000, guid: 7d49d87f6a31a5b5e803d53b4c4c4bf7, type: 3}
+  - key: Music/menu
+    clip: {fileID: 8300000, guid: 9ccc404ecc4384f6ba0abc53270d08ce, type: 3}
+  - key: Music/voyage
+    clip: {fileID: 8300000, guid: fab202e23f490e00cb0a44866ceeda28, type: 3}
+  - key: SFX/ash_pour
+    clip: {fileID: 8300000, guid: f60dffdaf2e8cb9a4a892b4ea2184890, type: 3}
+  - key: SFX/cart_wheels
+    clip: {fileID: 8300000, guid: dd45baa51546b2718a9ac2766b9fc8a4, type: 3}
+  - key: SFX/chain_rattle
+    clip: {fileID: 8300000, guid: 681418a4b6da4c602b527a4099d2bc92, type: 3}
+  - key: SFX/coal_pour
+    clip: {fileID: 8300000, guid: 754d60969e38a8a4fb7bf37746bf8e70, type: 3}
+  - key: SFX/coin
+    clip: {fileID: 8300000, guid: 2a333185286689641a1a29cccc051ec8, type: 3}
+  - key: SFX/cup_saucer
+    clip: {fileID: 8300000, guid: 1dceead409f3788c88213419c1752a71, type: 3}
+  - key: SFX/door_close
+    clip: {fileID: 8300000, guid: d59f05d28d83adcd994a68552c309905, type: 3}
+  - key: SFX/door_open
+    clip: {fileID: 8300000, guid: d9289aaf8e978b7faaba877949d276f0, type: 3}
+  - key: SFX/first_time
+    clip: {fileID: 8300000, guid: 935f454f64fade065be802faa076d091, type: 3}
+  - key: SFX/footstep_metal_1
+    clip: {fileID: 8300000, guid: f8bfc69b372af2d878d685fd570f569e, type: 3}
+  - key: SFX/footstep_metal_2
+    clip: {fileID: 8300000, guid: 55edb073dfed7c7c797afebd7820fcd1, type: 3}
+  - key: SFX/footstep_metal_3
+    clip: {fileID: 8300000, guid: d1e8f547d56869d87a951eb26edbf5e4, type: 3}
+  - key: SFX/footstep_stone_1
+    clip: {fileID: 8300000, guid: 65df8f6cabf256ff0997c6ed6bf5f6d6, type: 3}
+  - key: SFX/footstep_stone_2
+    clip: {fileID: 8300000, guid: 00d0c7c6ac7e2bab5bdaba709d0de201, type: 3}
+  - key: SFX/footstep_stone_3
+    clip: {fileID: 8300000, guid: 1dbc6bc9a33e711b8a03d8be8dd934d8, type: 3}
+  - key: SFX/footstep_stone_4
+    clip: {fileID: 8300000, guid: 2e72187ab1e0189a3b56d0b27d0913ab, type: 3}
+  - key: SFX/footstep_wood_1
+    clip: {fileID: 8300000, guid: 44e01241d0b2175bda4e515f0356493c, type: 3}
+  - key: SFX/footstep_wood_2
+    clip: {fileID: 8300000, guid: 8200bdfdd917ec3e587d2a9b4e89f79d, type: 3}
+  - key: SFX/footstep_wood_3
+    clip: {fileID: 8300000, guid: 3a912aed379d07e478535c1e3292854c, type: 3}
+  - key: SFX/footstep_wood_4
+    clip: {fileID: 8300000, guid: a0f59fa0764aa82ccbedd2a0b2ff93f0, type: 3}
+  - key: SFX/gull_1
+    clip: {fileID: 8300000, guid: 9c0f8ffcdccd6c857973c7c34975c7cf, type: 3}
+  - key: SFX/gull_2
+    clip: {fileID: 8300000, guid: a6e8a04f294044a928859574a4767895, type: 3}
+  - key: SFX/leaf
+    clip: {fileID: 8300000, guid: ecbce59f3e02483499ff69ec6bc694ca, type: 3}
+  - key: SFX/metal_clank
+    clip: {fileID: 8300000, guid: a42c643a9fd67a1c3ac20b8bf9bcb7f5, type: 3}
+  - key: SFX/page_turn
+    clip: {fileID: 8300000, guid: 8a60abac3a2788035a7966905e280c88, type: 3}
+  - key: SFX/pencil_write
+    clip: {fileID: 8300000, guid: 31a5552909f3b31eda14bdcd9b720805, type: 3}
+  - key: SFX/pot_place
+    clip: {fileID: 8300000, guid: 87a6d38605f12c05c8ce4165894b8f70, type: 3}
+  - key: SFX/potatoes
+    clip: {fileID: 8300000, guid: 5b0751488f7cd64c5b728e534a90677f, type: 3}
+  - key: SFX/rake
+    clip: {fileID: 8300000, guid: 72f59c8d1c111327db7429602a55ee14, type: 3}
+  - key: SFX/rope
+    clip: {fileID: 8300000, guid: fda0c43de66b9092d91b03dbc50a04e8, type: 3}
+  - key: SFX/sack_thud
+    clip: {fileID: 8300000, guid: 9b959ed3ca227395e88c7b164e6ce7ae, type: 3}
+  - key: SFX/scrape
+    clip: {fileID: 8300000, guid: 38e6d2d98cd1fed738b51c2a950e49eb, type: 3}
+  - key: SFX/service_bell
+    clip: {fileID: 8300000, guid: e78db384ced8f3d4b8ede85ebcc710cf, type: 3}
+  - key: SFX/ship_bell_8
+    clip: {fileID: 8300000, guid: f24a3aa42a5a937469ad3cce3f5c48e9, type: 3}
+  - key: SFX/ship_horn
+    clip: {fileID: 8300000, guid: d13bf6a61530e8bdda0e3684e4a237fb, type: 3}
+  - key: SFX/shovel
+    clip: {fileID: 8300000, guid: 6e19398ae2b9ca30eb57d9459f40a927, type: 3}
+  - key: SFX/sizzle
+    clip: {fileID: 8300000, guid: de7b2b64ef120a121b6992e91c4f63c3, type: 3}
+  - key: SFX/story_chuckle
+    clip: {fileID: 8300000, guid: 561f8263b264d41c687c51863161d568, type: 3}
+  - key: SFX/sweep
+    clip: {fileID: 8300000, guid: 57128efe7a2476fc4addd2d1cf2b6369, type: 3}
+  - key: SFX/tram_bell
+    clip: {fileID: 8300000, guid: 6cacb783415ccfdc2b7e94eb5530bcd9, type: 3}
+  - key: SFX/ui_click
+    clip: {fileID: 8300000, guid: 0d7c00b71c97ff05b947e71aa4a1a646, type: 3}
+  - key: SFX/ui_close
+    clip: {fileID: 8300000, guid: 05f692915cc23b2b4ac4b30e3a2a7b4d, type: 3}
+  - key: SFX/ui_open
+    clip: {fileID: 8300000, guid: a8406b68d95c84dacb2ec279008e7eef, type: 3}
+  - key: SFX/water_wash
+    clip: {fileID: 8300000, guid: 2013348cab16cc32dbc5703d5b901621, type: 3}
+  - key: SFX/wave_crash
+    clip: {fileID: 8300000, guid: ad1eb73ceb98af3888bc5fa620b43c07, type: 3}
+  - key: SFX/whistle_bosun
+    clip: {fileID: 8300000, guid: 1f10aac63a2ca4b3981e12ff4be30d59, type: 3}
+  - key: VO/ba_cards_1
+    clip: {fileID: 8300000, guid: 43edd86542df25cbbb056ee0ce3f2d08, type: 3}
+  - key: VO/ba_chieu
+    clip: {fileID: 8300000, guid: a79445640c7f18491933a560a132b6a9, type: 3}
+  - key: VO/ba_coffee
+    clip: {fileID: 8300000, guid: 4b6b09e71517435ed94112230f29191f, type: 3}
+  - key: VO/ba_d1_1
+    clip: {fileID: 8300000, guid: bc2d0d31fbbdd5a82baf51473be5bef1, type: 3}
+  - key: VO/ba_d1_2
+    clip: {fileID: 8300000, guid: f01983a84d32cdee79695c53a584e907, type: 3}
+  - key: VO/ba_d1_3
+    clip: {fileID: 8300000, guid: faf106e34395da138b005c822614b9aa, type: 3}
+  - key: VO/ba_d1_peel
+    clip: {fileID: 8300000, guid: 0d88159cde03fc348a34c21b323af390, type: 3}
+  - key: VO/ba_d2_1
+    clip: {fileID: 8300000, guid: 9fea83493b1270fcba837cfc0e0e72fb, type: 3}
+  - key: VO/ba_d2_2
+    clip: {fileID: 8300000, guid: b9ed93ee65075c81585153ee3c8c59e6, type: 3}
+  - key: VO/ba_d2_teach
+    clip: {fileID: 8300000, guid: c8e087e45d08c0d7c8f27db352b24cbf, type: 3}
+  - key: VO/ba_d3_1
+    clip: {fileID: 8300000, guid: fb656457aea755c63a59a7eea861d343, type: 3}
+  - key: VO/ba_d3_2
+    clip: {fileID: 8300000, guid: c1d49837dabecc4ba91a72e82df72725, type: 3}
+  - key: VO/ba_d3_3
+    clip: {fileID: 8300000, guid: d293aab667628e8b089627b039b0f3ac, type: 3}
+  - key: VO/ba_d4_1
+    clip: {fileID: 8300000, guid: 8a02660f4437449058720e199f5c1b3a, type: 3}
+  - key: VO/ba_d5_1
+    clip: {fileID: 8300000, guid: 742d312621357e8448b89a8d5230a15f, type: 3}
+  - key: VO/ba_d5_2
+    clip: {fileID: 8300000, guid: b26776906dbca6b7498990feb3daf2ac, type: 3}
+  - key: VO/ba_d6_1
+    clip: {fileID: 8300000, guid: b7c4bc8ffcc12d5d991feb6700ccf41c, type: 3}
+  - key: VO/ba_d6_2
+    clip: {fileID: 8300000, guid: 6c8e5436504b43623abb787af5c47181, type: 3}
+  - key: VO/ba_d6_book
+    clip: {fileID: 8300000, guid: 344985451569f47d8b3798d422bbe5fe, type: 3}
+  - key: VO/ba_good_french
+    clip: {fileID: 8300000, guid: 06fbf4a0189f7bc46bf8e067595957b0, type: 3}
+  - key: VO/ba_ice_saigon
+    clip: {fileID: 8300000, guid: cddbd6c44e4af167c889df5aba11f215, type: 3}
+  - key: VO/ba_letter
+    clip: {fileID: 8300000, guid: 42f96bc72ca1e3f8ca74f4d8da2b13a2, type: 3}
+  - key: VO/ba_meal_1
+    clip: {fileID: 8300000, guid: f152fc37185fd4f60852cd865c020875, type: 3}
+  - key: VO/ba_meal_2
+    clip: {fileID: 8300000, guid: 7f01d6d56270c8d52bdd1f4d1e941228, type: 3}
+  - key: VO/ba_meal_3
+    clip: {fileID: 8300000, guid: afb1ef7b41f867a85afc030d30af6d85, type: 3}
+  - key: VO/ba_self_study
+    clip: {fileID: 8300000, guid: 9533c9c52809c2904aa9c0059b38e491, type: 3}
+  - key: VO/ba_viet_bo
+    clip: {fileID: 8300000, guid: ba896ca86f8629534b8e388ba71dabf3, type: 3}
+  - key: VO/ba_viet_ma
+    clip: {fileID: 8300000, guid: 1efda7d996be40d0fb7431043831221b, type: 3}
+  - key: VO/ba_viet_teach
+    clip: {fileID: 8300000, guid: 1975ceaf604b990d59d3f6a0099807ba, type: 3}
+  - key: VO/ba_wave
+    clip: {fileID: 8300000, guid: 600d43f7fac3264d8a78672df21bbe8c, type: 3}
+  - key: VO/ba_word_eau
+    clip: {fileID: 8300000, guid: 6e5170188e804772ab483108344abc96, type: 3}
+  - key: VO/ba_word_pain
+    clip: {fileID: 8300000, guid: 23d75f4aea14039c6993fddff9e31e09, type: 3}
+  - key: VO/ban_viet_cards
+    clip: {fileID: 8300000, guid: f05cd807e777e3bfda9ae42b6c455cb9, type: 3}
+  - key: VO/bark_farewell_1
+    clip: {fileID: 8300000, guid: 4dcf6811f0d34c4d8b9abe2b3041c172, type: 3}
+  - key: VO/bark_farewell_2
+    clip: {fileID: 8300000, guid: 86c2a5109054384f8849acb1e3721bcd, type: 3}
+  - key: VO/bark_farewell_3
+    clip: {fileID: 8300000, guid: ca9685c032ecd12ecbe6a3da2b427e8f, type: 3}
+  - key: VO/bark_passenger_1
+    clip: {fileID: 8300000, guid: b072d37391b9d5b308f5e654ba12d648, type: 3}
+  - key: VO/bark_passenger_2
+    clip: {fileID: 8300000, guid: 25b46ba5e4694ed8dae454ab73048c75, type: 3}
+  - key: VO/bark_passenger_3
+    clip: {fileID: 8300000, guid: 74d7ccfb61ad3361b9ec396864fef439, type: 3}
+  - key: VO/bark_passenger_4
+    clip: {fileID: 8300000, guid: d2e95bf47ae1ed7c191f72fdc600ef33, type: 3}
+  - key: VO/bark_porter_1
+    clip: {fileID: 8300000, guid: 8c4b950d243a547e2896a070f24f434c, type: 3}
+  - key: VO/bark_porter_2
+    clip: {fileID: 8300000, guid: 597e6d9de5013431d8f235744ce35a42, type: 3}
+  - key: VO/bark_porter_3
+    clip: {fileID: 8300000, guid: a8f912a4077bbe14787da1f9eb984429, type: 3}
+  - key: VO/bark_purser_1
+    clip: {fileID: 8300000, guid: 3b98fd4df64f398c594ac718df4c3c73, type: 3}
+  - key: VO/bark_purser_2
+    clip: {fileID: 8300000, guid: 7a1497f1baefe1841b7a62c24ea6be50, type: 3}
+  - key: VO/bark_sailor_1
+    clip: {fileID: 8300000, guid: 7876a40d3803e1f6eb90c167391fef82, type: 3}
+  - key: VO/bark_sailor_2
+    clip: {fileID: 8300000, guid: 45ddb0bae9a7f0538b6dac3abb9d76c7, type: 3}
+  - key: VO/bark_sailor_3
+    clip: {fileID: 8300000, guid: e1a4379842a06e7c6bf78623102d0807, type: 3}
+  - key: VO/bark_vendor_1
+    clip: {fileID: 8300000, guid: 5b540b36dc4d0f49aae9615e31840739, type: 3}
+  - key: VO/bark_vendor_2
+    clip: {fileID: 8300000, guid: 52a2c02751ec84068b9ecf1344f0dd02, type: 3}
+  - key: VO/bark_vendor_3
+    clip: {fileID: 8300000, guid: 8745393397c0d8519969ae3cf46058b0, type: 3}
+  - key: VO/checker_pass
+    clip: {fileID: 8300000, guid: 3d3ac12ad2d9f8fdb90804842e044db6, type: 3}
+  - key: VO/chef_ash
+    clip: {fileID: 8300000, guid: 074719c2a32e45f839dee53ca86744a0, type: 3}
+  - key: VO/chef_call_coal
+    clip: {fileID: 8300000, guid: 641b1dda4f3dcb585a28cb1bef245689, type: 3}
+  - key: VO/chef_call_pan
+    clip: {fileID: 8300000, guid: 53b8e18b1bcce5bd592d4ae8d83046c3, type: 3}
+  - key: VO/chef_call_water
+    clip: {fileID: 8300000, guid: 7106f607fe1197d5fa455e5f5795189e, type: 3}
+  - key: VO/chef_d2_load
+    clip: {fileID: 8300000, guid: a83f5e2e050768773a61d18a428b4bb4, type: 3}
+  - key: VO/chef_d3_dawn
+    clip: {fileID: 8300000, guid: b7b60068b1f8042ceb138a2871cc33c6, type: 3}
+  - key: VO/chef_d3_roll
+    clip: {fileID: 8300000, guid: 9592de9e82b531f25b8b7fce802865e1, type: 3}
+  - key: VO/chef_d5_heat
+    clip: {fileID: 8300000, guid: a77c17e97850e0b23802f6a748ba380d, type: 3}
+  - key: VO/chef_d5_lunch
+    clip: {fileID: 8300000, guid: 9fce9d0c85be0ab979facc89108eed55, type: 3}
+  - key: VO/chef_d5_pile
+    clip: {fileID: 8300000, guid: 7687f6a5952a906c899104b31106c799, type: 3}
+  - key: VO/chef_d6_last
+    clip: {fileID: 8300000, guid: 91f91f8b439f163399aa6d80aff30d27, type: 3}
+  - key: VO/chef_depart
+    clip: {fileID: 8300000, guid: eef6de64e56997a7aad7247c795ae943, type: 3}
+  - key: VO/chef_dinner
+    clip: {fileID: 8300000, guid: 5fe212919e08c5fa581112b7ba1b25ab, type: 3}
+  - key: VO/chef_fire
+    clip: {fileID: 8300000, guid: 296741aa1f0f401edae7cd294ba5c2db, type: 3}
+  - key: VO/chef_fire_low
+    clip: {fileID: 8300000, guid: 56b0584bc76e0c27f97d89302a4debcd, type: 3}
+  - key: VO/chef_greens
+    clip: {fileID: 8300000, guid: 3723cf0461fca753982cb90fc730aaad, type: 3}
+  - key: VO/chef_haul
+    clip: {fileID: 8300000, guid: 0fdd46b75ffa58896adb026bd39fb1c3, type: 3}
+  - key: VO/chef_late
+    clip: {fileID: 8300000, guid: 3182dc168d9d284d3a58af7607a4bc48, type: 3}
+  - key: VO/chef_late_quay
+    clip: {fileID: 8300000, guid: a476e4c820320ce44a064adfaed22e32, type: 3}
+  - key: VO/chef_lunch
+    clip: {fileID: 8300000, guid: bea696cd75a9ef39c8b638d4ba29c3f7, type: 3}
+  - key: VO/chef_pan
+    clip: {fileID: 8300000, guid: 5919598e2f28edf8e874759d5cf35624, type: 3}
+  - key: VO/chef_pan_back
+    clip: {fileID: 8300000, guid: 5271836020cca8d7a8f928e180012757, type: 3}
+  - key: VO/chef_pay
+    clip: {fileID: 8300000, guid: cb0a533b40084f89f96248297d693977, type: 3}
+  - key: VO/chef_potatoes
+    clip: {fileID: 8300000, guid: 9d8edb96a41b57555a7d476e2d0cabd0, type: 3}
+  - key: VO/chef_shift_end
+    clip: {fileID: 8300000, guid: c9a17cb8f4510c37daf2b4336c5cc28e, type: 3}
+  - key: VO/chef_storm
+    clip: {fileID: 8300000, guid: 5a13c8b56fd35982e8d4dc244e2b14cc, type: 3}
+  - key: VO/chef_story_asparagus
+    clip: {fileID: 8300000, guid: 0b318b33548ac9e269dba6d526389727, type: 3}
+  - key: VO/chef_story_coal
+    clip: {fileID: 8300000, guid: e0b3fa18ef57aba42b1f23245480eecf, type: 3}
+  - key: VO/chef_story_fire
+    clip: {fileID: 8300000, guid: d9b21640a6bbded948475884131f5a4c, type: 3}
+  - key: VO/chef_story_hold
+    clip: {fileID: 8300000, guid: bf71599c843d35932b7a71a5879f0d1b, type: 3}
+  - key: VO/chef_story_peel
+    clip: {fileID: 8300000, guid: 67a0b90deba45f7758f5e30934f6316a, type: 3}
+  - key: VO/chef_story_serve
+    clip: {fileID: 8300000, guid: d4903dea3960ea37499ba011185ae5c2, type: 3}
+  - key: VO/chef_story_soup
+    clip: {fileID: 8300000, guid: 62851fa157f586915938aed544751448, type: 3}
+  - key: VO/chef_story_sweep
+    clip: {fileID: 8300000, guid: 28f11e41c99792f478fa4d64e6b21a8c, type: 3}
+  - key: VO/chef_sweep
+    clip: {fileID: 8300000, guid: 0d3ba76f46a518777a8c80f50b78f1e9, type: 3}
+  - key: VO/chef_tall_back
+    clip: {fileID: 8300000, guid: e369920511d207cd09a7182735f688f5, type: 3}
+  - key: VO/chef_tall_out
+    clip: {fileID: 8300000, guid: afa9c034f2f294e1c858367640c8d8b7, type: 3}
+  - key: VO/chef_tallpot
+    clip: {fileID: 8300000, guid: 09348ddb53c77f0ccbdd7a9df73e7ebb, type: 3}
+  - key: VO/chef_wash
+    clip: {fileID: 8300000, guid: 053fc54ca39213fbd9b4e985a67a6ecd, type: 3}
+  - key: VO/chieu_1
+    clip: {fileID: 8300000, guid: 7f020a4d6664140deb36a033a24c132f, type: 3}
+  - key: VO/chieu_2
+    clip: {fileID: 8300000, guid: 305e3472bf5ebedfba87a9d96afe6f1e, type: 3}
+  - key: VO/chieu_3
+    clip: {fileID: 8300000, guid: 66565a9d49783cb77a7f2d534a5af036, type: 3}
+  - key: VO/crew_spoon
+    clip: {fileID: 8300000, guid: 6f273719b68bbe6fe9000245bbdac1a4, type: 3}
+  - key: VO/friend_letter
+    clip: {fileID: 8300000, guid: cc282f04952417be99f850fb7fc9bd01, type: 3}
+  - key: VO/friend_letter_1
+    clip: {fileID: 8300000, guid: 2c89be4cc8969e5afa141063cbf51faf, type: 3}
+  - key: VO/friend_letter_2
+    clip: {fileID: 8300000, guid: 8a5e44265654f0c82b16f30b674c340c, type: 3}
+  - key: VO/jacques_d4_1
+    clip: {fileID: 8300000, guid: 5d9030ff6f79d49c1abe123689dc51a8, type: 3}
+  - key: VO/jacques_d4_teach
+    clip: {fileID: 8300000, guid: ea03fbd68c8e8e8c7986ef4ad5803a08, type: 3}
+  - key: VO/jacques_d4_warn
+    clip: {fileID: 8300000, guid: c0f5e758a5d43fd8888913a4ca693ebf, type: 3}
+  - key: VO/jacques_wave
+    clip: {fileID: 8300000, guid: 7a26d0416466c2b94a917ccc1810eb45, type: 3}
+  - key: VO/job_ba_any
+    clip: {fileID: 8300000, guid: 3701f6586d94db372a282c838319c76e, type: 3}
+  - key: VO/job_ba_ask
+    clip: {fileID: 8300000, guid: c09ed6b1e40e7028eb1b8fea8000f0ca, type: 3}
+  - key: VO/job_ba_name
+    clip: {fileID: 8300000, guid: c09be58d9d736e56a9f08fe0d01432ad, type: 3}
+  - key: VO/job_captain_accept
+    clip: {fileID: 8300000, guid: c951897f94ca493aeb3eedd61ece53da, type: 3}
+  - key: VO/job_captain_name
+    clip: {fileID: 8300000, guid: e28363a95c936cc90bcf99606ea49c40, type: 3}
+  - key: VO/job_captain_work
+    clip: {fileID: 8300000, guid: 915f51f2f29e0b285bdf10b49c011d50, type: 3}
+  - key: VO/job_mai_lead
+    clip: {fileID: 8300000, guid: 7509ce58458e01086b54cb4c03256694, type: 3}
+  - key: VO/job_mai_lead2
+    clip: {fileID: 8300000, guid: 36d19e8a2621cbfa6976f0985935382f, type: 3}
+  - key: VO/job_staff_no
+    clip: {fileID: 8300000, guid: 3aa41621f85610d5eac86cfa83d71374, type: 3}
+  - key: VO/job_staff_whisper
+    clip: {fileID: 8300000, guid: f231d1f5e58266900a67e529ee10a4e5, type: 3}
+  - key: VO/linh_d1_1
+    clip: {fileID: 8300000, guid: be949db20840f33dabd21c72a0297d38, type: 3}
+  - key: VO/linh_d1_2
+    clip: {fileID: 8300000, guid: a8500a26a5610994fa8441765c1cc685, type: 3}
+  - key: VO/linh_d2_1
+    clip: {fileID: 8300000, guid: 713128a3bd0f963f9ad8ff63a9003a80, type: 3}
+  - key: VO/linh_d2_2
+    clip: {fileID: 8300000, guid: 230b392239370ce97a13e945e3c49244, type: 3}
+  - key: VO/linh_d2_3
+    clip: {fileID: 8300000, guid: 9a6748bf1aed546678ac1f3cb7627bdc, type: 3}
+  - key: VO/linh_d2_4
+    clip: {fileID: 8300000, guid: a503e55168456ad57880e401bc07eb46, type: 3}
+  - key: VO/linh_d2_after
+    clip: {fileID: 8300000, guid: 6e0468084163befee97178f8d8618281, type: 3}
+  - key: VO/linh_d2_teach
+    clip: {fileID: 8300000, guid: e14eb1aafdc36fc18b3ea7ba4a41eb3f, type: 3}
+  - key: VO/linh_d3_1
+    clip: {fileID: 8300000, guid: 9d520f68c11ed4b2ea4a25754118a445, type: 3}
+  - key: VO/linh_d3_teach
+    clip: {fileID: 8300000, guid: 9a8b39356c6f2971e815125df182365d, type: 3}
+  - key: VO/linh_d5_1
+    clip: {fileID: 8300000, guid: ae49bfb15957f5b919aed244b1112c88, type: 3}
+  - key: VO/linh_d5_mere
+    clip: {fileID: 8300000, guid: 3e0321c86a52c9b958d19ad5aa6b81ab, type: 3}
+  - key: VO/linh_d5_teach
+    clip: {fileID: 8300000, guid: d28995f4e8fbacf2487ae9405042c4c9, type: 3}
+  - key: VO/linh_d6_1
+    clip: {fileID: 8300000, guid: 15f575f1af5ab156a9a8e449a18ffd96, type: 3}
+  - key: VO/linh_d6_book
+    clip: {fileID: 8300000, guid: 7af87dcc2b7db5479b991a49f5cb8220, type: 3}
+  - key: VO/linh_d6_night
+    clip: {fileID: 8300000, guid: a01a2f271ae0eb8de9a28404c0ca5c70, type: 3}
+  - key: VO/linh_d6_teach
+    clip: {fileID: 8300000, guid: f07a8d0e3b67b38c0bda229c49ddda3e, type: 3}
+  - key: VO/mai_asparagus
+    clip: {fileID: 8300000, guid: 365e979eac40561d0b78be0b235a0aeb, type: 3}
+  - key: VO/mai_call
+    clip: {fileID: 8300000, guid: 13ef866c1a685f5d288f0690785cca48, type: 3}
+  - key: VO/mai_cards_1
+    clip: {fileID: 8300000, guid: c5dd2ff9d32c484d2b04190d9b98d194, type: 3}
+  - key: VO/mai_d1_1
+    clip: {fileID: 8300000, guid: 55a34b50cc47d0c77a131a279c243c09, type: 3}
+  - key: VO/mai_d1_2
+    clip: {fileID: 8300000, guid: 614a1043e4d1db3279e38e8590ae7b2d, type: 3}
+  - key: VO/mai_d1_3
+    clip: {fileID: 8300000, guid: d55cfabeb02e3302c9e743931dc3eb45, type: 3}
+  - key: VO/mai_d3_1
+    clip: {fileID: 8300000, guid: 63e9ea1c2bf123e76b84e64ee58b3914, type: 3}
+  - key: VO/mai_d3_2
+    clip: {fileID: 8300000, guid: 471c974f6cf985a138f45ec894748605, type: 3}
+  - key: VO/mai_d5_1
+    clip: {fileID: 8300000, guid: 15e502a6c7a5854b3a08562196fd5200, type: 3}
+  - key: VO/mai_d5_2
+    clip: {fileID: 8300000, guid: aebdf986f37e26e188a1a3021f75ace0, type: 3}
+  - key: VO/mai_d6_1
+    clip: {fileID: 8300000, guid: 94d9c189a6ace4191986451651ecd7d3, type: 3}
+  - key: VO/mai_d6_2
+    clip: {fileID: 8300000, guid: 62ae7f148e56d06a8958bd46032e507b, type: 3}
+  - key: VO/mai_good_french
+    clip: {fileID: 8300000, guid: 87d14d89cf91e6166a4c45d8bc966663, type: 3}
+  - key: VO/mai_hail
+    clip: {fileID: 8300000, guid: c288d594ac682b481862ffc3c075374a, type: 3}
+  - key: VO/mai_meal_1
+    clip: {fileID: 8300000, guid: bf5ac004de21b62b28247a8ee6e425d4, type: 3}
+  - key: VO/mai_meal_2
+    clip: {fileID: 8300000, guid: 24914586fd292428783632053167ddf8, type: 3}
+  - key: VO/mai_meal_3
+    clip: {fileID: 8300000, guid: 3a0fb8747e649c1d28e3bba986ea2bef, type: 3}
+  - key: VO/mai_meal_4
+    clip: {fileID: 8300000, guid: 5f754a6e8bbc1cd7ca7afce33bf85655, type: 3}
+  - key: VO/mai_meal_5
+    clip: {fileID: 8300000, guid: 5116ab19194e552e0bfc6e1a864d788d, type: 3}
+  - key: VO/mai_peel
+    clip: {fileID: 8300000, guid: 2ad816e0b64d1df13845d84386b40a13, type: 3}
+  - key: VO/mai_recall
+    clip: {fileID: 8300000, guid: 647bac10365ee5117a00254d616e7aae, type: 3}
+  - key: VO/mai_route
+    clip: {fileID: 8300000, guid: 38c038ebdc390185097f30c10953149c, type: 3}
+  - key: VO/mrs_arrival
+    clip: {fileID: 8300000, guid: f2fd00f69f7a253b4bf78e0bc8135c07, type: 3}
+  - key: VO/mrs_ba_book
+    clip: {fileID: 8300000, guid: 22c1097a36cab5dd8b1cd08c5f39fd7b, type: 3}
+  - key: VO/mrs_ba_bye
+    clip: {fileID: 8300000, guid: c11655910a06e1f38ada8fcca6ca8e59, type: 3}
+  - key: VO/mrs_ba_bye_cook
+    clip: {fileID: 8300000, guid: fe529b892119ff5dbb0d8140165e37b0, type: 3}
+  - key: VO/mrs_ba_bye_helper
+    clip: {fileID: 8300000, guid: dbf24ba58f25ae376bfc3b1bc4c6f752, type: 3}
+  - key: VO/mrs_ba_bye_jacques
+    clip: {fileID: 8300000, guid: 9966d4eda32911ff19e32f0df05313e0, type: 3}
+  - key: VO/mrs_ba_bye_read
+    clip: {fileID: 8300000, guid: ef3edfbb9f63e08cf999f49847c515e0, type: 3}
+  - key: VO/mrs_ba_car
+    clip: {fileID: 8300000, guid: 36cdea331f42d42a7b15e3cf31eb6ffc, type: 3}
+  - key: VO/mrs_ba_first
+    clip: {fileID: 8300000, guid: a4e2efa8849ff514db9a0ef44b08c953, type: 3}
+  - key: VO/mrs_ba_glass
+    clip: {fileID: 8300000, guid: 3347b6e4f015040fbb5a1aabbfb09eb6, type: 3}
+  - key: VO/mrs_ba_mai_bye
+    clip: {fileID: 8300000, guid: a4267072a6d10dbe59c7842ea0713123, type: 3}
+  - key: VO/mrs_ba_paper
+    clip: {fileID: 8300000, guid: 950263e79becc0c8eba233b303846a81, type: 3}
+  - key: VO/mrs_ba_poor
+    clip: {fileID: 8300000, guid: 0363a1e24d54a454cb73544e9b7c44e4, type: 3}
+  - key: VO/mrs_ba_thanks
+    clip: {fileID: 8300000, guid: 7f3d011b4e44366a389705b6f5201430, type: 3}
+  - key: VO/mrs_ba_tram
+    clip: {fileID: 8300000, guid: ba6e9f434b0c108869c25706df98d2b6, type: 3}
+  - key: VO/mrs_ba_why1
+    clip: {fileID: 8300000, guid: d86fa109a5088961389064fd7311328d, type: 3}
+  - key: VO/mrs_ba_why2
+    clip: {fileID: 8300000, guid: 02a3acf93d3e28d41b7f162a3e0eb026, type: 3}
+  - key: VO/mrs_captain
+    clip: {fileID: 8300000, guid: 8bdcedcab8f3816f6868d6b50797c566, type: 3}
+  - key: VO/mrs_cook_bye
+    clip: {fileID: 8300000, guid: e0bc5bc347f466b08a5ac0c30acce19b, type: 3}
+  - key: VO/mrs_docker
+    clip: {fileID: 8300000, guid: 63d816b21ca7542148cbd3b4fc209040, type: 3}
+  - key: VO/mrs_foreman_no
+    clip: {fileID: 8300000, guid: 028f98096e661b09985771635480c1d7, type: 3}
+  - key: VO/mrs_helper_bye
+    clip: {fileID: 8300000, guid: 54736232292dc8a1b9691fcb0b4e2a0f, type: 3}
+  - key: VO/mrs_jacques_bye
+    clip: {fileID: 8300000, guid: ef97c22eb6f384e97b72d3ea461dd594, type: 3}
+  - key: VO/mrs_last_clean
+    clip: {fileID: 8300000, guid: 832bf38c33f735711b4e21056a9c367f, type: 3}
+  - key: VO/mrs_mai_bye
+    clip: {fileID: 8300000, guid: 00b08f2cb8e5ede4d880a29877ecde06, type: 3}
+  - key: VO/mrs_mai_clothes
+    clip: {fileID: 8300000, guid: 5979d57d1c2fecd3c9f4c0f95c371c5b, type: 3}
+  - key: VO/mrs_mai_clothes2
+    clip: {fileID: 8300000, guid: 7dbbb1e8f280904cd9dc689337ec7678, type: 3}
+  - key: VO/mrs_mai_context
+    clip: {fileID: 8300000, guid: b4811f4da8a353854bcf2d75ba4bf7ee, type: 3}
+  - key: VO/mrs_mai_monsieur
+    clip: {fileID: 8300000, guid: f6ad012bdc74003458221f38cb408309, type: 3}
+  - key: VO/mrs_mai_monsieur2
+    clip: {fileID: 8300000, guid: 6777fc4ad0270b5e4b18f5fe785621fb, type: 3}
+  - key: VO/mrs_pay_ba
+    clip: {fileID: 8300000, guid: 1696f4265a949ded3985a670ff0baf90, type: 3}
+  - key: VO/mrs_pay_called
+    clip: {fileID: 8300000, guid: 0c4d7e0181327640789489153c6793d8, type: 3}
+  - key: VO/mrs_pay_here
+    clip: {fileID: 8300000, guid: 072f653a1ea741e959ac55d021a2c9b4, type: 3}
+  - key: VO/mrs_pay_next
+    clip: {fileID: 8300000, guid: 3649d4f591e23b268b54511c2bb237b6, type: 3}
+  - key: VO/mrs_pay_others
+    clip: {fileID: 8300000, guid: 3344ea859da6693a697c1c8c70b4d1a3, type: 3}
+  - key: VO/mrs_pay_table
+    clip: {fileID: 8300000, guid: baf18b017cf78600ba1f756c51fd2c61, type: 3}
+  - key: VO/mrs_sailor_open
+    clip: {fileID: 8300000, guid: 12fd756cb6612858995712cff372b1cf, type: 3}
+  - key: VO/mrs_soldier_a_bye
+    clip: {fileID: 8300000, guid: a414dc486fe29611fbe1116ed9ff613c, type: 3}
+  - key: VO/mrs_soldier_b_bye
+    clip: {fileID: 8300000, guid: 4a13f3d2b64b9757d98b3fb19664d6f6, type: 3}
+  - key: VO/mrs_soldier_keep
+    clip: {fileID: 8300000, guid: e37bb82afd37619b984e624386c95e9a, type: 3}
+  - key: VO/mrs_waiter_seat
+    clip: {fileID: 8300000, guid: 138eb0bb7d9c96307bea8d58baee3808, type: 3}
+  - key: VO/mrs_waiter_voila
+    clip: {fileID: 8300000, guid: ae4dd2469ce874920863ca968ab75c6f, type: 3}
+  - key: VO/mrs_woman_invite
+    clip: {fileID: 8300000, guid: 4d1c9b064d7fff60e908ab51371e8a93, type: 3}
+  - key: VO/nr_ba_friend
+    clip: {fileID: 8300000, guid: d2cf8265cb5faac5c805baf5d41882ad, type: 3}
+  - key: VO/nr_mai_wait
+    clip: {fileID: 8300000, guid: 1b7c0fbc66cccf0c58fc2d5cb5c1e6b5, type: 3}
+  - key: VO/pro_ba_abroad
+    clip: {fileID: 8300000, guid: e1b654cf9938169e380b171eebf84bc3, type: 3}
+  - key: VO/pro_ba_abroad2
+    clip: {fileID: 8300000, guid: 3f031b79684390e69a3f27fadcc3fa1d, type: 3}
+  - key: VO/pro_ba_cinema
+    clip: {fileID: 8300000, guid: 3a8b78fc1d80d08e2854ed0d0c24f387, type: 3}
+  - key: VO/pro_ba_hands
+    clip: {fileID: 8300000, guid: dae0e7be01526ee07ad7b7269e7ca2af, type: 3}
+  - key: VO/pro_ba_ice
+    clip: {fileID: 8300000, guid: 4cfaf8a84c5744a0b95d2982b0bb93aa, type: 3}
+  - key: VO/pro_ba_invite
+    clip: {fileID: 8300000, guid: 765ba31e5f2cbcede8c02e7649a9b5bc, type: 3}
+  - key: VO/pro_ba_invite2
+    clip: {fileID: 8300000, guid: 700df3d51346cf478b95c7acf924afda, type: 3}
+  - key: VO/pro_ba_light
+    clip: {fileID: 8300000, guid: fc006ee0ec03ca99a9f0131b95d40aec, type: 3}
+  - key: VO/pro_ba_patriot
+    clip: {fileID: 8300000, guid: 51f9efff57632af73b7c75807537fcf1, type: 3}
+  - key: VO/pro_ba_secret
+    clip: {fileID: 8300000, guid: c8142c41ffccdba7484f36cc4137258a, type: 3}
+  - key: VO/pro_ba_water
+    clip: {fileID: 8300000, guid: a3cce70fbb8bca80bad2ed13cc468ddf, type: 3}
+  - key: VO/pro_ba_work
+    clip: {fileID: 8300000, guid: 15871cbf2fe65c694beb2b65a6e42786, type: 3}
+  - key: VO/pro_ba_work2
+    clip: {fileID: 8300000, guid: 5c0b18899dfee852284bc06e7b7b7fc1, type: 3}
+  - key: VO/pro_le_agree
+    clip: {fileID: 8300000, guid: 3b98a9eaba274da31a264c9eed66532d, type: 3}
+  - key: VO/pro_le_buy_ice
+    clip: {fileID: 8300000, guid: 47b256986ade7cbd8bef8e85dd0b309f, type: 3}
+  - key: VO/pro_le_family
+    clip: {fileID: 8300000, guid: 8c59ee61f84f75037adbca36dc9fb084, type: 3}
+  - key: VO/pro_le_ice
+    clip: {fileID: 8300000, guid: 20a1d995a4663ddb6b457d2a96d96b64, type: 3}
+  - key: VO/pro_le_money
+    clip: {fileID: 8300000, guid: a3ab898a8a4c0413b8d7f5bf8e7f5228, type: 3}
+  - key: VO/pro_le_patriot
+    clip: {fileID: 8300000, guid: cf4c10fe0383358d497b2e8d79185d57, type: 3}
+  - key: VO/pro_le_secret
+    clip: {fileID: 8300000, guid: 9b42ad0d2054e675189204b46157d9f7, type: 3}
+  - key: VO/pro_le_show
+    clip: {fileID: 8300000, guid: 7b2da47f22b1d81d18797e9c1c6084b3, type: 3}
+  - key: VO/pro_le_water
+    clip: {fileID: 8300000, guid: 74643b590a611991a8f831bfdca5378b, type: 3}
+  - key: VO/sailor_hold
+    clip: {fileID: 8300000, guid: ad74d21cd4c7b991ebfc07687d1b857c, type: 3}
+  - key: VO/soldier_viet
+    clip: {fileID: 8300000, guid: 574b63a9a18fbd32fbe3376deb4567da, type: 3}
+  - key: VO/waiter_voila
+    clip: {fileID: 8300000, guid: 17d20ec64bd4b5eaebe625eaa64a68ca, type: 3}
+  - key: VO/word_cendre
+    clip: {fileID: 8300000, guid: e2f9061cb5c5225bf95fe388685b2011, type: 3}
+  - key: VO/word_chaine
+    clip: {fileID: 8300000, guid: 1d5692a279f1555af9bc613a1ab84c4b, type: 3}
+  - key: VO/word_charbon
+    clip: {fileID: 8300000, guid: 761ce54d33f9933768a00dc0fd02a780, type: 3}
+  - key: VO/word_corde
+    clip: {fileID: 8300000, guid: e4d8d0a2b3f427599a5ec7911c249d0c, type: 3}
+  - key: VO/word_eau
+    clip: {fileID: 8300000, guid: 0b9636e7b25700b5ba356411011a7e58, type: 3}
+  - key: VO/word_feu
+    clip: {fileID: 8300000, guid: 5f67ca0e6eeed58bd8b27ab9846f0f32, type: 3}
+  - key: VO/word_laver
+    clip: {fileID: 8300000, guid: 65f12af39088d7ba7bfcf7a444113e87, type: 3}
+  - key: VO/word_legumes
+    clip: {fileID: 8300000, guid: 1a9e4975a9e1ee017896854a9b52154c, type: 3}
+  - key: VO/word_marmite
+    clip: {fileID: 8300000, guid: 375087438a7d2045ebe97733409064e7, type: 3}
+  - key: VO/word_mat
+    clip: {fileID: 8300000, guid: 50772a5d1836608dda1095dc4a2005d5, type: 3}
+  - key: VO/word_mer
+    clip: {fileID: 8300000, guid: 228c1ea8141fc18c29005174ddf25590, type: 3}
+  - key: VO/word_panier
+    clip: {fileID: 8300000, guid: d06517d8b1828c2a089b23d4c7c59bde, type: 3}
+  - key: VO/word_pommes
+    clip: {fileID: 8300000, guid: 8febf7aec5bd419078f9031d1e36d46f, type: 3}
+  - key: VO/word_sel
+    clip: {fileID: 8300000, guid: eab82d1e3f263be45840e2b1a6e31e68, type: 3}
+  - key: VO/word_vague
+    clip: {fileID: 8300000, guid: 45c4c8b9fce2d707489182577a070b8a, type: 3}
+  - key: VO/word_vite
+    clip: {fileID: 8300000, guid: 3ea5b13f98a1a662da83b0d484d4692c, type: 3}
