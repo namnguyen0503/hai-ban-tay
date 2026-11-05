@@ -49,3 +49,5 @@ Trên Android: kéo nửa trái màn hình để đi, kéo nửa phải để nh
 - Mã nguồn (C#, script trong `Tools/`): [MIT](LICENSE).
 - Nội dung do nhóm tạo (truyện, thoại, giọng đọc, model và âm thanh tự dựng): [CC BY-NC 4.0](LICENSE-CONTENT.md).
 - Tài nguyên bên thứ ba (Microsoft Rocketbox, Poly Haven, Kenney, ambientCG, OpenGameArt, BigSoundBank, poly.pizza, font Be Vietnam Pro và Noto Serif) giữ giấy phép gốc của tác giả; danh sách đầy đủ ở [Docs/CREDITS.md](Docs/CREDITS.md).
+
+<sub>Phát triển với sự hỗ trợ của công cụ AI (viết code, công cụ dựng và kiểm thử).</sub>
