@@ -8,7 +8,7 @@ Cốt truyện dựa theo đoạn kể về chuyến tàu trong *Những mẩu c
 
 ## Trailer
 
-[Xem trailer (1080p, 2 phút 10 giây)](https://github.com/namnguyen0503/hai-ban-tay/releases/download/v1.0/HaiBanTay-Trailer-1080p.mp4): quay từ chính game, do bot tự chơi theo kịch bản rồi `Tools/make_trailer.py` dựng tự động.
+[Xem trailer (1080p, 2 phút 5 giây)](https://github.com/namnguyen0503/hai-ban-tay/releases/download/v1.0/HaiBanTay-Trailer-1080p.mp4): quay từ chính game, do bot tự chơi theo kịch bản rồi `Tools/make_trailer.py` dựng tự động.
 
 ## Tải game
 

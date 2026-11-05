@@ -60,7 +60,9 @@ CUTS = [
     # Đoạn cuối chậm lại (người dùng 04/11: nhịp cuối quá nhanh): mỗi cảnh có chỗ thở trước và sau câu nói.
     ('clip', 'marseille', ('line', 'mrs_arrival', -0.5), ('end', 'mrs_arrival', 1.4), 'ending'),
     ('clip', 'marseille', ('line', 'mrs_ba_poor', -1.2), ('end', 'mrs_ba_poor', 1.0), 'ending'),
-    ('clip', 'marseille', ('line', 'mrs_waiter_voila', -1.0), ('end', 'mrs_mai_monsieur2', 1.0), 'ending'),
+    # Quán: chỉ lúc bồi bàn đặt tách (máy quay nhìn xuống bàn là đúng cảnh); câu ông Mai sau đó rơi vào khung chỉ thấy mặt bàn
+    # trong lượt quay cũ nên bỏ (quay lại Marseille với Cinematic thì có thể mở lại tới mrs_mai_monsieur2).
+    ('clip', 'marseille', ('line', 'mrs_waiter_voila', -1.0), ('end', 'mrs_ba_thanks', 0.9), 'ending'),
     # Câu chốt: ông Mai nói tiếp sau 0,4 s nên cắt ngay sau câu, giữ khung cuối 1,8 s rồi tối dần sang thẻ kết.
     ('clip', 'marseille', ('line', 'mrs_ba_why1', -1.2), ('end', 'mrs_ba_why2', 0.35), 'ending', 1.0, 1.8),
     ('card', 8.0, [('Title', 'HAI BÀN TAY'),
