@@ -307,7 +307,7 @@ namespace HaiBanTay.Tests
             if (!_bot.Ok) yield break;
             yield return _log.Shot("ice_in_hand");
             _bot.Input.SimUse = true;
-            yield return _bot.Wait("ice_eaten", () => prologue.IceEaten >= 2.5f, 10f, 20f);
+            yield return _bot.Wait("ice_eaten", () => prologue.IceEaten >= PrologueDirector.IceEatSeconds, 15f, 25f);
             _bot.Input.SimUse = false;
             if (!_bot.Ok) yield break;
             yield return _bot.Wait("prologue_raise_prompt", () => Beat == "P3" && _log.VisiblePrompt.Contains("Space"));

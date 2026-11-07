@@ -37,8 +37,11 @@ FIELDS = ('beat', 'day', 'pos', 'holding', 'line', 'prompt', 'guide')
 # Neo: ('line', id, lệch giây) = lúc câu bắt đầu; ('end', id, lệch) = lúc câu kết thúc; ('beat', tên, lệch); ('t', giây trong lượt).
 CUTS = [
     ('card', 3.0, [('Place', 'Sài Gòn, 1911')], 'menu'),
-    ('clip', 'prologue', ('line', 'pro_le_show', -0.6), ('end', 'pro_ba_light', 0.8), 'menu'),
-    ('clip', 'prologue', ('line', 'pro_le_ice', -0.4), ('end', 'pro_ba_ice', 0.6), 'menu'),
+    # Anh Lê nói xong thì cắt thẳng sang lúc Ba đứng nhìn chớp bóng, giữ tới hết câu (người dùng 06/11: bỏ đoạn đi bộ giữa hai câu).
+    # Hết câu Lê thì tối dần rồi hiện dần ngọn đèn (người dùng 06/11), không chớp tối nhanh.
+    ('clip', 'prologue', ('line', 'pro_le_show', -0.6), ('end', 'pro_le_show', 0.4), 'menu', 1.0, 0.0, 'soft'),
+    ('clip', 'prologue', ('line', 'pro_ba_light', -0.4), ('end', 'pro_ba_light', 0.15), 'menu'),
+    ('clip', 'prologue', ('end', 'pro_le_buy_ice', -0.1), ('end', 'pro_ba_ice', 0.6), 'menu'),
     ('clip', 'prologue', ('line', 'pro_ba_abroad', -0.3), ('line', 'pro_ba_invite', -0.15), 'menu'),
     ('clip', 'prologue', ('line', 'pro_le_money', -0.3), ('end', 'pro_ba_work2', 0.8), 'menu'),
     # Nhạc menu lặp lại từ đầu ở thẻ tựa (menu2: khúc mới, mở dần) thay vì vòng lặp cứng giữa chừng.
@@ -73,6 +76,8 @@ MUSIC = {'menu': 'Music/menu.ogg', 'menu2': 'Music/menu.ogg', 'voyage': 'Music/v
 FADE = 0.35
 # Hai cảnh quay liền nhau (không qua thẻ chữ): chớp tối ngắn, không dìm đen 0,7 s giữa mọi cặp cảnh.
 FADE_CUT = 0.12
+# Cảnh nối mềm ('soft' ở trường thứ 8): tối dần rồi hiện dần.
+FADE_SOFT = 0.5
 # Khung thiếu ở đầu/cuối cảnh tới chừng này giây thì giữ khung (đứng hình ngắn trong lúc mờ dần), quá thì co cảnh.
 PAD_MAX = 0.6
 
@@ -183,8 +188,10 @@ def main():
         _, name, a0, a1, music = cut[:5]
         speed = cut[5] if len(cut) > 5 else 1.0
         hold = cut[6] if len(cut) > 6 else 0.0
-        fade_in = FADE if i == 0 or CUTS[i - 1][0] == 'card' else FADE_CUT
-        fade_out = FADE if i + 1 >= len(CUTS) or CUTS[i + 1][0] == 'card' else FADE_CUT
+        soft = len(cut) > 7 and cut[7] == 'soft'
+        soft_before = i > 0 and len(CUTS[i - 1]) > 7 and CUTS[i - 1][7] == 'soft'
+        fade_in = FADE_SOFT if soft_before else FADE if i == 0 or CUTS[i - 1][0] == 'card' else FADE_CUT
+        fade_out = FADE_SOFT if soft else FADE if i + 1 >= len(CUTS) or CUTS[i + 1][0] == 'card' else FADE_CUT
         if hold:
             fade_out = min(1.2, hold)
         if name not in runs:

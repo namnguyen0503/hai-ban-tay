@@ -167,6 +167,8 @@ namespace HaiBanTay.Tests
             yield return Save(camera, "family_scene");
             yield return Inspect(camera, father.gameObject, father.GetComponentInChildren<Animator>(), "chieu");
             yield return Inspect(camera, child.gameObject, child.GetComponentInChildren<Animator>(), "child");
+            var woman = family.Single(x => x.name.EndsWith("4141"));
+            yield return Inspect(camera, woman.gameObject, woman.GetComponentInChildren<Animator>(), "woman");
             Object.Destroy(camera.gameObject);
         }
     }

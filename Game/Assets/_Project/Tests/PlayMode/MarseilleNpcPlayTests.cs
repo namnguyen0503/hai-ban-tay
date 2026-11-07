@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using HaiBanTay.Core;
 using HaiBanTay.Ending;
@@ -104,7 +105,20 @@ namespace HaiBanTay.Tests
         {
             yield return Load();
             var d = UnityEngine.Object.FindAnyObjectByType<EndingDirector>();
-            yield return Until(() => Root.Events.HasFired(EventIds.S3CafeServed), "bồi bàn không phục vụ", 120f);
+            // Đo khay suốt lúc bưng đi, đưa tách (không chỉ lúc đứng yên sau cùng).
+            int worstClip = 0; string worstInfo = "";
+            float until = Time.realtimeSinceStartup + 120f;
+            while (!Root.Events.HasFired(EventIds.S3CafeServed))
+            {
+                Assert.Less(Time.realtimeSinceStartup, until, "bồi bàn không phục vụ");
+                if (d.waiter.tray != null && d.waiter.tray.gameObject.activeInHierarchy)
+                {
+                    int n = TrayClipVertices(d.waiter, out var info);
+                    if (n > worstClip) { worstClip = n; worstInfo = info + " state=" + d.waiter.agent.State; }
+                }
+                yield return null;
+            }
+            Assert.AreEqual(0, worstClip, "khay xuyên người lúc bưng: " + worstInfo);
             Assert.IsTrue(d.MaiSeated, "ông Mai phải ngồi cùng bàn trước khi bồi phục vụ");
             Assert.AreEqual(TrangPhuc.Thuong, Rig.body.Outfit);
             Assert.IsTrue(d.waiter.CupPlaced);
@@ -119,6 +133,7 @@ namespace HaiBanTay.Tests
                 "; Animated=" + d.waiter.agent.Animated + "; State=" + d.waiter.agent.State +
                 "; hand=" + d.waiter.carryHand.position + "; eye=" + Rig.cam.transform.position +
                 "; facing=" + Rig.cam.transform.forward);
+            Assert.AreEqual(0, TrayClipVertices(d.waiter, out var clipInfo), "khay xuyên người bồi bàn: " + clipInfo);
             Assert.AreEqual(d.table, d.cup.parent);
             Assert.Less(Vector3.Distance(d.waiterTablePoint.position, d.cup.position), 0.002f);
             // Ba ngồi bằng clip SitChair: gốc người đặt SeatForward trước tâm ghế, theo hướng nhìn vào bàn.
@@ -281,6 +296,42 @@ namespace HaiBanTay.Tests
             yield return Until(() => ReferenceEquals(Rig.interactor.Current, target), "không thấy prompt " + target.name, 5f);
             Root.Input.SimulateInteract();
             yield return Until(effect, "E không có tác dụng ở " + target.name, 10f);
+        }
+        /// <summary>Đỉnh thân bồi bàn (đã skin ở tư thế hiện tại) nằm trong lòng khay: trong elip mặt khay và cách mặt phẳng khay dưới 2 cm.</summary>
+        static int TrayClipVertices(WaiterRoutine waiter, out string info)
+        {
+            var surface = waiter.tray.Find("TraySurface");
+            var half = new Vector2(surface.lossyScale.x, surface.lossyScale.z) * 0.5f;
+            int count = 0; var minY = float.MaxValue; var sample = Vector3.zero;
+            var byBone = new Dictionary<string, int>();
+            var baked = new Mesh();
+            foreach (var skin in waiter.agent.GetComponentsInChildren<SkinnedMeshRenderer>())
+            {
+                if (!skin.enabled || !skin.gameObject.activeInHierarchy) continue;
+                skin.BakeMesh(baked, true);
+                var m = skin.transform.localToWorldMatrix;
+                var verts = baked.vertices;
+                var weights = skin.sharedMesh.boneWeights;
+                var bones = skin.bones;
+                for (int i = 0; i < verts.Length; i++)
+                {
+                    var bone = i < weights.Length && bones.Length > weights[i].boneIndex0 ? bones[weights[i].boneIndex0] : null;
+                    // Bàn tay, ngón và cẳng tay phải đỡ dưới khay: chạm khay là đúng, không tính là xuyên người.
+                    if (bone != null && (bone == waiter.carryHand || bone == waiter.lowerArm || bone.IsChildOf(waiter.carryHand))) continue;
+                    var local = surface.parent.InverseTransformPoint(m.MultiplyPoint3x4(verts[i])) - surface.localPosition;
+                    float e = local.x * local.x / (half.x * half.x) + local.z * local.z / (half.y * half.y);
+                    if (e < 1f && Mathf.Abs(local.y) < 0.02f)
+                    {
+                        count++;
+                        var key = bone != null ? bone.name : "?";
+                        byBone[key] = byBone.TryGetValue(key, out var n) ? n + 1 : 1;
+                        if (Mathf.Abs(local.y) < minY) { minY = Mathf.Abs(local.y); sample = local; }
+                    }
+                }
+            }
+            UnityEngine.Object.Destroy(baked);
+            info = count + " đỉnh, ví dụ tọa độ trong hệ khay " + sample.ToString("F3") + " xương: " + string.Join(", ", byBone.Select(kv => kv.Key + "=" + kv.Value));
+            return count;
         }
     }
 }

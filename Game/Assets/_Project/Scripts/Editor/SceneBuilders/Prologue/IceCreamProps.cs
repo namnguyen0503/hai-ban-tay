@@ -28,7 +28,7 @@ namespace HaiBanTay.Editor.SceneBuilders
             EditorUtility.SetDirty(inner);
             MeshChild(cup, "PaperCup", CupMesh(), paper, inner);
 
-            var cream = MeshChild(cup, "IceCream", ScoopMesh("IceScoop", IceEatMotion.ScoopRadius, IceEatMotion.ScoopCenter, 0.0042f, 1f, 1f), CreamMaterial());
+            var cream = MeshChild(cup, "IceCream", ScoopMesh("IceScoop", IceEatMotion.ScoopRadius, IceEatMotion.ScoopCenter, 0.0042f, 1f, 1f, true), CreamMaterial());
             cream.localPosition = Vector3.up * IceEatMotion.CupHeight;
             // Thìa cắm nghiêng trong kem: lòng thìa chìm ở đỉnh viên kem, cán chĩa lên.
             Spoon(cup, "Spoon").SetLocalPositionAndRotation(new Vector3(0.027f, IceEatMotion.CupHeight + 0.069f, 0f), Quaternion.Euler(0f, 0f, 160f));
@@ -107,7 +107,7 @@ namespace HaiBanTay.Editor.SceneBuilders
         /// bằng nhiễu 3D (tổng Perlin ba mặt phẳng): cục ~2 cm cao vài mm + nhám mịn, thêm hai gờ cong của vệt muỗng nạo trên nửa trên.
         /// squashXZ/squashY bóp méo nhẹ (miếng kem trên thìa dẹt hơn).
         /// </summary>
-        static Mesh ScoopMesh(string name, float radius, float center, float bumps, float stretchXZ, float squashY)
+        static Mesh ScoopMesh(string name, float radius, float center, float bumps, float stretchXZ, float squashY, bool inCup = false)
         {
             int n = radius > .03f ? 22 : 14;
             float cut = Mathf.Cos(Mathf.PI * 5f / 6f);
@@ -143,7 +143,17 @@ namespace HaiBanTay.Editor.SceneBuilders
                 }
                 float upper = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(-.2f, .2f, d.y));
                 var outward = new Vector3(p.x, p.y - center, p.z).normalized;
-                return p + outward * (bumps * (lumps + .25f * fine + .7f * ridge * upper));
+                return InsideCup(p + outward * (bumps * (lumps + .25f * fine + .7f * ridge * upper)));
+            }
+            // Phần kem dưới miệng cốc không vượt thành trong (lòng cốc 36 cạnh: giữa mỗi mặt phẳng hẹp hơn đỉnh cạnh), chừa 1 mm
+            // (người dùng 06/11: gợn kem lòi ra ngoài thành cốc).
+            Vector3 InsideCup(Vector3 q)
+            {
+                if (!inCup || q.y >= 0f) return q;
+                const float h = IceEatMotion.CupHeight, bottom = IceEatMotion.CupBottomRadius - 0.0060f, top = IceEatMotion.CupTopRadius - 0.0058f;
+                float wall = (bottom + (top - bottom) * Mathf.Clamp01((h + q.y) / h)) * Mathf.Cos(Mathf.PI / Sides) - 0.001f;
+                float r = Mathf.Sqrt(q.x * q.x + q.z * q.z);
+                return r > wall ? new Vector3(q.x * wall / r, q.y, q.z * wall / r) : q;
             }
             var index = new Dictionary<Vector3Int, int>();
             var vertices = new List<Vector3>();

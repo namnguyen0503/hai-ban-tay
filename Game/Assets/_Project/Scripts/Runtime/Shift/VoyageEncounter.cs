@@ -66,8 +66,11 @@ namespace HaiBanTay.Shift
                 if (Kind == OrderKinds.Chieu)
                 {
                     speaker.Play("Talk");
-                    foreach (var id in new[] { "chieu_1", "chieu_2", "chieu_3", "ba_chieu" })
+                    foreach (var id in new[] { "chieu_1", "chieu_2", "chieu_3" })
                         yield return root.Subtitles.PlayAndWait(id);
+                    // Đổi người nói: Ba ngừng một nhịp rồi mới đáp.
+                    yield return new WaitForSeconds(1f);
+                    yield return root.Subtitles.PlayAndWait("ba_chieu");
                     speaker.Play("Idle");
                     yield return new WaitForSeconds(2f);
                 }

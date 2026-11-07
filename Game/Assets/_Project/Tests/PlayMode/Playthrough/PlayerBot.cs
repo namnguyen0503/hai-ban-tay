@@ -40,7 +40,8 @@ namespace HaiBanTay.Tests
         readonly System.Collections.Generic.Dictionary<HaiBanTay.Npc.NpcAgent, Transform> _heads =
             new System.Collections.Generic.Dictionary<HaiBanTay.Npc.NpcAgent, Transform>();
         HaiBanTay.Npc.NpcAgent _lastTalker;
-        float _lastTalkerAt = float.NegativeInfinity, _camYawVel, _camPitchVel;
+        float _lastTalkerAt = float.NegativeInfinity, _camYawVel, _camPitchVel, _driveAt = float.NegativeInfinity;
+        int _seenDriveFrame = int.MinValue;
 
         public PlayerBot(PlaythroughLog log) { Log = log; }
         public void Fail(string message) { Ok = false; Log.Note(message); }
@@ -83,11 +84,15 @@ namespace HaiBanTay.Tests
         {
             var rig = Rig;
             if (!Cinematic || rig == null || rig.look == null || rig.cam == null) return;
+            // Mốc lần cuối bot tự nhắm/đi: câu của Ba ngay sau đó giữ hướng bot vừa nhắm (người dùng 06/11: ngước nhìn đèn nói
+            // "Không dầu, không bấc..." mà camera quay về anh Lê giữa câu).
+            if (Log.BotDriveFrame != _seenDriveFrame) { _seenDriveFrame = Log.BotDriveFrame; _driveAt = Time.time; }
             // Bot vừa tự nhắm (nhấn, cầm) hay đang đi, đang rê chuột: không giành máy quay.
             if (Time.frameCount - Log.BotDriveFrame < 3 || Input.SimLook != Vector2.zero || Input.SimMove != Vector2.zero) return;
             var root = GameRoot.Instance;
             string id = root != null && root.Subtitles != null ? root.Subtitles.CurrentLineId : null;
             string speaker = id != null ? root.Content.GetLine(id).Speaker : null;
+            if (speaker == HaiBanTay.Npc.TalkGaze.Player && Time.time - _driveAt < CinematicMemory) return;
             var talker = speaker != null && speaker != HaiBanTay.Npc.TalkGaze.Player ? HaiBanTay.Npc.TalkGaze.Agent(speaker) : null;
             var eye = rig.cam.transform.position;
             if (talker != null && talker.isActiveAndEnabled && (talker.transform.position - eye).sqrMagnitude < CinematicRange * CinematicRange)
@@ -521,6 +526,16 @@ namespace HaiBanTay.Tests
             yield return Frame();
             Log.Note("After E: " + step + "; effect=" + effect());
             yield return Wait("effect_" + step, effect, effectSeconds, effectSeconds + 10f);
+            // Quay phim: Ba nói câu phản ứng sau khi nhấn thì đứng nhìn tới hết câu, không bỏ đi giữa câu (người dùng 06/11:
+            // nhìn chớp bóng nói "Không dầu, không bấc..." mà bot đi luôn, camera quay theo hướng đi).
+            if (Cinematic && Ok)
+            {
+                var root = GameRoot.Instance;
+                float until = Time.time + 8f;
+                while (Time.time < until && root != null && root.Subtitles != null && root.Subtitles.CurrentLineId is string id
+                       && root.Content.GetLine(id).Speaker == HaiBanTay.Npc.TalkGaze.Player)
+                    yield return null;
+            }
             yield return Log.Checkpoint("pressed_" + step);
         }
 

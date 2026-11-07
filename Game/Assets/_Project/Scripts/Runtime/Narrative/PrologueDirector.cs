@@ -29,7 +29,8 @@ namespace HaiBanTay.Narrative
         public InteractTarget iceTarget;
         public Transform iceCup, leIceCup;
         /// <summary>Tổng thời gian giữ chuột để ăn hết cốc (chia đều cho các thìa).</summary>
-        public const float IceEatSeconds = 2.5f;
+        // 2 s mỗi thìa: 0,83 s/thìa trông như ăn vội (người dùng 06/11: "ăn chậm thôi").
+        public const float IceEatSeconds = 6f;
         public float IceEaten { get; private set; }
         public int DiscoveriesSeen { get; private set; }
         public float placeCardSeconds = 4f;
@@ -195,7 +196,7 @@ namespace HaiBanTay.Narrative
             yield return Root.Subtitles.PlayAndWait("pro_le_buy_ice");
             iceSeller.Play("HandOver");
             le.Play("HandOver");
-            leIceCup.gameObject.SetActive(true);
+            yield return PassCupToLe();
             yield return Root.Subtitles.PlayAndWait("pro_le_ice");
             bool taken = false;
             iceTarget.Interacted += _ => taken = true;
@@ -203,6 +204,9 @@ namespace HaiBanTay.Narrative
             Guide("guide.pro_ice", () => iceTarget.transform);
             yield return WaitFor(() => taken, () => taken = true);
             iceTarget.available = false;
+            // Ly anh Lê vừa đưa sang tay Ba; ly thứ hai (gọi hai ly) người bán đưa cho anh Lê sau.
+            leIceCup.gameObject.SetActive(false);
+            StartCoroutine(SecondIceToLe());
             Guide("guide.pro_eat");
             // Gốc khung tay là cổ tay; kiểu cầm đặt cốc áp lòng bàn tay trái, thìa kẹp giữa ngón cái và ngón trỏ phải.
             IceEatMotion.CupGrip.Attach(iceCup, Rig.hands.left);
@@ -251,6 +255,80 @@ namespace HaiBanTay.Narrative
             Rig.hands.SetPose(HandPose.Lowered);
             Root.Events.Raise(EventIds.S0StreetDone);
         }
+
+        IEnumerator SecondIceToLe()
+        {
+            yield return new WaitForSeconds(0.8f);
+            // Anh Lê đang quay về Ba: quay sang người bán nhận ly (tay người bán không với tới sau lưng anh Lê), xong quay lại.
+            float back = le.transform.eulerAngles.y;
+            var toSeller = iceSeller.Position - le.Position;
+            yield return le.Face(Mathf.Atan2(toSeller.x, toSeller.z) * Mathf.Rad2Deg);
+            iceSeller.Play("HandOver");
+            le.Play("HandOver");
+            yield return PassCupToLe();
+            le.Play("Idle");
+            yield return le.Face(back);
+        }
+
+        /// <summary>
+        /// Người bán trao cốc cho anh Lê (người dùng 07/11: cốc không được bay từ không khí): tay phải người bán xuống sau quầy lấy
+        /// cốc (quầy cao 1,22 m che tay), nâng lên lòng bàn tay ngửa đưa ra góc quầy; anh Lê với tay nắm cốc (dáng Blender,
+        /// LeCupGrip) rồi người bán buông, anh Lê kéo cốc về trước bụng.
+        /// </summary>
+        IEnumerator PassCupToLe()
+        {
+            if (_leGrip == null && !le.TryGetComponent(out _leGrip)) _leGrip = le.gameObject.AddComponent<LeCupGrip>();
+            var seller = iceSeller.GetComponent<HaiBanTay.Npc.NpcArmIK>();
+            if (seller == null) seller = iceSeller.gameObject.AddComponent<HaiBanTay.Npc.NpcArmIK>();
+            if (_sellerHand == null) _sellerHand = new GameObject("IceSellerHand").transform;
+            var toLe = le.Position - iceSeller.Position; toLe.y = 0f; toLe.Normalize();
+            var palmUp = Quaternion.LookRotation(toLe, Vector3.down);
+            // Tay thấp sau quầy, trước bụng người bán.
+            var low = iceSeller.Position + Vector3.up * .85f + iceSeller.transform.forward * .2f;
+            // Điểm trao: dáng cầm của anh Lê dời 10 cm về phía người bán, nâng lên trên mặt quầy cho Ba thấy cốc qua tay.
+            var give = le.transform.TransformPoint(new Vector3(.177f, .98f, .40f)) - toLe * .1f;
+            give.y = Mathf.Max(give.y, IceCounterTop + .08f);
+            Vector3 Wrist(Vector3 cupBase) => cupBase - palmUp * LeCupGrip.PalmCup;
+            // Anh Lê nhìn chỗ trao cốc: NpcGaze nhìn điểm thì không quay thân theo Ba giữa lúc nhận.
+            var gaze = NpcGaze.Of(le);
+            gaze.LookAt(give);
+            seller.rightTarget = _sellerHand;
+            seller.rightCurl = new Vector3(12f, 10f, 6f);
+            _sellerHand.SetPositionAndRotation(low, palmUp);
+            for (float t = 0f; t < 1f; t += Time.deltaTime / .35f) { seller.rightWeight = Mathf.SmoothStep(0f, 1f, t); yield return null; }
+            seller.rightWeight = 1f;
+            leIceCup.SetParent(le.transform, true);
+            leIceCup.gameObject.SetActive(true);
+            _leGrip.Offer(leIceCup, seller);
+            yield return new WaitForSeconds(.15f);
+            // Nâng thẳng lên quá mặt quầy rồi mới đưa ngang (đường chéo xuyên góc quầy).
+            var lowWrist = _sellerHand.position;
+            var over = new Vector3(lowWrist.x, Wrist(give).y + .02f, lowWrist.z);
+            for (float t = 0f; t < 1f; t += Time.deltaTime / .45f) { _sellerHand.position = Vector3.Lerp(lowWrist, over, Mathf.SmoothStep(0f, 1f, t)); yield return null; }
+            for (float t = 0f; t < 1f; t += Time.deltaTime / .5f) { _sellerHand.position = Vector3.Lerp(over, Wrist(give), Mathf.SmoothStep(0f, 1f, t)); yield return null; }
+            _sellerHand.position = Wrist(give);
+            _leGrip.handoff = give;
+            _leGrip.reachAmount = 1f;
+            _leGrip.Reach();
+            float until = Time.time + 2f;
+            while (!_leGrip.CupInHand && Time.time < until) yield return null;
+            yield return new WaitForSeconds(.1f);
+            for (float t = 0f; t < 1f; t += Time.deltaTime / .6f)
+            {
+                float k = Mathf.SmoothStep(0f, 1f, t);
+                seller.rightWeight = Mathf.Clamp01(1f - k * 1.6f);
+                _leGrip.reachAmount = 1f - k;
+                yield return null;
+            }
+            seller.rightWeight = 0f;
+            _leGrip.reachAmount = 0f;
+            gaze.LookAt(null);
+        }
+
+        Transform _sellerHand;
+        /// <summary>Mặt quầy kem (PrologueSceneBuilder: IceCounter tâm y .67, cao 1,1 m).</summary>
+        const float IceCounterTop = 1.22f;
+        LeCupGrip _leGrip;
 
         [Tooltip("Ba cách anh Lê trong tầm này (m) thì anh Lê mới đi tiếp / mới bắt đầu đoạn nhìn.")]
         public float leWaitRadius = 3f;
